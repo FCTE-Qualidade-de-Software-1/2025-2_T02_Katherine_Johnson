@@ -1,60 +1,22 @@
 # Katherine Johnson
 
+<p align="center">
+  <img src="../../assets/images/katherine-johnson.jpg" width="50%" alt="Katherine Johnson">
+  
+</p>
+
+<p align="center" style="font-size: 12px; font-style: italic;">
+  Fonte: <a href="https://people.com/human-interest/katherine-johnson-dies-at-101/" target="_blank">Katherine Johnson</a>
+</p>
+
+
+## Quem foi Katherine Johnson
+
+**Katherine Johnson (1918–2020)** foi uma matemática pioneira da NASA, cuja precisão em cálculos orbitais foi decisiva para marcos da corrida espacial. Entre suas contribuições mais conhecidas estão a validação manual das trajetórias do voo **Mercury-Atlas 6** (1962), que colocou John Glenn em órbita, e o suporte matemático aos programas **Apollo 11** e **Apollo 13**. Em 2015, recebeu a **Medalha Presidencial da Liberdade** pelos serviços prestados à ciência e à humanidade. Sua história também simboliza a superação de barreiras de gênero e raça, inspirando excelência, rigor e ética – valores que norteiam nosso trabalho em qualidade de software.
+
 ## Sobre a Equipe
 
 A equipe **Katherine Johnson** é composta por estudantes do curso de **Engenharia de Software** da disciplina **Qualidade de Software**, comprometidos a aplicar conceitos de qualidade no projeto Guardiões da Saúde.
-
-O nome da equipe homenageia **Katherine Johnson**, matemática brilhante que trabalhou na NASA e foi fundamental para o sucesso das primeiras missões espaciais americanas, representando excelência técnica e precisão - qualidades essenciais em qualidade de software.
-
-## Membros da Equipe
-
-### Integrante 1
-
--   **Nome**: Arthur Carneiro Trindade
--   **Matrícula**: 180098080
--   **GitHub**: [trindadea](https://github.com/trindadea)
-<!-- -   **Papel**: [Função na equipe]
--   **Especialidades**: [Áreas de conhecimento] -->
-
-### Integrante 2
-
--   **Nome**: Caio Pacheco Santos
--   **Matrícula**: 211029183
--   **GitHub**: [CaioPacheco](https://github.com/CaioPacheco)
-<!-- -   **Papel**: [Função na equipe]
--   **Especialidades**: [Áreas de conhecimento] -->
-
-### Integrante 3
-
--   **Nome**: Gabriela Tiago de Araújo
--   **Matrícula**: 190028475
--   **GitHub**: [GabrielaTiago](https://github.com/GabrielaTiago)
-<!-- -   **Papel**: [Função na equipe]
--   **Especialidades**: [Áreas de conhecimento] -->
-
-### Integrante 4
-
--   **Nome**: Guilherme Coelho Mendonça
--   **Matrícula**: 202016364
--   **GitHub**: [Guilhermanoo](https://github.com/Guilhermanoo)
-<!-- -   **Papel**: [Função na equipe]
--   **Especialidades**: [Áreas de conhecimento] -->
-
-### Integrante 5
-
--   **Nome**: Matheus Henrick Dutra dos Santos
--   **Matrícula**: 190018101
--   **GitHub**: [MatheusHenrickSantos](https://github.com/MatheusHenrickSantos)
-<!-- -   **Papel**: [Função na equipe]
--   **Especialidades**: [Áreas de conhecimento] -->
-
-### Integrante 6
-
--   **Nome**: Uires Carlos de Oliveira
--   **Matrícula**: 202043307
--   **GitHub**: [uires2023](https://github.com/uires2023)
-<!-- -   **Papel**: [Função na equipe]
--   **Especialidades**: [Áreas de conhecimento] -->
 
 ## Organização da Equipe
 

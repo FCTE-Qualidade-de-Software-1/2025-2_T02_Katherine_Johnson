@@ -4,6 +4,8 @@
 
 A equipe **Katherine Johnson** é composta por estudantes do curso de **Engenharia de Software** da disciplina **Qualidade de Software**, comprometidos a aplicar conceitos de qualidade no projeto Guardiões da Saúde.
 
+                            
+
 O nome da equipe homenageia **Katherine Johnson**, matemática brilhante que trabalhou na NASA e foi fundamental para o sucesso das primeiras missões espaciais americanas, representando excelência técnica e precisão - qualidades essenciais em qualidade de software.
 
 ## Membros da Equipe

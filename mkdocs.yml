@@ -78,8 +78,14 @@ nav:
     - Sobre o Projeto:
           - Visão Geral: sobre/visao-geral.md
           - Equipe: sobre/equipe.md
-    - Documentação:
+    - Fase 1:
           - Planos de Qualidade: documentacao/planos-qualidade.md
+    # - Fase 2:
+    #       - Item da Fase 2: caminho/do/arquivo.md
+    # - Fase 3:
+    #       - Item da Fase 3: caminho/do/arquivo.md
+    # - Fase 4:
+    #       - Item da Fase 4: caminho/do/arquivo.md
     - Entregas:
           - Sprint 1: entregas/sprint-1.md
 

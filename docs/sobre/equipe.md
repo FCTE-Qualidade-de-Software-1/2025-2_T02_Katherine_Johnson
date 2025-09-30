@@ -24,26 +24,26 @@ A equipe **Katherine Johnson** é composta por estudantes do curso de **Engenhar
 
 A equipe adota práticas ágeis e de qualidade para o desenvolvimento das atividades:
 
--   **Sprints**: Trabalho organizado em ciclos de 2-3 semanas
--   **Weekly Meetings**: Reuniões semanais para alinhamento
--   **Code Review**: Revisão de código obrigatória
--   **Documentation**: Documentação contínua do processo
+-   **_Sprints_**: Trabalho organizado em ciclos de 2-3 semanas;
+-   **_Weekly Meetings_**: Reuniões semanais para alinhamento;
+-   **_Code Review_**: Revisão de código obrigatória;
+-   **_Documentation_**: Documentação contínua do processo.
 <!-- -   **Testing**: Testes automatizados e manuais -->
 
 ## Ferramentas e Tecnologias
 
 ### Gestão de Projeto
 
--   **GitHub Projects**: Kanban e tracking de issues
--   **Git Flow**: Fluxo de versionamento
--   **Markdown/MKDocs**: Documentação
+-   **_GitHub Projects_**: Kanban e _tracking_ de _issues_;
+-   **_Git Flow_**: Fluxo de versionamento;
+-   **_Markdown_/_MKDocs_**: Documentação.
 
 ### Comunicação
 
--   **WhatsApp**: Comunicação diária
--   **Teams**: Reuniões e discussões
--   **GitHub Issues**: Rastreamento de tarefas
--   **Pull Requests**: Revisão colaborativa
+-   **_WhatsApp_**: Comunicação diária;
+-   **_Teams_**: Reuniões e discussões;
+-   **_GitHub Issues_**: Rastreamento de tarefas;
+-   **_Pull Requests_**: Revisão colaborativa.
 
 <!-- ### Qualidade de Software
 
@@ -51,3 +51,14 @@ A equipe adota práticas ágeis e de qualidade para o desenvolvimento das ativid
 -   **Análise Estática**: ESLint
 -   **Cobertura de Código**: SimpleCov
 -   **CI/CD**: GitHub Actions -->
+
+
+
+---
+
+## Histórico de Versões
+
+| Versão | Descrição | Autor(es) | Data de Produção | Revisor(es) | Data de Revisão | 
+| :----: | --------- | --------- | :--------------: | ----------- | :-------------: |
+| `1.0`  | Criação do documento | [Gabriela Tiago](https://github.com/GabrielaTiago) | 28/09/2025 | [Matheus Henrick](https://github.com/MatheusHenrickSantos) | 30/09/2025 |
+| `1.1`  | Adição do Histórico de Versões | [Matheus Henrick](https://github.com/MatheusHenrickSantos) | 30/09/2025 |  |  |

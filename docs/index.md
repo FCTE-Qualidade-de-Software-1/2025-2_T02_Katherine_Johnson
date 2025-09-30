@@ -70,3 +70,14 @@ O **Guardiões da Saúde** é uma plataforma pública e gratuita que estimula a 
   </tr>
   
 </table>
+
+
+
+---
+
+## Histórico de Versões
+
+| Versão | Descrição | Autor(es) | Data de Produção | Revisor(es) | Data de Revisão | 
+| :----: | --------- | --------- | :--------------: | ----------- | :-------------: |
+| `1.0`  | Criação do documento | [Arthur Carneiro](https://github.com/trindadea) | 29/09/2025 | [Matheus Henrick](https://github.com/MatheusHenrickSantos) | 30/09/2025 |
+| `1.1`  | Adição do Histórico de Versões | [Matheus Henrick](https://github.com/MatheusHenrickSantos) | 30/09/2025 |  |  |

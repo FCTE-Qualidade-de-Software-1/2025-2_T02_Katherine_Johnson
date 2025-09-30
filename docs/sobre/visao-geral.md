@@ -17,7 +17,7 @@ A vigilância participativa é uma estratégia que transforma o cidadão em um a
 
 A funcionalidade central do aplicativo é o **reporte diário do estado de saúde**, no qual o usuário informa se está se sentindo _"bem"_ ou _"mal"_.
 
-Caso reporte mal-estar, pode selecionar sintomas específicos em uma lista detalhada. Em troca, a plataforma oferece **orientações de saúde**, a **localização de farmácias** e **Unidades de Pronto Atendimento (UPAs) próximas** via GPS e atua como um canal de informações confiáveis, como notícias e boletins.
+Caso reporte mal-estar, pode selecionar sintomas específicos em uma lista detalhada. Em troca, a plataforma oferece **orientações de saúde**, a **localização de farmácias** e **Unidades de Pronto Atendimento (UPAs)** próximas via GPS e atua como um canal de informações confiáveis, como notícias e boletins.
 
 Outra função chave é a **Vigilância Ativa Institucional**, que permite ao usuário, mediante consentimento, vincular seu perfil a uma instituição (como uma universidade) para notificar automaticamente a equipe de saúde local em caso de sintomas, agilizando o cuidado e o monitoramento.
 
@@ -39,7 +39,7 @@ Outra função chave é a **Vigilância Ativa Institucional**, que permite ao us
 
 O sistema é composto por diferentes módulos que trabalham em conjunto para viabilizar a vigilância participativa e ativa.
 
--   **Aplicativo Mobile/Web**: Interface principal para o usuário reportar seu estado de saúde, acessar informações e localizar serviços próximos, como UPAs e farmácias.
+-   **Aplicativo _Mobile_/_Web_**: Interface principal para o usuário reportar seu estado de saúde, acessar informações e localizar serviços próximos, como UPAs e farmácias.
 -   **Banco de Dados Centralizado**: Armazena os registros de saúde enviados pelos usuários para análise posterior.
 -   **Módulo de Análise (Sala de Situação da UnB)**: Equipes de especialistas processam os dados brutos, gerando inteligência epidemiológica, mapas de calor e análises de padrões.
 -   **Dashboard e Sistema de Boletins**: Painéis públicos e boletins epidemiológicos são gerados para gestores de saúde e para a sociedade, garantindo transparência e subsidiando a tomada de decisão.
@@ -69,3 +69,14 @@ O projeto contribui para:
 -   Fortalecimento do Sistema Único de Saúde (SUS) com dados complementares e oportunos.
 -   Melhoria na capacidade de resposta a emergências sanitárias, como demonstrado na pandemia de COVID-19.
 -   Promoção de uma cultura de cuidado coletivo na saúde pública.
+
+
+
+---
+
+## Histórico de Versões
+
+| Versão | Descrição | Autor(es) | Data de Produção | Revisor(es) | Data de Revisão | 
+| :----: | --------- | --------- | :--------------: | ----------- | :-------------: |
+| `1.0`  | Criação do documento | [Gabriela Tiago](https://github.com/GabrielaTiago) | 28/09/2025 | [Matheus Henrick](https://github.com/MatheusHenrickSantos) | 30/09/2025 |
+| `1.1`  | Adição do Histórico de Versões | [Matheus Henrick](https://github.com/MatheusHenrickSantos) | 30/09/2025 |  |  |

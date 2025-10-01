@@ -81,12 +81,12 @@ nav:
 #     - Documentação:
       #     - Planos de Qualidade: documentacao/planos-qualidade.md
     - Fase 1 - Requisitos de Avaliação:
-          - Propósito da Avaliação: entregas/fase-1/proposito-da-avaliacao.md
-          - Partes Interessadas: entregas/fase-1/partes-interessadas.md
-          - Identificação do tipo de produto a ser avaliado: entregas/fase-1/identificacao-tipo-produto.md
-          - Especificação do modelo de qualidade: entregas/fase-1/especificacao-modelo-qualidade.md
-          - Seleção das características avaliadas: entregas/fase-1/selecao-caracteristicas-avaliadas.md
-          - Vínculo com ODS: entregas/fase-1/vinculo-ods.md
+          - 1. Propósito da Avaliação: entregas/fase-1/proposito-da-avaliacao.md
+          - 2. Partes Interessadas: entregas/fase-1/partes-interessadas.md
+          - 3. Identificação do tipo de produto a ser avaliado: entregas/fase-1/identificacao-tipo-produto.md
+          - 4. Especificação do modelo de qualidade: entregas/fase-1/especificacao-modelo-qualidade.md
+          - 5. Seleção das características avaliadas: entregas/fase-1/selecao-caracteristicas-avaliadas.md
+          - 6. Vínculo com ODS: entregas/fase-1/vinculo-ods.md
       # - Entregas:
       #       - Fase 1:
       #             - Requisitos de Avaliação: entregas/fase-1.md

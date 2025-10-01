@@ -78,17 +78,18 @@ nav:
     - Sobre o Projeto:
           - Visão Geral: sobre/visao-geral.md
           - Equipe: sobre/equipe.md
-    - Documentação:
-          - Planos de Qualidade: documentacao/planos-qualidade.md
-    # - Fase 2:
-    #       - Item da Fase 2: caminho/do/arquivo.md
-    # - Fase 3:
-    #       - Item da Fase 3: caminho/do/arquivo.md
-    # - Fase 4:
-    #       - Item da Fase 4: caminho/do/arquivo.md
-    - Entregas:
-          - Fase 1:
-                - Requisitos de Avaliação: entregas/fase-1.md
+#     - Documentação:
+      #     - Planos de Qualidade: documentacao/planos-qualidade.md
+    - Fase 1 - Requisitos de Avaliação:
+          - Propósito da Avaliação: entregas/fase-1/proposito-da-avaliacao.md
+          - Partes Interessadas: entregas/fase-1/partes-interessadas.md
+          - Identificação do tipo de produto a ser avaliado: entregas/fase-1/identificacao-tipo-produto.md
+          - Especificação do modelo de qualidade: entregas/fase-1/especificacao-modelo-qualidade.md
+          - Seleção das características avaliadas: entregas/fase-1/selecao-caracteristicas-avaliadas.md
+          - Vínculo com ODS: entregas/fase-1/vinculo-ods.md
+      # - Entregas:
+      #       - Fase 1:
+      #             - Requisitos de Avaliação: entregas/fase-1.md
       # - Fase 2:
       #       - Item da Fase 2: caminho/do/arquivo.md
       # - Fase 3:

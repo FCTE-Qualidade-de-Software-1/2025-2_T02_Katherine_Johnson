@@ -61,13 +61,13 @@ A **Tabela 1** abaixo aprensenta a descrição de cada característica do modelo
 
 Considerando o modelo apresentado, a equipe decidiu analisar o produto de software com base nas seguintes características:
 
--   **Segurança**:  
+-   **Segurança**:
     _Justificativa:_ Essencial para proteger dados sensíveis dos usuários e garantir a integridade do sistema contra ameaças externas.
 
--   **Confiabilidade**:  
+-   **Confiabilidade**:
     _Justificativa:_ Fundamental para assegurar que o sistema funcione corretamente e esteja disponível quando necessário, evitando falhas que possam comprometer o serviço.
 
--   **Manutenibilidade**:  
+-   **Manutenibilidade**:
     _Justificativa:_ Importante para facilitar atualizações, correções e adaptações futuras, garantindo a evolução contínua do software com baixo custo e esforço.
 
 ## Bibliografia
@@ -78,6 +78,8 @@ Considerando o modelo apresentado, a equipe decidiu analisar o produto de softwa
 
 ## Histórico de Versões
 
-| Versão | Descrição            | Autor(es)                                                  | Data de Produção | Revisor(es) | Data de Revisão |
-| :----: | -------------------- | ---------------------------------------------------------- | :--------------: | ----------- | :-------------: |
-| `1.0`  | Criação do documento | [Matheus Henrick](https://github.com/MatheusHenrickSantos) |    01/10/2025    |             |                 |
+| Versão | Descrição                  | Autor(es)                                                  | Data de Produção | Revisor(es) | Data de Revisão |
+| :----: | -------------------------- | ---------------------------------------------------------- | :--------------: | ----------- | :-------------: |
+| `1.0`  | Criação do documento       | [Matheus Henrick](https://github.com/MatheusHenrickSantos) |    01/10/2025    |             |                 |
+| `1.1`  | Linter e formatação        | [Gabriela Tiago](https://github.com/GabrielaTiago)         |    01/10/2025    |             |                 |
+| `1.2`  | Conserta caminho da imagem | [Gabriela Tiago](https://github.com/GabrielaTiago)         |    01/10/2025    |             |                 |

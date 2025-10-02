@@ -35,3 +35,11 @@ Analisando a natureza do serviço prestado pelo Guardiões da Saúde, selecionam
 - **Conexões principais**:
   - 17.16 e 17.17 (Parcerias multissetoriais): integração entre academia, governo e sociedade civil para vigilância em saúde.
 
+---
+
+## Histórico de Versões
+
+| Versão | Descrição            | Autor(es)                                          | Data de Produção | 
+| :----: | -------------------- | -------------------------------------------------- | :--------------: |
+| `1.0`  | Criação do documento | [Arthur Trindade](https://github.com/trindadea)    |    28/09/2025    |
+| `1.1`  | Revisão e ajustes pós feedback | [Arthur Trindade](https://github.com/trindadea)    |    01/10/2025    |

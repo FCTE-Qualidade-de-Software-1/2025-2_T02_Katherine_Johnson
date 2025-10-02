@@ -24,3 +24,12 @@ Os resultados desta avaliação poderão ser aplicados de diferentes formas, tan
 - **Fortalecimento da confiança social**: demonstrar aos cidadãos que o Guardiões da Saúde é continuamente avaliado, promovendo maior engajamento e participação.  
 
 - **Referência acadêmica e metodológica**: contribuir para a aplicação prática de normas de qualidade de software, como a ISO/IEC 25010, permitindo que outros projetos semelhantes se beneficiem do processo.
+
+---
+
+## Histórico de Versões
+
+| Versão | Descrição            | Autor(es)                                          | Data de Produção | 
+| :----: | -------------------- | -------------------------------------------------- | :--------------: |
+| `1.0`  | Criação do documento | [Guilherme Coelho Mendonça](https://github.com/Guilermanoo)    |    28/09/2025    |
+| `1.1`  | Revisão e ajustes pós feedback | [Arthur Trindade](https://github.com/trindadea)    |    01/10/2025    |

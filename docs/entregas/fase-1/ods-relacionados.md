@@ -25,16 +25,6 @@ Analisando a natureza do serviço prestado pelo Guardiões da Saúde, selecionam
 - **Conexões principais**:
   - 9.c (Acesso à informação e TIC): amplia acesso a serviços digitais de saúde e a dados para gestão pública.
 
-### [ODS 16 — Paz, Justiça e Instituições Eficazes](https://brasil.un.org/pt-br/sdgs/16)
-- **Justificativa**: a confiança social no app depende de proteção de dados, transparência e governança.
-- **Conexões principais**:
-  - 16.6 (Instituições eficazes e responsáveis) e 16.10 (Acesso à informação): políticas de privacidade claras, consentimento e comunicação transparente fortalecem a legitimidade da ferramenta.
-
-### [ODS 17 — Parcerias e Meios de Implementação](https://brasil.un.org/pt-br/sdgs/17)
-- **Justificativa**: o projeto envolve cooperação entre organizações (ProEpi, universidades, gestores públicos), importante para adoção e sustentabilidade.
-- **Conexões principais**:
-  - 17.16 e 17.17 (Parcerias multissetoriais): integração entre academia, governo e sociedade civil para vigilância em saúde.
-
 ---
 
 ## Histórico de Versões

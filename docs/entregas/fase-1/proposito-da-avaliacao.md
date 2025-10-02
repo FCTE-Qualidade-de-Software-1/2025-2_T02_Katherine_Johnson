@@ -13,17 +13,15 @@ Mas a eficiência do Guardiões da Saúde não depende somente da parte técnica
 
 > O propósito desta avaliação é analisar de forma sistemática a **qualidade do software Guardiões da Saúde**, garantindo que ele esteja alinhado às necessidades de seus usuários e aos objetivos de saúde pública para os quais foi concebido. Pretende-se verificar se o sistema oferece uma **experiência segura, estável e sustentável**, capaz de apoiar tanto cidadãos quanto gestores de saúde em situações cotidianas e emergenciais. A avaliação não busca apenas identificar pontos fortes e limitações técnicas, mas também fornecer **subsídios para a melhoria contínua** do produto e para a **confiança da sociedade no uso da plataforma**. Serão considerados o aplicativo móvel (Android/iOS), o acesso via web e os serviços associados, de acordo com o escopo definido neste trabalho.
 
-## 1.3 Utilização dos Resultados da Avaliação  
+## 1.3 Utilização dos Resultados da Avaliação
 
-Os resultados desta avaliação poderão ser aplicados de diferentes formas, tanto no âmbito acadêmico quanto no contexto da saúde pública:  
+- **Identificação de pontos de melhoria**: os resultados obtidos pela equipe orientarão a priorização de correções e evoluções pela equipe desenvolvedora da ProEpi, com base nas recomendações consolidadas no relatório.
 
-- **Identificação de pontos de melhoria**: servir de base para propor ajustes no software, apoiando desenvolvedores e mantenedores do projeto.  
+- **Apoio à tomada de decisão em saúde pública**: as evidências reunidas permitirão que gestores parceiros decidam manter ou ampliar o uso do aplicativo, iniciar pilotos controlados ou solicitar ajustes antes de uma adoção mais ampla.
 
-- **Apoio à tomada de decisão em saúde pública**: fornecer subsídios para gestores avaliarem a confiabilidade e adequação do aplicativo como ferramenta de vigilância participativa.  
+- **Fortalecimento da confiança social**: as conclusões do estudo indicarão melhorias de transparência e comunicação a serem implementadas pela ProEpi (por exemplo, textos de consentimento e políticas de privacidade), reforçando a confiança e o engajamento dos cidadãos.
 
-- **Fortalecimento da confiança social**: demonstrar aos cidadãos que o Guardiões da Saúde é continuamente avaliado, promovendo maior engajamento e participação.  
-
-- **Referência acadêmica e metodológica**: contribuir para a aplicação prática de normas de qualidade de software, como a ISO/IEC 25010, permitindo que outros projetos semelhantes se beneficiem do processo.
+- **Referência acadêmica e metodológica**: o documento servirá para que a professora e a equipe registrem e consolidem o método de avaliação (baseado na ISO/IEC 25010), possibilitando sua utilização como referência em próximas turmas e comparações futuras.
 
 ---
 

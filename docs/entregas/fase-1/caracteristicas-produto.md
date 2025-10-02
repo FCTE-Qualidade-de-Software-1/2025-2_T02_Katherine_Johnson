@@ -64,6 +64,16 @@ Camada de comunicação entre aplicativos (Android/iOS/web) e os **serviços de 
 
 ---
 
+## Referências Bibliográficas
+
+-   [1] PROEPI DESENVOLVIMENTO. Repositório do projeto Guardiões da Saúde. Disponível em: <https://github.com/ProEpiDesenvolvimento>. Acesso em: 28 ago. 2025.
+-   [2] APPLE. Guardiões da Saúde — App Store. Disponível em: <https://apps.apple.com/br/app/guardi%C3%B5es-da-sa%C3%BAde/id1450965975>. Acesso em: 01 out. 2025.
+-   [3] GOOGLE. Guardiões da Saúde — Google Play. Disponível em: <https://play.google.com/store/apps/details?id=com.guardioesapp&hl=pt_BR>. Acesso em: 01 out. 2025.
+-   [5]: ISO/IEC 25010:2011 — Systems and Software Engineering — Systems and Software Quality Requirements and Evaluation (SQuaRE).
+
+
+---
+
 ## Histórico de Versões
 
 | Versão | Descrição            | Autor(es)                                          | Data de Produção | 

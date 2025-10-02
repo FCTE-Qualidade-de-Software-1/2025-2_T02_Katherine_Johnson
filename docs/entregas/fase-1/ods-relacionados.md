@@ -27,6 +27,14 @@ Analisando a natureza do serviço prestado pelo Guardiões da Saúde, selecionam
 
 ---
 
+## Referências Bibliográficas
+
+-   [1] ONU BRASIL. ODS 3: Saúde e Bem-Estar. Organização das Nações Unidas no Brasil, 2025. Disponível em: <https://brasil.un.org/pt-br/sdgs/3>. Acesso em: 01 out. 2025.
+-   [2] ONU BRASIL. ODS 9: Indústria, Inovação e Infraestrutura. Organização das Nações Unidas no Brasil, 2025. Disponível em: <https://brasil.un.org/pt-br/sdgs/9>. Acesso em: 01 out. 2025.
+-   [3] ONU BRASIL. Objetivos de Desenvolvimento Sustentável (ODS). Organização das Nações Unidas no Brasil, 2025. Disponível em: <https://brasil.un.org/pt-br/sdgs>. Acesso em: 01 out. 2025.
+
+---
+
 ## Histórico de Versões
 
 | Versão | Descrição            | Autor(es)                                          | Data de Produção | 

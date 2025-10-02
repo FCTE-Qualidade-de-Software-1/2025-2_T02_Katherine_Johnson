@@ -25,6 +25,14 @@ Mas a eficiência do Guardiões da Saúde não depende somente da parte técnica
 
 ---
 
+## Referências Bibliográficas
+
+-   [1] PROEPI DESENVOLVIMENTO. Repositório do projeto Guardiões da Saúde. Disponível em: <https://github.com/ProEpiDesenvolvimento>. Acesso em: 28 ago. 2025.
+-   [2] PROEPI. Guardiões da Saúde. ProEpi — Associação Brasileira de Profissionais de Epidemiologia de Campo, 2025. Disponível em: <https://proepi.org.br/guardioes-da-saude/>. Acesso em: 28 ago. 2025.
+-   [3] ISO/IEC 25010:2011 — Systems and Software Engineering — Systems and Software Quality Requirements and Evaluation (SQuaRE).
+
+---
+
 ## Histórico de Versões
 
 | Versão | Descrição            | Autor(es)                                          | Data de Produção | 

@@ -33,7 +33,7 @@ A **Figura 2** abaixo apresenta o modelo de qualidade do produto, com suas carac
 </div>
 
 <div align="center">
-    <img src="../../assets/images/modelo-de-qualidade-do-produto.png" width="50%" alt="Modelo de Qualidade do Produto">
+    <img src="/2025-2_T02_Katherine_Johnson/assets/images/modelo-de-qualidade-do-produto.png" width="50%" alt="Modelo de Qualidade do Produto">
 </div>
 
 <div align="center" style="font-size: 12px; font-style: italic;">

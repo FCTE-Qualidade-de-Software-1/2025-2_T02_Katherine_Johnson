@@ -70,13 +70,12 @@ O projeto contribui para:
 -   Melhoria na capacidade de resposta a emergências sanitárias, como demonstrado na pandemia de COVID-19.
 -   Promoção de uma cultura de cuidado coletivo na saúde pública.
 
-
-
 ---
 
 ## Histórico de Versões
 
-| Versão | Descrição | Autor(es) | Data de Produção | Revisor(es) | Data de Revisão | 
-| :----: | --------- | --------- | :--------------: | ----------- | :-------------: |
-| `1.0`  | Criação do documento | [Gabriela Tiago](https://github.com/GabrielaTiago) | 28/09/2025 | [Matheus Henrick](https://github.com/MatheusHenrickSantos) | 30/09/2025 |
-| `1.1`  | Adição do Histórico de Versões | [Matheus Henrick](https://github.com/MatheusHenrickSantos) | 30/09/2025 |  |  |
+| Versão | Descrição                      | Autor(es)                                                  | Data de Produção |
+| :----: | ------------------------------ | ---------------------------------------------------------- | :--------------: |
+| `1.0`  | Criação do documento           | [Gabriela Tiago](https://github.com/GabrielaTiago)         |    28/09/2025    |
+| `1.1`  | Adição do Histórico de Versões | [Matheus Henrick](https://github.com/MatheusHenrickSantos) |    30/09/2025    |
+| `1.2`  | Linter e formatação            | [Gabriela Tiago](https://github.com/GabrielaTiago)         |    01/10/2025    |

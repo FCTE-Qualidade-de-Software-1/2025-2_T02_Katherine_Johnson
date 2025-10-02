@@ -2,13 +2,11 @@
 
 <p align="center">
   <img src="../../assets/images/katherine-johnson.jpg" width="50%" alt="Katherine Johnson">
-  
 </p>
 
 <p align="center" style="font-size: 12px; font-style: italic;">
   Fonte: <a href="https://people.com/human-interest/katherine-johnson-dies-at-101/" target="_blank">Katherine Johnson</a>
 </p>
-
 
 ## Quem foi Katherine Johnson
 
@@ -52,13 +50,12 @@ A equipe adota práticas ágeis e de qualidade para o desenvolvimento das ativid
 -   **Cobertura de Código**: SimpleCov
 -   **CI/CD**: GitHub Actions -->
 
-
-
 ---
 
 ## Histórico de Versões
 
-| Versão | Descrição | Autor(es) | Data de Produção | Revisor(es) | Data de Revisão | 
-| :----: | --------- | --------- | :--------------: | ----------- | :-------------: |
-| `1.0`  | Criação do documento | [Gabriela Tiago](https://github.com/GabrielaTiago) | 28/09/2025 | [Matheus Henrick](https://github.com/MatheusHenrickSantos) | 30/09/2025 |
-| `1.1`  | Adição do Histórico de Versões | [Matheus Henrick](https://github.com/MatheusHenrickSantos) | 30/09/2025 |  |  |
+| Versão | Descrição                      | Autor(es)                                                  | Data de Produção |
+| :----: | ------------------------------ | ---------------------------------------------------------- | :--------------: |
+| `1.0`  | Criação do documento           | [Gabriela Tiago](https://github.com/GabrielaTiago)         |    28/09/2025    |
+| `1.1`  | Adição do Histórico de Versões | [Matheus Henrick](https://github.com/MatheusHenrickSantos) |    30/09/2025    |
+| `1.2`  | Linter e formatação            | [Gabriela Tiago](https://github.com/GabrielaTiago)         |    01/10/2025    |

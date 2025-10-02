@@ -49,6 +49,6 @@ O mapeamento das partes interessadas influencia diretamente a seleção e priori
 
 ## Histórico de Versões
 
-| Versão | Descrição            | Autor(es)                                          | Data de Produção | 
+| Versão | Descrição            | Autor(es)                                          | Data de Produção |
 | :----: | -------------------- | -------------------------------------------------- | :--------------: |
 | `1.0`  | Criação do documento | [Gabriela Tiago](https://github.com/GabrielaTiago) |    01/10/2025    |

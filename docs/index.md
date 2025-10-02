@@ -20,7 +20,6 @@ O **Guardiões da Saúde** é uma plataforma pública e gratuita que estimula a 
 
 ## Integrantes da Equipe
 
-
 <table style="width: 100%; table-layout: fixed;">
   <tr>
     <td align="center">
@@ -68,16 +67,15 @@ O **Guardiões da Saúde** é uma plataforma pública e gratuita que estimula a 
       </a>
     </td>
   </tr>
-  
 </table>
-
-
 
 ---
 
 ## Histórico de Versões
 
-| Versão | Descrição | Autor(es) | Data de Produção | Revisor(es) | Data de Revisão | 
-| :----: | --------- | --------- | :--------------: | ----------- | :-------------: |
-| `1.0`  | Criação do documento | [Arthur Carneiro](https://github.com/trindadea) | 29/09/2025 | [Matheus Henrick](https://github.com/MatheusHenrickSantos) | 30/09/2025 |
-| `1.1`  | Adição do Histórico de Versões | [Matheus Henrick](https://github.com/MatheusHenrickSantos) | 30/09/2025 |  |  |
+| Versão | Descrição                      | Autor(es)                                                  | Data de Produção |
+| :----: | ------------------------------ | ---------------------------------------------------------- | :--------------: |
+| `1.0`  | Criação do documento           | [Gabriela Tiago](https://github.com/GabrielaTiago)         |    28/09/2025    |
+| `2.0`  | Refatoração do documento       | [Arthur Carneiro](https://github.com/trindadea)            |    29/09/2025    |
+| `2.1`  | Adição do Histórico de Versões | [Matheus Henrick](https://github.com/MatheusHenrickSantos) |    30/09/2025    |
+| `2.2`  | Linter e formatação            | [Gabriela Tiago](https://github.com/GabrielaTiago)         |    01/10/2025    |

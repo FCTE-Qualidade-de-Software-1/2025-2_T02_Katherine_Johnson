@@ -9,7 +9,7 @@ Os modelos de qualidade classificam a qualidade do produto de software em caract
 </div>
 
 <div align="center">
-    <img src="../../../assets/images/estrutura-de-um-modelo-de-qualidade.png" width="50%" alt="Estrutura de um Modelo de Qualidade">
+    <img src="../../../assets/images/estrutura-de-um-modelo-de-qualidade.png" width="100%" alt="Estrutura de um Modelo de Qualidade">
 </div>
 
 <div align="center" style="font-size: 12px; font-style: italic;">
@@ -31,7 +31,7 @@ A **Figura 2** abaixo apresenta o modelo de qualidade do produto, com suas carac
 </div>
 
 <div align="center">
-    <img src="../../../assets/images/modelo-de-qualidade-do-produto.png" width="50%" alt="Modelo de Qualidade do Produto">
+    <img src="../../../assets/images/modelo-de-qualidade-do-produto.png" width="100%" alt="Modelo de Qualidade do Produto">
 </div>
 
 <div align="center" style="font-size: 12px; font-style: italic;">
@@ -70,7 +70,7 @@ Considerando o modelo apresentado, a equipe decidiu analisar o produto de softwa
 -   **Manutenibilidade**:
     _Justificativa:_ Importante para facilitar atualizações, correções e adaptações futuras, garantindo a evolução contínua do software com baixo custo e esforço.
 
-## Bibliografia
+## Referências Bibliográficas
 
 > INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. ISO/IEC 25010:2011. Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models. Genebra: ISO, 2011.
 
@@ -78,8 +78,8 @@ Considerando o modelo apresentado, a equipe decidiu analisar o produto de softwa
 
 ## Histórico de Versões
 
-| Versão | Descrição                  | Autor(es)                                                  | Data de Produção | Revisor(es) | Data de Revisão |
-| :----: | -------------------------- | ---------------------------------------------------------- | :--------------: | ----------- | :-------------: |
-| `1.0`  | Criação do documento       | [Matheus Henrick](https://github.com/MatheusHenrickSantos) |    01/10/2025    |             |                 |
-| `1.1`  | Linter e formatação        | [Gabriela Tiago](https://github.com/GabrielaTiago)         |    01/10/2025    |             |                 |
-| `1.2`  | Conserta caminho da imagem | [Gabriela Tiago](https://github.com/GabrielaTiago)         |    01/10/2025    |             |                 |
+| Versão | Descrição                  | Autor(es)                                                  | Data de Produção |
+| :----: | -------------------------- | ---------------------------------------------------------- | :--------------: |
+| `1.0`  | Criação do documento       | [Matheus Henrick](https://github.com/MatheusHenrickSantos) |    01/10/2025    |
+| `1.1`  | Linter e formatação        | [Gabriela Tiago](https://github.com/GabrielaTiago)         |    01/10/2025    |
+| `1.2`  | Conserta caminho da imagem | [Gabriela Tiago](https://github.com/GabrielaTiago)         |    01/10/2025    |

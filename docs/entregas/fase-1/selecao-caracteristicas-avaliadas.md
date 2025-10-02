@@ -1,8 +1,6 @@
 # 5. Seleção das características avaliadas
 
-># 5. Seleção das Características Avaliadas
-
-## Critérios de Priorização
+## 5.1 Critérios de Priorização
 
 Para sistematizar a priorização das subcaracterísticas de qualidade, aplicou-se o método MoSCoW, que classifica os elementos em quatro grupos principais:
 
@@ -19,9 +17,11 @@ Cada categoria foi associada a um peso quantitativo, de modo a simplificar o pro
 
 ---
 
-## Priorização das Subcaracterísticas
+## 5.2 Priorização das Subcaracterísticas
 
-### Tabela 1 — Priorização pelo método MoSCoW
+### 5.2.1 Priorização pelo método MoSCoW
+
+<p align="center"> Tabela 1 - Priorização pelo método MoSCoW </p>
 
 | Subcaracterística        | Característica     | Categoria MoSCoW | Peso | Decisão Final       |
 |---------------------------|-------------------|------------------|------|---------------------|
@@ -40,9 +40,13 @@ Cada categoria foi associada a um peso quantitativo, de modo a simplificar o pro
 | Modificabilidade          | Manutenibilidade | Should           | 3    | Será analisada      |
 | Testabilidade             | Manutenibilidade | Must             | 4    | Será analisada      |
 
+<p align="center"><b>Fonte: </b>Autores</p>
+
 ---
 
-### Tabela 2 — Comparativo de Subcaracterísticas por Risco, Impacto e Esforço
+### 5.2.2 Comparativo de Subcaracterísticas por Risco, Impacto e Esforço
+
+<p align="center"> Tabela 2 - Comparativo de Subcaracterísticas por Risco, Impacto e Esforço </p>
 
 | Subcaracterística        | Característica     | Risco se ausente | Impacto para stakeholders                                  | Esforço de análise                  | Decisão Final   |
 |---------------------------|-------------------|------------------|-------------------------------------------------------------|-------------------------------------|-----------------|
@@ -61,17 +65,19 @@ Cada categoria foi associada a um peso quantitativo, de modo a simplificar o pro
 | Modificabilidade          | Manutenibilidade | Alto             | Alto (facilidade de evolução, novas versões)                | Médio (avaliação de código-fonte)       | Selecionada |
 | Testabilidade             | Manutenibilidade | Alto             | Alto (garante confiabilidade nos ciclos de teste)           | Médio (construção de testes automatizados) | Selecionada |
 
+<p align="center"><b>Fonte: </b>Autores</p>
+
 ---
 
 ## Referências Bibliográficas
 
-- INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. **ISO/IEC 25010:2011 — Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models.** Geneva: ISO, 2011.  
-Disponível em: <https://cdn.standards.iteh.ai/samples/35733/2ca18b477b7845a5b8cae39d6de0c098/ISO-IEC-25010-2011.pdf>. Acesso em: 01 Out. 2025.
+-   [1] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. ISO/IEC 25010:2011 — Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models. Geneva: ISO, 2011.  
+    Disponível em: <https://cdn.standards.iteh.ai/samples/35733/2ca18b477b7845a5b8cae39d6de0c098/ISO-IEC-25010-2011.pdf>. Acesso em: 01 out. 2025.
 
 ---
 
 ## Histórico de Versões
 
-| Versão | Data       | Descrição                                                                 | Autor(es)                        | Revisor |
-|--------|-----------|---------------------------------------------------------------------------|----------------------------------|---------|
-| 1.0    | 01/10/2025 | Elaboração inicial do documento                                          | Uires Carlos de oliveira                   | —       |.
+| Versão | Data       | Descrição                        | Autor(es)                   |
+|--------|------------|----------------------------------|-----------------------------|
+| 1.0    | 01/10/2025 | Elaboração inicial do documento | [Uires Carlos de Oliveira](https://github.com/uires2023)    |

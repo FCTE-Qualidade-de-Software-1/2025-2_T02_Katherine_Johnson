@@ -61,3 +61,12 @@ Conjunto de princípios e recursos que suportam **uso simples e inclusivo**. Foc
 
 ### 3.3.10 Integração cliente-servidor (API)
 Camada de comunicação entre aplicativos (Android/iOS/web) e os **serviços de backend** (API). É responsável por **transmitir dados com segurança**, sincronizar reportes e conteúdos, e manter a coerência entre o que o usuário vê e o que é armazenado/analizado no servidor.
+
+---
+
+## Histórico de Versões
+
+| Versão | Descrição            | Autor(es)                                          | Data de Produção | 
+| :----: | -------------------- | -------------------------------------------------- | :--------------: |
+| `1.0`  | Criação do documento | [Arthur Trindade](https://github.com/trindadea)    |    28/09/2025    |
+| `1.1`  | Revisão e ajustes pós feedback | [Arthur Trindade](https://github.com/trindadea)    |    01/10/2025    |

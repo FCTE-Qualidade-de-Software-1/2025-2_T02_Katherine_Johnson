@@ -37,10 +37,7 @@ Analisando a natureza do serviço prestado pelo Guardiões da Saúde, selecionam
 
 ---
 
-
----
-
-  ## Histórico de Versões
+## Histórico de Versões
 
 | Versão | Descrição            | Autor(es)                                          | Data de Produção | 
 | :----: | -------------------- | -------------------------------------------------- | :--------------: |

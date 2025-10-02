@@ -9,7 +9,7 @@ Os modelos de qualidade classificam a qualidade do produto de software em caract
 </div>
 
 <div align="center">
-    <img src="../../assets/images/estrutura-de-um-modelo-de-qualidade.png" width="50%" alt="Estrutura de um Modelo de Qualidade">
+    <img src="../../../assets/images/estrutura-de-um-modelo-de-qualidade.png" width="50%" alt="Estrutura de um Modelo de Qualidade">
 </div>
 
 <div align="center" style="font-size: 12px; font-style: italic;">
@@ -31,7 +31,7 @@ A **Figura 2** abaixo apresenta o modelo de qualidade do produto, com suas carac
 </div>
 
 <div align="center">
-    <img src="../../assets/images/modelo-de-qualidade-do-produto.png" width="50%" alt="Modelo de Qualidade do Produto">
+    <img src="../../../assets/images/modelo-de-qualidade-do-produto.png" width="50%" alt="Modelo de Qualidade do Produto">
 </div>
 
 <div align="center" style="font-size: 12px; font-style: italic;">

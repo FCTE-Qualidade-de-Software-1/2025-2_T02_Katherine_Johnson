@@ -1,6 +1,6 @@
 # 4. Especificação do modelo de qualidade
 
-## Introdução
+## 4.1 Introdução
 
 Os modelos de qualidade classificam a qualidade do produto de software em características e subcaracterísticas que, por sua vez, possuem propriedades mensuráveis. Essa estrutura, apresentada na **Figura 1** abaixo, permite avaliar melhor os atributos que compõem a qualidade de um sistema.
 
@@ -20,7 +20,7 @@ No conjunto de normas da SQuaRE, existem três tipos de modelos de qualidade: o 
 
 A equipe **Katherine Johnson** irá analisar o aplicativo **Guardiões da Saúde** usando o modelo de qualidade do produto. Portanto, o foco deste documento será no modelo de qualidade do produto.
 
-## Modelo de Qualidade
+## 4.2 Modelo de Qualidade
 
 O modelo de qualidade do produto é dividido em oito características: adequação funcional, eficiência de desempenho, compatibilidade, usabilidade, confiabilidade, segurança, manutenção e portabilidade.
 
@@ -70,16 +70,19 @@ Considerando o modelo apresentado, a equipe decidiu analisar o produto de softwa
 -   **Manutenibilidade**:
     _Justificativa:_ Importante para facilitar atualizações, correções e adaptações futuras, garantindo a evolução contínua do software com baixo custo e esforço.
 
+---
+
 ## Referências Bibliográficas
 
-> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. ISO/IEC 25010:2011. Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models. Genebra: ISO, 2011.
+> [1] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. ISO/IEC 25010:2011. Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models. Genebra: ISO, 2011.
 
 ---
 
 ## Histórico de Versões
 
-| Versão | Descrição                  | Autor(es)                                                  | Data de Produção |
-| :----: | -------------------------- | ---------------------------------------------------------- | :--------------: |
-| `1.0`  | Criação do documento       | [Matheus Henrick](https://github.com/MatheusHenrickSantos) |    01/10/2025    |
-| `1.1`  | Linter e formatação        | [Gabriela Tiago](https://github.com/GabrielaTiago)         |    01/10/2025    |
-| `1.2`  | Conserta caminho da imagem | [Gabriela Tiago](https://github.com/GabrielaTiago)         |    01/10/2025    |
+| Versão | Descrição                      | Autor(es)                                                  | Data de Produção | Revisor(es) | Data de Revisão |
+| :----: | ------------------------------ | ---------------------------------------------------------- | :--------------: | ----------- | :-------------: |
+| `1.0`  | Criação do documento           | [Matheus Henrick](https://github.com/MatheusHenrickSantos) |    01/10/2025    |             |                 |
+| `1.1`  | Linter e formatação            | [Gabriela Tiago](https://github.com/GabrielaTiago)         |    01/10/2025    |             |                 |
+| `1.2`  | Conserta caminho da imagem     | [Gabriela Tiago](https://github.com/GabrielaTiago)         |    01/10/2025    |             |                 |
+| `1.3`  | Atualiza numeração dos tópicos | [Gabriela Tiago](https://github.com/GabrielaTiago)         |    01/10/2025    |             |                 |

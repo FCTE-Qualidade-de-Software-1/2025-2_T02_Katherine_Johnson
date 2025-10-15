@@ -85,7 +85,8 @@ nav:
           - 4. Especificação do modelo de qualidade: entregas/fase-1/especificacao-modelo-qualidade.md
           - 5. Seleção das características avaliadas: entregas/fase-1/selecao-caracteristicas-avaliadas.md
           - 6. ODS Relacionados: entregas/fase-1/ods-relacionados.md
-    # - Fase 2:
+    - Fase 2 - Especificação da Avaliação:
+          - 1. Abordagem GQM: entregas/fase-2/abordagem-gqm.md
     # 
     # - Fase 3:
     #

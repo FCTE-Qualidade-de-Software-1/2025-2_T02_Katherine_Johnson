@@ -1,0 +1,31 @@
+/* Gradiente inspirado no logo: azul (#2b8bb3) -> verde (#41c38a) */
+:root {
+  --brand-start: #2b8bb3;
+  --brand-end: #41c38a;
+}
+
+/* Barra superior e abas com gradiente sutil */
+.md-header, .md-tabs {
+  background: linear-gradient(90deg, var(--brand-start), var(--brand-end));
+}
+
+/* Links ativos e realces no tom esverdeado */
+.md-nav__link--active, .md-typeset a {
+  color: var(--brand-end);
+}
+
+/* Botão de alternância do tema para melhor contraste */
+.md-header__button.md-icon {
+  color: #ffffff;
+}
+
+/* Realce de código e seleção com leve tom da paleta */
+::selection {
+  background: rgba(65, 195, 138, 0.35);
+}
+
+/* Ajuste da borda inferior das abas para evitar conflito com gradiente */
+.md-tabs__list {
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+

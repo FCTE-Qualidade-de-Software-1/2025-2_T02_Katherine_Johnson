@@ -10,6 +10,10 @@ O papel do requisitante é avaliar a capacidade da equipe de aplicar os conceito
 
 O ecossistema do "Guardiões da Saúde" é composto por uma rede diversificada de organizações e grupos de usuários, cada um com papéis e interesses distintos na qualidade do software. A tabela a seguir detalha os principais stakeholders identificados.
 
+<div align="center">
+    <p><strong>Tabela 1 - Partes Interessadas</strong></p>
+</div>
+
 | Parte Interessada (Stakeholder)                                               | Categoria                      | Papel e Relação com o Software                                                                                                                                            | Principais Necessidades e Expectativas de Qualidade                                                                                                                                                                                                             |
 | :---------------------------------------------------------------------------- | :----------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **ProEpi (Associação Brasileira de Profissionais de Epidemiologia de Campo)** | Desenvolvedor / Mantenedor     | Idealizadora e principal desenvolvedora do aplicativo, responsável por suas atualizações e pela coordenação de novos projetos, como o de "Líderes Comunitários".[1, 2, 3] | **Manutenibilidade** para adaptar o app a novas emergências e projetos. **Segurança** para proteger os dados dos usuários e garantir a conformidade com a LGPD. **Confiabilidade** para assegurar que a plataforma funcione sem falhas críticas.                |
@@ -49,6 +53,7 @@ O mapeamento das partes interessadas influencia diretamente a seleção e priori
 
 ## Histórico de Versões
 
-| Versão | Descrição            | Autor(es)                                          | Data de Produção |
-| :----: | -------------------- | -------------------------------------------------- | :--------------: |
-| `1.0`  | Criação do documento | [Gabriela Tiago](https://github.com/GabrielaTiago) |    01/10/2025    |
+| Versão | Descrição                     | Autor(es)                                          | Data de Produção |
+| :----: | ----------------------------- | -------------------------------------------------- | :--------------: |
+| `1.0`  | Criação do documento          | [Gabriela Tiago](https://github.com/GabrielaTiago) |    01/10/2025    |
+| `1.1`  | Atualização do nome da tabela | [Gabriela Tiago](https://github.com/GabrielaTiago) |    01/10/2025    |

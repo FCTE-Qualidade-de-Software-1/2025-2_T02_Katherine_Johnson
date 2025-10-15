@@ -10,7 +10,9 @@ Em linhas gerais, o usuário indica diariamente se está bem ou mal e, quando ne
 
 Abaixo estão, de forma sintética, as principais características do **Guardiões da Saúde** consideradas nesta identificação do produto. As informações foram coletadas no repositório público [ProEpiDesenvolvimento](https://github.com/ProEpiDesenvolvimento) e nas lojas [Google Play](https://play.google.com/store) e [App Store](https://apps.apple.com/).
 
-<p align="center"> Tabela 1 - Características do Produto </a> </p>
+<div align="center">
+    <p><strong>Tabela 1 - Características do Produto</strong></p>
+</div>
 
 | Característica                                   | Descrição                                                               |
 | ------------------------------------------------ | ----------------------------------------------------------------------- |
@@ -81,7 +83,6 @@ Camada de comunicação entre aplicativos (Android/iOS/web) e os **serviços de 
 -   [3] GOOGLE. Guardiões da Saúde — Google Play. Disponível em: <https://play.google.com/store/apps/details?id=com.guardioesapp&hl=pt_BR>. Acesso em: 01 out. 2025.
 -   [5]: ISO/IEC 25010:2011 — Systems and Software Engineering — Systems and Software Quality Requirements and Evaluation (SQuaRE).
 
-
 ---
 
 ## Histórico de Versões
@@ -91,3 +92,4 @@ Camada de comunicação entre aplicativos (Android/iOS/web) e os **serviços de 
 | `1.0`  | Criação do documento           | [Arthur Trindade](https://github.com/trindadea)    |    28/09/2025    |
 | `1.1`  | Revisão e ajustes pós feedback | [Arthur Trindade](https://github.com/trindadea)    |    01/10/2025    |
 | `1.2`  | Linter e formatação            | [Gabriela Tiago](https://github.com/GabrielaTiago) |    01/10/2025    |
+| `1.3`  | Atualiza seção de módulos      | [Gabriela Tiago](https://github.com/GabrielaTiago) |    01/10/2025    |

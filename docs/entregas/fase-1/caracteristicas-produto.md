@@ -38,6 +38,20 @@ A seguir apresentamos, em alto nível, os principais módulos e funcionalidades 
 
 Permite que o usuário informe, de forma voluntária e rápida, seu estado de saúde (ex.: **bem** ou **mal**) e selecione sintomas quando aplicável. O envio gera um registro diário associado ao perfil e à localização aproximada (quando permitido), servindo como insumo para orientações ao usuário e análises agregadas.
 
+<div align="center">
+    <p><strong>Figura 1 – Reporte diário de saúde</strong></p>
+</div>
+
+<div align="center">
+    <img src="../../../assets/images/reporte_diario.png" width="30%" alt="Reporte diário de saúde">
+</div>
+
+<div align="center" style="font-size: 12px; font-style: italic;">
+    Fonte: Captura de tela do aplicativo Guardiões da Saúde, versão 3.4.6.
+</div>
+
+
+
 ### 3.3.2 Orientações pós-reporte
 
 Após o envio do reporte, o app apresenta **orientações**. O conteúdo é educativo e busca orientar condutas básicas, reduzindo incertezas e reforçando boas práticas de saúde.
@@ -46,13 +60,55 @@ Após o envio do reporte, o app apresenta **orientações**. O conteúdo é educ
 
 Oferece um **mapa** para localizar unidades de saúde próximas, utilizando GPS (com consentimento do usuário) e serviços de mapas. Ajuda o usuário a identificar pontos de cuidado disponíveis na região.
 
+<div align="center">
+    <p><strong>Figura 2 – Função de mapa</strong></p>
+</div>
+
+<div align="center">
+    <img src="../../../assets/images/mapa.png" width="30%" alt="Função de mapa">
+</div>
+
+<div align="center" style="font-size: 12px; font-style: italic;">
+    Fonte: Captura de tela do aplicativo Guardiões da Saúde, versão 3.4.6.
+</div>
+
+
+
 ### 3.3.4 Vigilância Ativa Institucional
 
 Funcionalidade opcional que permite **vincular** o perfil do usuário a uma **instituição acadêmica**. Quando o usuário reporta sintomas, o sistema pode **notificar equipes de saúde** da instituição, agilizando triagem, orientação e acompanhamento.
 
+<div align="center">
+    <p><strong>Figura 3 – Cadastro de Instituição</strong></p>
+</div>
+
+<div align="center">
+    <img src="../../../assets/images/cadastra_intituicao.png" width="30%" alt="Cadastro de Instituição">
+</div>
+
+<div align="center" style="font-size: 12px; font-style: italic;">
+    Fonte: Captura de tela do aplicativo Guardiões da Saúde, versão 3.4.6.
+</div>
+
+
+
 ### 3.3.5 Conteúdos informativos
 
 Canal interno com **dicas gerais de saúde**, **notícias confiáveis** e **quizzes** educativos. Visa combater desinformação, engajar o usuário no uso contínuo do app e promover educação sanitária de forma simples e contextualizada.
+
+<div align="center">
+    <p><strong>Figura 4 – Conteúdos informativos</strong></p>
+</div>
+
+<div align="center">
+    <img src="../../../assets/images/dicas.png" width="30%" alt="Conteúdos informativos">
+</div>
+
+<div align="center" style="font-size: 12px; font-style: italic;">
+    Fonte: Captura de tela do aplicativo Guardiões da Saúde, versão 3.4.6.
+</div>
+
+
 
 ### 3.3.6 Visão agregada no mapa
 
@@ -93,3 +149,4 @@ Camada de comunicação entre aplicativos (Android/iOS/web) e os **serviços de 
 | `1.1`  | Revisão e ajustes pós feedback | [Arthur Trindade](https://github.com/trindadea)    |    01/10/2025    |
 | `1.2`  | Linter e formatação            | [Gabriela Tiago](https://github.com/GabrielaTiago) |    01/10/2025    |
 | `1.3`  | Atualiza seção de módulos      | [Gabriela Tiago](https://github.com/GabrielaTiago) |    01/10/2025    |
+| `1.4`  | Adiciona imagens nos tópicos 3.3.1, 3.3.3, 3.3.4 e 3.3.5 | [Matheus Henrick](https://github.com/MatheusHenrickSantos) | 23/10/2025 |

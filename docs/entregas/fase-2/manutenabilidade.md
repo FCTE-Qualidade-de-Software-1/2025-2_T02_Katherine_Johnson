@@ -1,7 +1,8 @@
 # 2. Manutenibilidade
 
 ## 2.1 Introdução
-A **manutenibilidade** é uma característica fundamental para garantir a evolução contínua e a longevidade de um software. Ela reflete a facilidade com que o sistema pode ser **compreendido, modificado, corrigido e evoluído** ao longo do tempo. 
+
+A **manutenibilidade** é uma característica fundamental para garantir a evolução contínua e a longevidade de um software. Ela reflete a facilidade com que o sistema pode ser **compreendido, modificado, corrigido e evoluído** ao longo do tempo.
 
 Para o Guardiões da Saúde — uma plataforma usada em monitoramento participativo de sintomas — assegurar uma boa manutenibilidade é crucial para evolução contínua do código e rápida resposta às demandas de saúde pública.
 
@@ -36,8 +37,11 @@ As questões avaliativas foram definidas com base nas subcaracterísticas seleci
 <br>
 
 **Q1**. Qual o nível de complexidade estrutural do código-fonte do sistema?
+
 **Q2**. As responsabilidades dos módulos estão bem separadas?
+
 **Q3**. O código está suficientemente coberto por testes automatizados?
+
 **Q4**. A documentação técnica existente é suficiente para apoiar futuras manutenções?
 
 ---
@@ -50,8 +54,11 @@ Elas orientam a interpretação dos resultados das medições e permitem compara
 <br>
 
 **H1:** O grau de acoplamento entre os módulos é baixo, com poucas dependências diretas, permitindo modificações locais sem impacto significativo.
+
 **H2:** Não há ciclos de dependência entre pacotes ou módulos, garantindo arquitetura modular e reusável.
+
 **H3:** O código possui cobertura de testes automatizados de pelo menos 70%.
+
 **H4:** Espera-se que a documentação de arquitetura geral exista, mas que a documentação detalhada de componentes seja limitada ou desatualizada.
 
 ---
@@ -59,6 +66,8 @@ Elas orientam a interpretação dos resultados das medições e permitem compara
 ## 2.5 Métricas
 
 As métricas foram selecionadas com base nas [questões](#23-questões) e [hipóteses propostas](#24-hipóteses), seguindo o princípio do GQM de alinhar cada medida a um objetivo claro.
+
+<br>
 
 **M1.1 (Q1):** Complexidade Ciclomática: Mede a complexidade de um programa contando o número de caminhos linearmente independentes através do código-fonte. Um número alto indica um código mais complexo e difícil de testar e manter.
 
@@ -87,6 +96,12 @@ O plano de medição detalha como cada métrica será coletada, incluindo as fer
 | M4.1 | Disponibilidade da Documentação   | Verificação da existência de documentos-chave (arquitetura, API).                              | Direta   | Nominal  | Repositório           | Manual                   | Inspeção do repositório para verificar a presença (Sim) ou ausência (Não) dos artefatos de documentação definidos como essenciais.     |
 | M4.2 | Qualidade da Documentação         | Avaliação da documentação com base em clareza, completude e atualização (1=Ruim, 5=Excelente). | Direta   | Ordinal  | Documentação          | Manual (Checklist)       | Um membro da equipe utilizará um checklist para avaliar cada documento e atribuir uma nota de 1 a 5.                                   |
 
+<div align="center">
+  <span style="font-size: 12px; font-style: italic;">
+    Autora: <a href="https://github.com/GabrielaTiago">Gabriela Tiago</a>
+  </span>
+</div>
+
 ## 2.7 Níveis de Pontuação e Critérios de Julgamento
 
 Os **níveis de pontuação** foram definidos para possibilitar uma **interpretação padronizada dos resultados** das [medições](#25-métricas).
@@ -98,6 +113,12 @@ Cada métrica é associada a uma escala de valores que varia de _insuficiente_ a
 | M2.2 | Detecção de Ciclos de Dependência | **Não:** Aceitável **Sim:** Crítico                                                                                     | A existência de ciclos de dependência é uma falha arquitetural grave que impacta negativamente a manutenibilidade. |
 | M3.1 | Cobertura de Testes (%)           | **> 70%:** Adequada **50-70%:** A melhorar **< 50%:** Insuficiente                                                      | Uma cobertura "Insuficiente" indica alto risco de regressão e baixa testabilidade.                                 |
 | M4.2 | Qualidade da Documentação         | **4-5:** Boa **3:** Regular **1-2:** Ruim"                                                                              | Uma avaliação "Ruim" indica que a documentação não é confiável para guiar novas manutenções.                       |
+
+<div align="center">
+  <span style="font-size: 12px; font-style: italic;">
+    Autores:  <a href="https://github.com/trindadea">Arthur Trindade</a> e <a href="https://github.com/GabrielaTiago">Gabriela Tiago</a>
+  </span>
+</div>
 
 ---
 
@@ -114,6 +135,12 @@ Essa visão integrada facilita o acompanhamento das medições e a verificação
 |                                                                                 | Q3. O código está suficientemente coberto por testes automatizados?                | Cobertura de Testes (%)           | Ferramentas de Cobertura | Uma vez       | > 70%      |
 |                                                                                 | Q4. A documentação técnica existente é suficiente para apoiar futuras manutenções? | Disponibilidade da Documentação   | Manual                   | Uma vez       | Sim        |
 |                                                                                 |                                                                                    | Qualidade da Documentação         | Manual (Checklist)       | Uma vez       | 4-5 (Boa)  |
+
+<div align="center">
+  <span style="font-size: 12px; font-style: italic;">
+    Autores:  <a href="https://github.com/trindadea">Arthur Trindade</a> e <a href="https://github.com/GabrielaTiago">Gabriela Tiago</a>
+  </span>
+</div>
 
 ---
 
@@ -136,6 +163,12 @@ G(G1: Entender a Manutenibilidade) --> Q1(Q1: Complexidade estrutural?)
   Q4 --> M4_1(M4.1: Disponibilidade da Documentação)
   Q4 --> M4_2(M4.2: Qualidade da Documentação)
 ```
+
+<div align="center">
+  <span style="font-size: 12px; font-style: italic;">
+    Autora: <a href="https://github.com/GabrielaTiago">Gabriela Tiago</a>
+  </span>
+</div>
 
 ---
 

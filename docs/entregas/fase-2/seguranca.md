@@ -32,9 +32,12 @@ As questões definidas para uma característica visam direcionar a avaliação e
 
 <br>
 
-**Q1.** O sistema protege adequadamente os dados sensíveis dos usuários?  
-**Q2.** O sistema garante que os dados não sejam alterados indevidamente?  
-**Q3.** As ações dos usuários e do sistema são rastreáveis e auditáveis?  
+**Q1.** O sistema protege adequadamente os dados sensíveis dos usuários?
+
+**Q2.** O sistema garante que os dados não sejam alterados indevidamente?
+
+**Q3.** As ações dos usuários e do sistema são rastreáveis e auditáveis?
+
 **Q4.** O sistema verifica corretamente a identidade dos usuários?
 
 ---
@@ -47,8 +50,11 @@ Elas orientam a interpretação dos resultados das medições e permitem compara
 <br>
 
 **H1:** Os dados sensíveis estão protegidos por mecanismos de criptografia e controle de acesso.
+
 **H2:** Os dados são protegidos contra alterações não autorizadas, com validações e registros de auditoria.
+
 **H3:** O sistema registra ações relevantes com identificação clara do autor e timestamp, permitindo auditoria.
+
 **H4:** O sistema utiliza mecanismos seguros de autenticação, evitando acessos indevidos.
 
 ---
@@ -82,6 +88,12 @@ O plano de medição detalha como cada métrica de segurança será coletada, in
 | M1.3 | Percentual de Security Hotspots Revisados                   | Proporção de pontos de código sensíveis à segurança que foram revisados por um desenvolvedor para garantir que riscos potenciais foram avaliados. | Indireta | De Razão | Código-fonte    | SonarQube (SAST)  | Extrair do dashboard do SonarQube o número de hotspots marcados como "Revisado" e o número total de hotspots para calcular o percentual.                                   |
 | M3.1 | Verificação da Implementação de Mecanismos de Log/Auditoria | Verificação da existência de um framework de logging implementado nas principais rotinas de negócio para garantir a rastreabilidade.              | Direta   | Nominal  | Código-fonte    | Manual (Inspeção) | Inspecionar o código-fonte de módulos críticos (ex: autenticação, manipulação de dados) para verificar a presença (Sim) ou ausência (Não) de chamadas a um sistema de log. |
 
+<div align="center">
+  <span style="font-size: 12px; font-style: italic;">
+    Autora: <a href="https://github.com/GabrielaTiago">Gabriela Tiago</a>
+  </span>
+</div>
+
 ---
 
 ## 4.7 Níveis de Pontuação e Critérios de Julgamento
@@ -95,6 +107,12 @@ Cada métrica é associada a uma escala de valores que varia de _insuficiente_ a
 | M1.2 | Tipos de Vulnerabilidades (Mapeamento OWASP Top 10)         | **Excelente:** Ausência de vulnerabilidades nas categorias A01, A02, A03, A07 **Atenção:** Presença de qualquer vulnerabilidade nessas categorias | A presença de vulnerabilidades como Broken Access Control (A01), Cryptographic Failures (A02), Injection (A03) ou Broken Authentication (A07) representa uma falha grave e um risco direto à segurança dos dados e do sistema.              |
 | M1.3 | Percentual de Security Hotspots Revisados                   | **Excelente:** 100% **Bom:** 80-99% **Insuficiente:** < 80%                                                                                       | Um percentual "Insuficiente" indica que existem riscos de segurança potenciais no código que não foram devidamente analisados pela equipe, deixando brechas que podem ser exploradas.                                                       |
 | M3.1 | Verificação da Implementação de Mecanismos de Log/Auditoria | **Aceitável:** Sim **Insuficiente:** Não                                                                                                          | A ausência ("Não") de um mecanismo de logging impede a rastreabilidade e auditoria das ações (Q3), falhando em atender a um requisito básico de segurança e conformidade para sistemas que manipulam dados sensíveis.                       |
+
+<div align="center">
+  <span style="font-size: 12px; font-style: italic;">
+    Autores:  <a href="https://github.com/trindadea">Arthur Trindade</a> e <a href="https://github.com/GabrielaTiago">Gabriela Tiago</a>
+  </span>
+</div>
 
 ---
 
@@ -111,6 +129,12 @@ Essa visão integrada facilita o acompanhamento das medições e a verificação
 |                                                                 | Q3. As ações dos usuários e do sistema são rastreáveis e auditáveis?  | Verificação da Implementação de Mecanismos de Log/Auditoria | Manual (Inspeção) | Uma vez       | Sim                                      |
 |                                                                 | Q4. O sistema verifica corretamente a identidade dos usuários?        | Percentual de Security Hotspots Revisados                   | SonarQube         | Uma vez       | 100%                                     |
 |                                                                 |                                                                       | Tipos de Vulnerabilidades (OWASP)                           | SonarQube         | Uma vez       | Ausência de Broken Authentication (A07)  |
+
+<div align="center">
+  <span style="font-size: 12px; font-style: italic;">
+    Autores:  <a href="https://github.com/trindadea">Arthur Trindade</a> e <a href="https://github.com/GabrielaTiago">Gabriela Tiago</a>
+  </span>
+</div>
 
 ---
 
@@ -145,7 +169,7 @@ graph TD
 
 ---
 
-## 4.9 Referências
+## 4.9 Referências Bibliográficas
 
 > BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, Hans Dieter. _The Goal Question Metric (GQM) Approach._ In: MARCINIAK, J. J. (ed.). _Encyclopedia of Software Engineering._ New York: John Wiley & Sons, 1994. cap. 6, p. 51–55.  
 > INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. _ISO/IEC 25023:2011._ Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models. Genebra: ISO, 2011.

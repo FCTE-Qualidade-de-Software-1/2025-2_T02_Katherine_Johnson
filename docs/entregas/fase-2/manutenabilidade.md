@@ -189,3 +189,4 @@ G(G1: Entender a Manutenibilidade) --> Q1(Q1: Complexidade estrutural?)
 | `1.2`  | 24/10/2025 | Reestruturação do artefato, adição da introdução e dos links de navegação                              | [Arthur Carneiro](https://github.com/trindadea)                                                                      |
 | `1.3`  | 25/10/2025 | Ajuste dos itens 2.2 - 3.2 - 4.2 (propósitos somente o verbo no infinitivo)                            | [Uires Carlos de Oliveira](https://github.com/uires2023)                                                             |
 | `1.4`  | 25/10/2025 | Revisão e atualização da seção de Manutenibilidade, incluindo ajustes nas métricas, tabelas e diagrama | [Gabriela Tiago](https://github.com/GabrielaTiago)                                                                   |
+| `1.5`  | 25/10/2025 | inclusão dos termos: Analisabilidade/ Testabilidade      | [Uires Carlos de Oliveira](https://github.com/uires2023) 

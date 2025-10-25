@@ -11,7 +11,7 @@ Nesta etapa da análise, a confiabilidade é avaliada com base em aspectos como 
 
 <table>
   <tr><th>Analisar</th><td>o Guardiões da Saúde</td></tr>
-  <tr><th>Para o propósito de</th><td>entender o nível de confiança do software em operar corretamente e de forma estável</td></tr>
+  <tr><th>Para o propósito de</th><td>Entender</td></tr>
   <tr><th>Com respeito a</th><td>confiabilidade</td></tr>
   <tr><th>Do ponto de vista da</th><td>equipe de desenvolvimento</td></tr>
   <tr><th>No contexto da</th><td>disciplina de Qualidade de Software</td></tr>
@@ -119,3 +119,4 @@ Essa visão integrada facilita o acompanhamento das medições e a verificação
 | `1.0` | 14/10/2025 | Criação do documento | [Uires Carlos de Oliveira](https://github.com/uires2023), [Matheus Henrick](https://github.com/MatheusHenrickSantos) |
 | `1.1` | 15/10/2025 | Formatação do texto, remoção de informações redundantes | [Gabriela Tiago](https://github.com/GabrielaTiago) |
 | `1.2` | 24/10/2025 | Reestruturação do artefato, adição da introdução e dos links de navegação | [Arthur Carneiro](https://github.com/trindadea) |
+| `1.3` | 25/10/2025 | Ajuste dos itens 2.2 - 3.2 - 4.2 (propósitos somente o verbo no infinitivo) | [Uires Carlos de Oliveira](https://github.com/uires2023) |

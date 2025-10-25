@@ -6,7 +6,7 @@ Esta seção apresenta a tabela de contribuição dos integrantes do grupo na Fa
 
 | Integrante | Contribuição (%) | Responsabilidades |
 |------------|------------------|-------------------|
-| Uires Carlos de oliveira | 16.6% | ajsute no item 1.3 Estrutura de Avaliação(objetivos / Ajuste nos objetivos itens 2.2 / 3.2 / 4.2 (Propósitos)) |
+| Uires Carlos de oliveira | 16.6% | ajsute no item 1.3 Estrutura de Avaliação - objetivos / Ajuste nos objetivos itens 2.2 / 3.2 / 4.2 (Propósitos) |
 | - | 16.6% | - |
 | - | 16.6% | - |
 | - | 16.6% | - |

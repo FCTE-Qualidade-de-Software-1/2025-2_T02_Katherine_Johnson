@@ -103,7 +103,6 @@ Essa visão integrada facilita o acompanhamento das medições e a verificação
 ## 3.9 Diagrama GQM
 
 ```mermaid
-
 graph TD
 G(G1: Entender a Confiabilidade)
   G --> Q1(Q1: Disponibilidade?)
@@ -117,17 +116,8 @@ G(G1: Entender a Confiabilidade)
 
   Q3 --> M3_1(M3.1: Reliability Rating (A–E))
   Q3 --> M3_2(M3.2: Incidentes P0/P1)
-```
 
-<div align="center">
-  <span style="font-size: 12px; font-style: italic;">
-    Autor: <a href="https://github.com/uires2023)">Uires Carlos</a>
-  </span>
-</div>
-```
-
-
----
+<div align="center"> <span style="font-size: 12px; font-style: italic;"> Autor: <a href="https://github.com/uires2023">Uires Carlos</a> </span> </div> ```
 
 ---
 

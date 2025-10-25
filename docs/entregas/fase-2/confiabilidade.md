@@ -103,6 +103,7 @@ Essa visão integrada facilita o acompanhamento das medições e a verificação
 ## 3.9 Diagrama GQM
 
 ```mermaid
+
 graph TD
 G(G1: Entender a Confiabilidade)
   G --> Q1(Q1: Disponibilidade?)
@@ -123,6 +124,8 @@ G(G1: Entender a Confiabilidade)
     Autor: <a href="https://github.com/uires2023)">Uires Carlos</a>
   </span>
 </div>
+```
+
 
 ---
 

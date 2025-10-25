@@ -6,7 +6,7 @@ A **manutenibilidade** é uma característica fundamental para garantir a evolu�
 
 Para o Guardiões da Saúde — uma plataforma usada em monitoramento participativo de sintomas — assegurar uma boa manutenibilidade é crucial para evolução contínua do código e rápida resposta às demandas de saúde pública.
 
-Nesta fase, a manutenibilidade será avaliada com base em três subcaracterísticas priorizadas na Fase 1: **analisabilidade**, **modificabilidade** e **testabilidade**.
+Nesta fase, a manutenibilidade será avaliada com base em três subcaracterísticas priorizadas na Fase 1: **analisabilidade** e **testabilidade**.
 
 A análise de manutenibilidade busca identificar aspectos estruturais e técnicos que influenciam a facilidade de manutenção, como **modularidade, complexidade, duplicação de código, documentação e cobertura de testes**
 

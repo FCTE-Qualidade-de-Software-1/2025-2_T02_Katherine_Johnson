@@ -30,6 +30,9 @@ Esta análise de segurança foca na identificação de vulnerabilidades no códi
 
 As questões definidas para uma característica visam direcionar a avaliação e verificar se o objetivo de medição está sendo atingido.
 
+As questões avaliativas foram definidas com base nas subcaracterísticas selecionadas na Fase 1.
+
+**Confidencialidade / Integridade**
 <br>
 
 **Q1.** O sistema protege adequadamente os dados sensíveis dos usuários?
@@ -185,3 +188,4 @@ graph TD
 | `1.2`  | 24/10/2025 | Reestruturação do artefato, adição da introdução e dos links de navegação                       | [Arthur Carneiro](https://github.com/trindadea)                                                                      |
 | `1.3`  | 25/10/2025 | Ajuste dos itens 2.2 - 3.2 - 4.2 (propósitos somente o verbo no infinitivo)                     | [Uires Carlos de Oliveira](https://github.com/uires2023)                                                             |
 | `1.4`  | 26/10/2025 | Revisão e atualização da seção de segurança, incluindo ajustes nas métricas, tabelas e diagrama | [Gabriela Tiago](https://github.com/GabrielaTiago)                                                                   |
+| `1.5`  | 25/10/2025 | inclusão dos termos: Confidencialidade/ Integridade      | [Uires Carlos de Oliveira](https://github.com/uires2023) 

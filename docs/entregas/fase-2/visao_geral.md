@@ -50,9 +50,9 @@ Cada característica possui um artefato próprio com objetivo, questões, métri
 
 | Característica       | Objetivo                                                        | Link                             |
 | -------------------- | --------------------------------------------------------------- | -------------------------------- |
-| **Manutenibilidade** | Avaliar a facilidade de manutenção e evolução do código         | [Ver seção](manutenabilidade.md) |
-| **Confiabilidade**   | Avaliar a estabilidade e robustez do sistema                    | [Ver seção](confiabilidade.md)   |
-| **Segurança**        | Avaliar a proteção contra vulnerabilidades e controle de acesso | [Ver seção](seguranca.md)        |
+| **Manutenibilidade** | Entender (Facilidade de manutenção e evolução do código)         | [Ver seção](manutenabilidade.md) |
+| **Confiabilidade**   | Entender (Estabilidade e robustez do sistema)                    | [Ver seção](confiabilidade.md)   |
+| **Segurança**        | Enterder e Avaliar (A proteção a vulnerabilidades e controle de acesso) | [Ver seção](seguranca.md)        |
 
 ---
 
@@ -85,3 +85,4 @@ Nenhum conteúdo foi gerado sem **validação e revisão humana** e todo o mater
 | `1.0` | 14/10/2025 | Criação do documento | [Uires Carlos de Oliveira](https://github.com/uires2023), [Matheus Henrick](https://github.com/MatheusHenrickSantos) |
 | `1.1` | 15/10/2025 | Formatação do texto, remoção de informações redundantes | [Gabriela Tiago](https://github.com/GabrielaTiago) |
 | `1.2` | 24/10/2025 | Adição do objetivo, metodologia, estrutura e declaração do uso de IA  | [Arthur Carneiro](https://github.com/trindadea) |
+| `1.3` | 25/10/2025 | Ajuste do item 1.3 os objetivos | [Uires Carlos de Oliveira](https://github.com/uires2023) |

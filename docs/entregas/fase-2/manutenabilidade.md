@@ -1,7 +1,11 @@
 # 2. Manutenibilidade
 
 ## 2.1 Introdução
-A **manutenibilidade** é uma das principais características da qualidade de software, pois determina o quanto o sistema pode ser facilmente **compreendido, modificado, corrigido e evoluído** ao longo do tempo.   
+A **manutenibilidade** é uma característica fundamental para garantir a evolução contínua e a longevidade de um software. Ela reflete a facilidade com que o sistema pode ser **compreendido, modificado, corrigido e evoluído** ao longo do tempo. 
+
+Para o Guardiões da Saúde — uma plataforma usada em monitoramento participativo de sintomas — assegurar uma boa manutenibilidade é crucial para evolução contínua do código e rápida resposta às demandas de saúde pública.
+
+Nesta fase, a manutenibilidade será avaliada com base em três subcaracterísticas priorizadas na Fase 1: **analisabilidade**, **modificabilidade** e **testabilidade**.
 
 A análise de manutenibilidade busca identificar aspectos estruturais e técnicos que influenciam a facilidade de manutenção, como **modularidade, complexidade, duplicação de código, documentação e cobertura de testes**
 
@@ -25,6 +29,8 @@ A análise de manutenibilidade busca identificar aspectos estruturais e técnico
 
 ## 2.3 Questões
 As questões definidas para uma característica visam direcionar a avaliação e verificar se o objetivo de medição está sendo atingido.
+
+As questões avaliativas foram definidas com base nas subcaracterísticas selecionadas na Fase 1.
 
 <br>
 

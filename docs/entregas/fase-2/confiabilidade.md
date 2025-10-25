@@ -1,7 +1,9 @@
 # 3. Confiabilidade
 
 ## 3.1 Introdução
-*(Esta seção apresentará o papel da confiabilidade como um dos principais atributos de qualidade em sistemas críticos como o Guardiões da Saúde. Serão destacados aspectos como estabilidade, disponibilidade, tolerância a falhas e recuperação de erros.)*
+A **confiabilidade** representa a capacidade de um software operar **de forma estável, precisa e contínua**, mesmo diante de condições adversas. Em sistemas como o **Guardiões da Saúde**, essa característica é importante para assegurar que os serviços funcionem corretamente.
+
+Nesta etapa da análise, a confiabilidade é avaliada com base em aspectos como **estabilidade, disponibilidade, tolerância a falhas e recuperação de erros**, buscando compreender em que medida o sistema mantém seu desempenho esperado ao longo do tempo.  
 
 ---
 
@@ -24,7 +26,9 @@
 ---
 
 ## 3.3 Questões
-*(Questões formuladas para avaliar a confiabilidade do sistema Guardiões da Saúde.)*
+As questões definidas para uma característica visam direcionar a avaliação e verificar se o objetivo de medição está sendo atingido. 
+
+<br>
 
 **Q1.** O sistema está disponível para uso na maior parte do tempo?  
 **Q2.** O sistema consegue continuar operando mesmo diante de falhas pontuais?  
@@ -33,7 +37,10 @@
 ---
 
 ## 3.4 Hipóteses
-*(Hipóteses que refletem o comportamento esperado do sistema quanto à confiabilidade.)*
+As hipóteses representam **expectativas sobre o comportamento ideal do software** em relação às [questões formuladas](#33-questões).  
+Elas orientam a interpretação dos resultados das medições e permitem comparar o desempenho real do sistema com o esperado, fornecendo base para o julgamento qualitativo.
+
+<br>
 
 - **H1:** O sistema está disponível durante 99% do tempo de operação, com interrupções mínimas e planejadas.  
 - **H2:** O sistema possui mecanismos de tolerância a falhas que evitam interrupções totais.  
@@ -42,7 +49,9 @@
 ---
 
 ## 3.5 Métricas
-*(Métricas selecionadas para mensurar a confiabilidade, com base na abordagem GQM.)*
+As métricas foram selecionadas com base nas questões e [hipóteses propostas](#34-hipóteses), seguindo o princípio do GQM de alinhar cada medida a um objetivo claro.  
+
+Essas métricas foram extraídas da ferramenta **SonarQube**, amplamente utilizada para avaliação automática de qualidade de código, e permitem quantificar fatores como **estabilidade, robustez e tolerância a falhas**.
 
 | Nível | Elemento |
 |-------|-----------|
@@ -66,7 +75,8 @@
 ---
 
 ## 3.6 Níveis de Pontuação e Critérios de Julgamento
-*(Definição de intervalos de pontuação e critérios de avaliação para cada métrica.)*
+Os **níveis de pontuação** foram definidos para possibilitar uma **interpretação padronizada dos resultados** das [medições](#35-métricas).  
+Cada métrica é associada a uma escala de valores que varia de *insuficiente* a *excelente*, permitindo avaliar o grau de atendimento das boas práticas de qualidade de software.
 
 | Métrica | Insuficiente | Satisfatório | Bom | Excelente |
 |----------|---------------|--------------|------|------------|
@@ -78,7 +88,8 @@
 ---
 
 ## 3.7 Tabela GQM – Confiabilidade
-*(Resumo consolidado das métricas aplicadas à avaliação da confiabilidade.)*
+A tabela GQM consolida as relações entre **objetivos, questões, métricas, fontes de dados e periodicidade de coleta**.  
+Essa visão integrada facilita o acompanhamento das medições e a verificação contínua da qualidade, garantindo que as decisões sejam tomadas com base em evidências quantitativas e consistentes.
 
 | Objetivo | Questão | Métrica | Fonte | Periodicidade | Alvo |
 |-----------|----------|----------|--------|----------------|------|
@@ -90,6 +101,8 @@
 
 ## 3.8 Diagrama GQM
 *(Representação hierárquica das relações entre objetivo, questões e métricas.)*
+
+---
 
 
 ## 3.9 Referências
@@ -105,3 +118,4 @@
 |--------|------|------------|------------|
 | `1.0` | 14/10/2025 | Criação do documento | [Uires Carlos de Oliveira](https://github.com/uires2023), [Matheus Henrick](https://github.com/MatheusHenrickSantos) |
 | `1.1` | 15/10/2025 | Formatação do texto, remoção de informações redundantes | [Gabriela Tiago](https://github.com/GabrielaTiago) |
+| `1.2` | 24/10/2025 | Reestruturação do artefato, adição da introdução e dos links de navegação | [Arthur Carneiro](https://github.com/trindadea) |

@@ -1,6 +1,11 @@
 # 2. Manutenibilidade
 
-## 2.1 Objetivo GQM
+## 2.1 Introdução
+A **manutenibilidade** é uma das principais características da qualidade de software, pois determina o quanto o sistema pode ser facilmente **compreendido, modificado, corrigido e evoluído** ao longo do tempo.   
+
+A análise de manutenibilidade busca identificar aspectos estruturais e técnicos que influenciam a facilidade de manutenção, como **modularidade, complexidade, duplicação de código, documentação e cobertura de testes**
+
+## 2.2 Objetivo GQM
 
 <table>
   <tr><th>Analisar</th><td>o Guardiões da Saúde</td></tr>
@@ -18,8 +23,10 @@
 
 ---
 
-## 2.2 Questões
-*(Questões que permitem avaliar se o objetivo de medição foi atingido.)*
+## 2.3 Questões
+As questões definidas para uma característica visam direcionar a avaliação e verificar se o objetivo de medição está sendo atingido.
+
+<br>
 
 **Q1**. Qual é o grau de acoplamento entre os módulos do sistema?  
 **Q2**. Há dependências cíclicas entre pacotes ou módulos?  
@@ -28,8 +35,11 @@
 
 ---
 
-## 2.3 Hipóteses
-*(Hipóteses relacionadas às questões, descrevendo os comportamentos esperados.)*
+## 2.4 Hipóteses
+As hipóteses representam **expectativas sobre o comportamento ideal do software** em relação às [questões formuladas](#23-questões).  
+Elas orientam a interpretação dos resultados das medições e permitem comparar o desempenho real do sistema com o esperado, fornecendo base para o julgamento qualitativo.
+
+<br>
 
 - **H1:** O grau de acoplamento entre os módulos é baixo, com poucas dependências diretas, permitindo modificações locais sem impacto significativo.  
 - **H2:** Não há ciclos de dependência entre pacotes ou módulos, garantindo arquitetura modular e reusável.  
@@ -38,8 +48,11 @@
 
 ---
 
-## 2.4 Métricas
-*(Métricas selecionadas com base nas questões e hipóteses, seguindo a abordagem GQM.)*
+## 2.5 Métricas
+As métricas foram selecionadas com base nas questões e [hipóteses propostas](#24-hipóteses), seguindo o princípio do GQM de alinhar cada medida a um objetivo claro.  
+
+Essas métricas foram extraídas da ferramenta **SonarQube**, amplamente utilizada para avaliação automática de qualidade de código, e permitem quantificar fatores como **complexidade cognitiva, duplicação de código e densidade de comentários**.
+
 
 | Nível | Elemento |
 |-------|-----------|
@@ -62,8 +75,9 @@
 
 ---
 
-## 2.5 Níveis de Pontuação e Critérios de Julgamento
-*(Definição de escalas de pontuação e critérios de interpretação para cada métrica.)*
+## 2.6 Níveis de Pontuação e Critérios de Julgamento
+Os **níveis de pontuação** foram definidos para possibilitar uma **interpretação padronizada dos resultados** das [medições](#25-métricas).  
+Cada métrica é associada a uma escala de valores que varia de *insuficiente* a *excelente*, permitindo avaliar o grau de atendimento das boas práticas de qualidade de software.
 
 | Métrica | Insuficiente | Satisfatório | Bom | Excelente |
 |----------|---------------|--------------|------|------------|
@@ -74,8 +88,9 @@
 
 ---
 
-## 2.6 Tabela GQM – Manutenibilidade
-*(Consolidação das métricas e periodicidade de coleta.)*
+## 2.7 Tabela GQM – Manutenibilidade
+A tabela GQM consolida as relações entre **objetivos, questões, métricas, fontes de dados e periodicidade de coleta**.  
+Essa visão integrada facilita o acompanhamento das medições e a verificação contínua da qualidade, garantindo que as decisões sejam tomadas com base em evidências quantitativas e consistentes.
 
 | Objetivo | Questão | Métrica | Fonte | Periodicidade | Alvo |
 |-----------|----------|----------|--------|----------------|------|
@@ -85,20 +100,22 @@
 
 ---
 
-## 2.7 Diagrama GQM
+## 2.8 Diagrama GQM
 *(Representação hierárquica entre objetivo, questões e métricas.)*
 
+---
 
-## 2.8 Referências
+## 2.9 Referências
 
 > BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, Hans Dieter. *The Goal Question Metric (GQM) Approach.* In: MARCINIAK, J. J. (ed.). *Encyclopedia of Software Engineering.* New York: John Wiley & Sons, 1994. cap. 6, p. 51–55.  
 > INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. *ISO/IEC 25023:2011.* Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models. Genebra: ISO, 2011.
 
 ---
 
-## 2.9 Histórico de Versões
+## 2.10 Histórico de Versões
 
 | Versão | Data | Descrição | Autor(es) |
 |--------|------|------------|------------|
 | `1.0` | 14/10/2025 | Criação do documento | [Uires Carlos de Oliveira](https://github.com/uires2023), [Matheus Henrick](https://github.com/MatheusHenrickSantos) |
 | `1.1` | 15/10/2025 | Formatação do texto, remoção de informações redundantes | [Gabriela Tiago](https://github.com/GabrielaTiago) |
+| `1.2` | 24/10/2025 | Reestruturação do artefato, adição da introdução e dos links de navegação | [Arthur Carneiro](https://github.com/trindadea) |

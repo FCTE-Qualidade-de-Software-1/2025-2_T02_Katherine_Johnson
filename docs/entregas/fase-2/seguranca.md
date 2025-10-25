@@ -1,7 +1,10 @@
 # 4. Segurança
 
 ## 4.1 Introdução
-*(Esta seção apresentará o contexto da segurança como um fator essencial na qualidade de software, especialmente em sistemas que lidam com dados sensíveis de usuários. Será descrita a importância de avaliar vulnerabilidades, autenticação e rastreabilidade no Guardiões da Saúde.)*
+A **segurança de software** é uma importante característica da qualidade, especialmente em sistemas que tratam **informações sensíveis e dados pessoais dos usuários**, como o **Guardiões da Saúde**. Ela assegura que o sistema proteja seus dados contra **acessos não autorizados, alterações indevidas e falhas de confidencialidade, integridade e disponibilidade**.
+
+Nesta etapa, a análise concentra-se na identificação e prevenção de **vulnerabilidades**, na verificação de **mecanismos de autenticação e controle de acesso**, e na garantia de **rastreabilidade e auditoria das ações do sistema**. 
+
 
 ---
 
@@ -24,7 +27,9 @@
 ---
 
 ## 4.3 Questões
-*(Questões que orientam a avaliação da segurança no contexto do sistema Guardiões da Saúde.)*
+As questões definidas para uma característica visam direcionar a avaliação e verificar se o objetivo de medição está sendo atingido.  
+
+<br>
 
 **Q1.** O sistema protege adequadamente os dados sensíveis dos usuários?  
 **Q2.** O sistema garante que os dados não sejam alterados indevidamente?  
@@ -34,7 +39,10 @@
 ---
 
 ## 4.4 Hipóteses
-*(Expectativas sobre o comportamento do sistema em relação à segurança.)*
+As hipóteses representam **expectativas sobre o comportamento ideal do software** em relação às [questões formuladas](#43-questões).  
+Elas orientam a interpretação dos resultados das medições e permitem comparar o desempenho real do sistema com o esperado, fornecendo base para o julgamento qualitativo.
+
+<br>
 
 - **H1:** Os dados sensíveis estão protegidos por mecanismos de criptografia e controle de acesso.  
 - **H2:** Os dados são protegidos contra alterações não autorizadas, com validações e registros de auditoria.  
@@ -44,7 +52,9 @@
 ---
 
 ## 4.5 Métricas
-*(Métricas selecionadas para medir a segurança, segundo a abordagem GQM.)*
+As métricas foram selecionadas com base nas questões e [hipóteses propostas](#44-hipóteses), seguindo o princípio do GQM de alinhar cada medida a um objetivo claro.  
+
+Essas métricas foram extraídas da ferramenta **SonarQube**, amplamente utilizada para avaliação automática de qualidade de código, e permitem quantificar fatores como **vulnerabilidades, hotspots de segurança e conformidade com padrões**.
 
 | Nível | Elemento |
 |-------|-----------|
@@ -68,7 +78,8 @@
 ---
 
 ## 4.6 Níveis de Pontuação e Critérios de Julgamento
-*(Definição dos intervalos de desempenho e critérios de avaliação de segurança.)*
+Os **níveis de pontuação** foram definidos para possibilitar uma **interpretação padronizada dos resultados** das [medições](#45-métricas).  
+Cada métrica é associada a uma escala de valores que varia de *insuficiente* a *excelente*, permitindo avaliar o grau de atendimento das boas práticas de qualidade de software.
 
 | Métrica | Insuficiente | Satisfatório | Bom | Excelente |
 |----------|---------------|--------------|------|------------|
@@ -79,7 +90,8 @@
 ---
 
 ## 4.7 Tabela GQM – Segurança
-*(Resumo das métricas aplicadas e periodicidade de coleta.)*
+A tabela GQM consolida as relações entre **objetivos, questões, métricas, fontes de dados e periodicidade de coleta**.  
+Essa visão integrada facilita o acompanhamento das medições e a verificação contínua da qualidade, garantindo que as decisões sejam tomadas com base em evidências quantitativas e consistentes.
 
 | Objetivo | Questão | Métrica | Fonte | Periodicidade | Alvo |
 |-----------|----------|----------|--------|----------------|------|
@@ -92,6 +104,7 @@
 ## 4.8 Diagrama GQM
 *(Representação hierárquica das relações entre objetivo, questões e métricas.)*
 
+---
 
 ## 4.9 Referências
 
@@ -106,3 +119,4 @@
 |--------|------|------------|------------|
 | `1.0` | 14/10/2025 | Criação do documento | [Uires Carlos de Oliveira](https://github.com/uires2023), [Matheus Henrick](https://github.com/MatheusHenrickSantos) |
 | `1.1` | 15/10/2025 | Formatação do texto, remoção de informações redundantes | [Gabriela Tiago](https://github.com/GabrielaTiago) |
+| `1.2` | 24/10/2025 | Reestruturação do artefato, adição da introdução e dos links de navegação | [Arthur Carneiro](https://github.com/trindadea) |

@@ -126,6 +126,8 @@ G(G1: Entender a Confiabilidade)
 
 ---
 
+---
+
 ## 3.10 Referências
 
 > BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, Hans Dieter. *The Goal Question Metric (GQM) Approach.* In: MARCINIAK, J. J. (ed.). *Encyclopedia of Software Engineering.* New York: John Wiley & Sons, 1994. cap. 6, p. 51–55.  

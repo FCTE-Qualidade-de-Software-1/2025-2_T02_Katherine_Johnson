@@ -34,6 +34,7 @@ As questões definidas para uma característica visam direcionar a avaliação e
 
 As questões avaliativas foram definidas com base nas subcaracterísticas selecionadas na Fase 1.
 
+**Analisabilidade/ Testabilidade**
 <br>
 
 **Q1**. Qual o nível de complexidade estrutural do código-fonte do sistema?

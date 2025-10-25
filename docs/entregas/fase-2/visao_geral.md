@@ -44,7 +44,9 @@ A seguir, apresenta-se a formulação estruturada da meta global, conforme o mod
 
 ## 1.3 Estrutura de Avaliação
 
-A estrutura de avaliação desta fase foi organizada de forma a refletir diretamente a aplicação da metodologia **GQM** sobre as **três características de qualidade** priorizadas na [Fase 1](../fase-1/selecao-caracteristicas-avaliadas.md).
+A estrutura de avaliação desta fase foi organizada de forma a refletir diretamente a aplicação da metodologia **GQM** sobre as características de qualidade **Manutenibilidade**, **Confiabilidade** e **Segurança**, que foram selecionadas com base na [análise de stakeholders](../fase-1/partes-interessadas.md) e na [seleção de características](../fase-1/selecao-caracteristicas-avaliadas.md) realizadas na [Fase 1](../fase-1/proposito-da-avaliacao.md).
+
+A ProEpi, como desenvolvedora, tem interesse na Manutenibilidade. Os Gestores de Saúde dependem da Confiabilidade dos dados. A Segurança é uma necessidade transversal, crucial para proteger os dados sensíveis de saúde dos Cidadãos, em conformidade com a LGPD, sendo uma prioridade para todas as partes interessadas.
 
 Cada característica possui um artefato próprio com objetivo, questões, métricas e critérios de julgamento. Essa divisão facilita a leitura, permitindo que cada característica seja analisada de forma independente, mas sob o mesmo referencial metodológico.
 

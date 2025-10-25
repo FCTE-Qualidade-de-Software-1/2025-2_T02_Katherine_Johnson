@@ -58,7 +58,23 @@ Cada característica possui um artefato próprio com objetivo, questões, métri
 
 ---
 
-## 1.4 Uso de IA no Desenvolvimento do Trabalho
+## 1.4 Ferramentas de Análise Utilizadas
+
+Para garantir uma coleta de métricas objetiva, automatizada e padronizada, selecionamos uma das ferramentas mais robustas de análise de software disponíveis no mercado: o **SonarQube**.
+
+### SonarQube
+
+A escolha do **SonarQube** como ferramenta principal se deve à sua capacidade de integrar múltiplos tipos de análise em uma única plataforma, cobrindo as três características de qualidade avaliadas:
+
+**Análise de Manutenibilidade:** O SonarQube realiza uma análise estática do código para medir indicadores como **Complexidade Ciclomática**, **Tamanho do Código (SLOC)** e **Acoplamento**. Ele inspeciona o código-fonte sem executá-lo e gera relatórios detalhados que nos permitem coletar métricas de forma eficiente.
+
+**Análise de Confiabilidade:** A ferramenta identifica **bugs**, **code smells** e potenciais falhas que podem comprometer a estabilidade do sistema. Ela avalia a qualidade do código em termos de robustez e resiliência, fornecendo insights valiosos para melhorar a confiabilidade do software.
+
+**Análise de Segurança (SAST e SCA):** O SonarQube possui funcionalidades de **SAST (Static Application Security Testing)** para encontrar vulnerabilidades no código-fonte e **SCA (Software Composition Analysis)** para identificar vulnerabilidades em dependências de terceiros. Isso nos permite avaliar a segurança de forma abrangente, cobrindo tanto o código próprio quanto o de bibliotecas externas.
+
+---
+
+## 1.5 Uso de IA no Desenvolvimento do Trabalho
 
 Durante a elaboração desta fase do projeto, foram utilizados recursos de **inteligência artificial generativa**, em especial o modelo _ChatGPT_, como **apoio à estruturação textual, correções ortográficas e padronização da redação e da documentação**.
 
@@ -77,15 +93,16 @@ Nenhum conteúdo foi gerado sem **validação e revisão humana** e todo o mater
 > BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, Hans Dieter. _The Goal Question Metric (GQM) Approach._ In: MARCINIAK, J. J. (ed.). _Encyclopedia of Software Engineering._ New York: John Wiley & Sons, 1994.
 > VAN SOLINGEN, R.; BERGHOUT, E. _The Goal/Question/Metric Method: A Practical Guide for Quality Improvement of Software Development._ London: McGraw-Hill, 1999.
 > INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. _ISO/IEC 25023:2011 – Systems and Software Quality Requirements and Evaluation (SQuaRE): Measurement of System and Software Product Quality._ Geneva: ISO, 2011.
+> SONARQUBE. _SonarQube Documentation._ Disponível em: <https://docs.sonarqube.org/>. Acesso em: 25 out. 2025.
 
 ---
 
 ## 1.7 Histórico de Versões
 
-| Versão | Data       | Descrição                                                            | Autor(es)                                                                                                            |
-| ------ | ---------- | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| `1.0`  | 14/10/2025 | Criação do documento                                                 | [Uires Carlos de Oliveira](https://github.com/uires2023), [Matheus Henrick](https://github.com/MatheusHenrickSantos) |
-| `1.1`  | 15/10/2025 | Formatação do texto, remoção de informações redundantes              | [Gabriela Tiago](https://github.com/GabrielaTiago)                                                                   |
-| `1.2`  | 24/10/2025 | Adição do objetivo, metodologia, estrutura e declaração do uso de IA | [Arthur Carneiro](https://github.com/trindadea)                                                                      |
-| `1.3`  | 25/10/2025 | Ajuste do item 1.3 os objetivos                                      | [Uires Carlos de Oliveira](https://github.com/uires2023)                                                             |
-| `1.4`  | 25/10/2025 | Revisão geral do documento, adição da referência da fase 1           | [Gabriela Tiago](https://github.com/GabrielaTiago)                                                                   |
+| Versão | Data       | Descrição                                                                                                      | Autor(es)                                                                                                            |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| `1.0`  | 14/10/2025 | Criação do documento                                                                                           | [Uires Carlos de Oliveira](https://github.com/uires2023), [Matheus Henrick](https://github.com/MatheusHenrickSantos) |
+| `1.1`  | 15/10/2025 | Formatação do texto, remoção de informações redundantes                                                        | [Gabriela Tiago](https://github.com/GabrielaTiago)                                                                   |
+| `1.2`  | 24/10/2025 | Adição do objetivo, metodologia, estrutura e declaração do uso de IA                                           | [Arthur Carneiro](https://github.com/trindadea)                                                                      |
+| `1.3`  | 25/10/2025 | Ajuste do item 1.3 os objetivos                                                                                | [Uires Carlos de Oliveira](https://github.com/uires2023)                                                             |
+| `1.4`  | 25/10/2025 | Revisão geral do documento, adição da referência da fase 1, adição de informações sobre ferramentas de análise | [Gabriela Tiago](https://github.com/GabrielaTiago)                                                                   |

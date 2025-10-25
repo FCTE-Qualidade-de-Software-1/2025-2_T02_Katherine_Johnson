@@ -102,19 +102,29 @@ Essa visão integrada facilita o acompanhamento das medições e a verificação
 
 ## 3.9 Diagrama GQM
 
+```mermaid
 graph TD
 G(G1: Entender a Confiabilidade)
-  G --> Q1(Q1: Disponibilidade)
-  G --> Q2(Q2: Tolerância a falhas)
-  G --> Q3(Q3: Maturidade)
+  G --> Q1(Q1: Disponibilidade?)
+  G --> Q2(Q2: Tolerância a falhas?)
+  G --> Q3(Q3: Maturidade?)
 
-  Q1 --> M1_1(M1.1: Availability Rate %)
+  Q1 --> M1_1(M1.1: Availability Rate (%))
 
-  Q2 --> M2_1(M2.1: Erros sem queda)
-  Q2 --> M2_2(M2.2: Erros com queda)
+  Q2 --> M2_1(M2.1: Crash-Free Sessions (%))
+  Q2 --> M2_2(M2.2: Erros sem queda - ratio)
 
-  Q3 --> M3_1(M3.1: Reliability Rating A–E)
-  Q3 --> M3_2(M3.2: Bugs Count)
+  Q3 --> M3_1(M3.1: Reliability Rating (A–E))
+  Q3 --> M3_2(M3.2: Incidentes P0/P1)
+```
+
+<div align="center">
+  <span style="font-size: 12px; font-style: italic;">
+    Autor: <a href="https://github.com/uires2023)">Uires Carlos</a>
+  </span>
+</div>
+
+---
 
 ---
 

@@ -61,15 +61,15 @@ As métricas foram selecionadas com base nas questões e [hipóteses propostas](
 
 Essas métricas foram extraídas da ferramenta **SonarQube**, amplamente utilizada para avaliação automática de qualidade de código, e permitem quantificar fatores como **estabilidade, robustez e tolerância a falhas**.
 
-**M1.1 (Q1):** Availability Rate (%) — proporção do tempo em que o sistema esteve funcional.
+**<a id="m11conf"></a>M1.1 (Q1):** Availability Rate (%) — proporção do tempo em que o sistema esteve funcional.
 
-**M2.1 (Q2):** Erros sem queda (contagem) — falhas internas que não causam interrupção.
+**<a id="m21conf"></a>M2.1 (Q2):** Erros sem queda (contagem) — falhas internas que não causam interrupção.
 
-**M2.2 (Q2):** Erros com queda (contagem) — falhas que causam indisponibilidade total.
+**<a id="m22conf"></a>M2.2 (Q2):** Erros com queda (contagem) — falhas que causam indisponibilidade total.
 
-**M3.1 (Q3):** Reliability Rating (A–E) — classificação da estabilidade no SonarQube.
+**<a id="m31conf"></a>M3.1 (Q3):** Reliability Rating (A–E) — classificação da estabilidade no SonarQube.
 
-**M3.2 (Q3):** Bugs Count (por severidade) — contagem de erros críticos detectados.
+**<a id="m32conf"></a>M3.2 (Q3):** Bugs Count (por severidade) — contagem de erros críticos detectados.
 
 ---
 

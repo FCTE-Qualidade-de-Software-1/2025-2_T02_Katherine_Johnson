@@ -28,13 +28,13 @@ Etapas executadas:
 ## **📸 Evidência – Dashboard Geral do Projeto**
 
 <p align="center">
-  <img src="../evidencias/confiabilidade/dashboard.jpeg" width="85%">
+  <img src="..docs/assets/images/sonar_resultado.jpeg" width="85%">
   <br>
   <strong>Figura 1 – Dashboard geral do Guardiões da Saúde – App no SonarQube</strong>
 </p>
 
 > *(Substitua o caminho pelo local onde você salvar o arquivo no repositório)*  
-Exemplo usado: `../evidencias/confiabilidade/dashboard.jpeg`
+Exemplo usado: `docs/assets/images/sonar_resultado.jpeg`
 
 ---
 

@@ -42,7 +42,7 @@ As questões definidas para uma característica visam direcionar a avaliação e
 
 ## 3.4 Hipóteses
 
-As hipóteses representam **expectativas sobre o comportamento ideal do software** em relação às [questões formuladas](#33-questões).  
+As hipóteses representam **expectativas sobre o comportamento ideal do software** em relação às [questões formuladas](#33-questoes).  
 Elas orientam a interpretação dos resultados das medições e permitem comparar o desempenho real do sistema com o esperado, fornecendo base para o julgamento qualitativo.
 
 <br>
@@ -57,7 +57,7 @@ Elas orientam a interpretação dos resultados das medições e permitem compara
 
 ## 3.5 Métricas
 
-As métricas foram selecionadas com base nas questões e [hipóteses propostas](#34-hipóteses), seguindo o princípio do GQM de alinhar cada medida a um objetivo claro.
+As métricas foram selecionadas com base nas questões e [hipóteses propostas](#34-hipoteses), seguindo o princípio do GQM de alinhar cada medida a um objetivo claro.
 
 Essas métricas foram extraídas da ferramenta **SonarQube**, amplamente utilizada para avaliação automática de qualidade de código, e permitem quantificar fatores como **estabilidade, robustez e tolerância a falhas**.
 

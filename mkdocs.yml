@@ -91,9 +91,13 @@ nav:
           - 3. Confiabilidade: entregas/fase-2/confiabilidade.md
           - 4. Segurança: entregas/fase-2/seguranca.md
           - 5. Tabela de Contribuição: entregas/fase-2/tabela_contribuicao.md
-    # 
-    # - Fase 3:
-    #
+    - Fase 3 - Fase 3 (Planejar como será a coleta dos dados):
+          - 1. Como operacionalizar?: entregas/fase-3/Como_operacionalizar?.md
+          - 2. Quais serão as ferramentas para automatizar a coleta?: entregas/fase-3/Quais_serão_as_ferramentas_para_automatizar_a_coleta?.md
+          - 3. Como será feito?: entregas/fase-3/ Como_será_feito?.md
+          - 4. Onde os dados serão armazenados? (Excel, docs): entregas/fase-3/Onde_os_dados_serão_armazenados?_(Excel,_docs).md
+          - 5. Caso seja manual, qual o fluxo que iremos seguir?: entregas/fase-3/Caso_seja_manual,_qual_o_fluxo_que_iremos_seguir?.md
+ 
     # - Fase 4:
 
 extra:

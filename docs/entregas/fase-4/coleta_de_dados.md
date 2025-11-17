@@ -25,6 +25,29 @@ Etapas executadas:
 - Aba "Code Smells"  
 - Aba "Duplications"
 
+## **📸 Evidência – Dashboard Geral do Projeto**
+
+<p align="center">
+  <img src="../evidencias/confiabilidade/dashboard.jpeg" width="85%">
+  <br>
+  <strong>Figura 1 – Dashboard geral do Guardiões da Saúde – App no SonarQube</strong>
+</p>
+
+> *(Substitua o caminho pelo local onde você salvar o arquivo no repositório)*  
+Exemplo usado: `../evidencias/confiabilidade/dashboard.jpeg`
+
+---
+
+## 🎥 **Evidência em Vídeo – Execução da Análise**
+
+Para assistir ao vídeo da execução real da análise no SonarQube, clique abaixo:
+
+👉 **[▶️ Assistir vídeo da análise](../evidencias/confiabilidade/sonar-analise.mp4)**
+
+> *(Depois que você subir o arquivo para o GitHub, renomeie para `sonar-analise.mp4` ou ajuste o caminho.)*
+
+---
+
 ---
 
 ## 2. Dados coletados (métricas reais do SonarQube)

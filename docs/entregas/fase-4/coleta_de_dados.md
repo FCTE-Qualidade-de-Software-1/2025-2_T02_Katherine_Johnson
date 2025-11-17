@@ -1,121 +1,105 @@
-## Histórico de Versões
 
 
-Nesta fase são exibidas as evidências, os dados coletados e a interpretação dos resultados referentes à análise da Confiabilidade.
+# FASE 4 – CONFIABILIDADE - Executar o Planejamento (Execução + Análise + Interpretação)
 
-🔹 1. Gravações das coletas e execução dos testes
+Nesta fase são exibidas as **evidências**, os **dados coletados** e a **interpretação dos resultados** referentes à análise da Confiabilidade.
 
-A análise foi realizada no Ubuntu.
-O SonarQube foi iniciado com sucesso:
+---
 
-./sonar.sh start
-SonarQube is running
+## 1. Gravações das coletas e execução dos testes
 
+A análise foi realizada no Ubuntu, com o SonarQube iniciado via: ./sonar.sh start
 
 Etapas executadas:
 
-Acesso ao painel web
+1. Acesso ao painel web  
+2. Execução do SonarScanner  
+3. Processamento de mais de 21.000 linhas  
+4. Geração dos dashboards
 
-Execução do SonarScanner
+### Prints que devem ser adicionados ao GitPages:
 
-Processamento de 21.000+ linhas
+- Dashboard geral  
+- Aba "Bugs"  
+- Aba "Reliability"  
+- Aba "Code Smells"  
+- Aba "Duplications"
 
-Geração de métricas completas
+---
 
-🔸 Prints que devem ser incluídos no GitPages:
+## 2. Dados coletados (métricas reais do SonarQube)
 
-Dashboard geral do SonarQube
+### ✔ Maturidade
 
-Aba "Bugs"
+| Métrica | Valor |
+|--------|--------|
+| Bugs detectados | **206** |
+| Severidade | Critical / Major |
+| Reliability Rating | **D** |
 
-Aba "Reliability"
+---
 
-Aba "Code Smells"
+### ✔ Disponibilidade (estrutura do código)
 
-Aba "Duplications"
+| Métrica | Valor |
+|--------|--------|
+| Build Blockers | **0** |
+| Erros Críticos | Presentes |
+| Cobertura de Testes | **0%** |
+| Uptime (%) | **Não mensurável** |
 
-(Os prints você cola no seu GitPages.)
+---
 
-🔹 2. Dados coletados (métricas reais do SonarQube)
-🟩 Maturidade
-Métrica	Valor
-Bugs detectados	206
-Severidade	Critical / Major
-Reliability Rating	D
-🟩 Disponibilidade (estrutura do código)
-Métrica	Valor
-Build Blockers	0
-Erros Críticos	Presentes
-Cobertura de Testes	0%
-Uptime (%)	Não mensurável
-🟩 Tolerância a Falhas
-Métrica	Valor
-Code Smells	355
-Duplicação de Código	39.1%
-Complexidade	Elevada
-🔹 3. Análise das métricas (interpretação)
-✔ Maturidade – Baixa
+### ✔ Tolerância a Falhas
 
-Alto volume de bugs
+| Métrica | Valor |
+|--------|--------|
+| Code Smells | **355** |
+| Duplicação de Código | **39.1%** |
+| Complexidade | Elevada |
 
-Presença de falhas críticas
+---
 
-Reliability Rating = D
+## 3. Interpretação das métricas
 
-➡ Indica baixa robustez e necessidade de correções.
+### ✔ Maturidade – Baixa  
+Alto volume de bugs e erros críticos compromete a robustez.
 
-✔ Disponibilidade – Comprometida
+### ✔ Disponibilidade – Comprometida  
+Sem testes, com erros críticos e duplicação elevada, a estabilidade real do app é afetada.
 
-Ausência total de testes
+### ✔ Tolerância a Falhas – Insuficiente  
+Code smells, duplicação e alta complexidade indicam fragilidade no tratamento de erros.
 
-Erros críticos
+---
 
-Estrutura frágil
+## 4. Respostas das Questões GQM
 
-Uptime e telemetria não disponíveis
+- **Q1:** O sistema apresenta erros que comprometem a operação?  
+  **Sim** – 206 bugs, incluindo críticos.
 
-➡ Em ambiente real, a disponibilidade seria prejudicada.
+- **Q2:** O código possui fragilidades que afetam a disponibilidade?  
+  **Sim** – ausência de testes e erros críticos.
 
-✔ Tolerância a Falhas – Insuficiente
+- **Q3:** O sistema é tolerante a falhas?  
+  **Não** – muitos smells e duplicação elevada.
 
-Muitos code smells
+---
 
-Duplicação elevada
+## 5. Conclusão da Fase 4
 
-Complexidade alta
+Os resultados obtidos mostram:
 
-Ausência de mecanismos robustos de tratamento de exceções
+- Baixa maturidade  
+- Disponibilidade estrutural comprometida  
+- Baixa tolerância a falhas  
+- Alta complexidade e duplicação  
+- Ausência de testes
 
-➡ O sistema não tolera falhas de forma eficiente.
+➡ **Conclusão geral:** O nível de Confiabilidade do Guardiões da Saúde – App é **insatisfatório**, exigindo refatorações e implantação de testes.
 
-🔹 4. Resposta das Questões GQM
-● Q1 – O sistema apresenta erros que comprometem a operação?
 
-Sim. Foram encontrados 206 bugs.
 
-● Q2 – O código possui fragilidades que afetam a disponibilidade?
-
-Sim. A ausência de testes e erros críticos prejudicam a estabilidade.
-
-● Q3 – O sistema é tolerante a falhas?
-
-Não. Há muitos smells, duplicação e complexidade elevada.
-
-🔹 5. Conclusão da Fase 4
-
-Os resultados mostraram:
-
-Baixa maturidade
-
-Baixa tolerância a falhas
-
-Estrutura insuficiente para garantir disponibilidade
-
-Código com alto risco de falhas
-
-Solução exige refatoração e testes urgentes
-
-➡ Conclusão geral: O nível de Confiabilidade do Guardiões da Saúde – App é insatisfatório.
-
+## Histórico de Versões
 | Versão | Data | Descrição | Autor(es) |
 | ------ | ---- | --------- | --------- |

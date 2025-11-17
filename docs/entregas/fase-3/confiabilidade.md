@@ -15,32 +15,32 @@ A coleta será realizada através de **análise estática do código**, utilizan
 
 - quantidade e severidade de bugs  
 - duplicação de código  
-- code smells  
+- _code smells_  
 - complexidade  
 - riscos de falha  
 - confiabilidade estrutural do sistema
 
-Como não há ambiente de produção, métricas de runtime (como uptime e erros Sentry) serão classificadas como **não mensuráveis no contexto da análise estática**.
+Como não há ambiente de produção, métricas de _runtime_ (como _uptime_ e erros Sentry) serão classificadas como **não mensuráveis no contexto da análise estática**.
 
 ### Operacionalização por subcaracterística
 
-#### ➤ Maturidade  
+#### Maturidade  
 Identificar bugs, severidades e impacto no funcionamento.
 
-#### ➤ Disponibilidade  
+#### Disponibilidade  
 Avaliada como “resiliência estrutural”, considerando:
 
-- blockers  
+- _blockers_  
 - erros críticos  
 - ausência de testes  
 - fragilidade na inicialização
 
-**Uptime real (Availability %)** → *Não mensurável*.
+**_Uptime real_ (_Availability_ %)** → *Não mensurável*.
 
-#### ➤ Tolerância a Falhas  
+#### Tolerância a Falhas  
 Avaliar:
 
-- code smells  
+- _code smells_  
 - duplicação  
 - complexidade  
 - tratamento de erros
@@ -86,27 +86,27 @@ Avaliar:
 
 ## Métricas Planejadas (GQM)
 
-### ✔ Maturidade
-- M1.1: Quantidade total de bugs  
-- M1.2: Severidade dos bugs (Critical / Major / Minor)
+### Disponibilidade (não mensurável via UptimeRobot)
+- [M1.1: _Availability Rate_ (%)](../fase-2/confiabilidade.md#m11conf) – Não mensurável  
 
-### ✔ Disponibilidade (estrutura do código)
-- M2.1: Quantidade de erros críticos  
-- M2.2: Erros bloqueadores de execução  
-- M2.3: Ausência de testes / riscos de instabilidade
+> Observação: a medição de _Availability_ (_uptime_) requer um _endpoint_ em execução contínua e monitoramento externo, (por exemplo, UptimeRobot). Como o repositório disponibiliza apenas o código‑fonte, não há ambiente de produção nem informação sobre qual endpoint principal deve ser monitorado; por isso, a [métrica M1.1](../fase-2/confiabilidade.md#m11conf) foi classificada como “não mensurável no contexto deste estudo (análise estática do código)”.
 
-### ✔ Disponibilidade (não mensurável via UptimeRobot)
-- **Availability (%)** – Não mensurável  
-  Motivo: app não possui endpoint monitorável.
+### Tolerância a Falhas (Erros de _runtime_) (não mensuráveis)
+- [M2.1: Erros sem queda](../fase-2/confiabilidade.md#m21conf) (Sentry) – Não mensurável: requer integração com Sentry/telemetria e acesso aos logs de produção.
+- [M2.2: Crashes](../fase-2/confiabilidade.md#m22conf) (Sentry) – Não mensurável: requer integração com Sentry/telemetria e acesso aos logs de produção.
 
-### ✔ Erros de runtime (não mensuráveis)
-- **Erros sem queda (Sentry)**  
-- **Crashes (Sentry)**  
+> Observação: O repositório GitHub também não registra automaticamente erros de execução. As métricas de erros sem queda ([M2.1](../fase-2/confiabilidade.md#m21conf)) e com queda ([M2.2](../fase-2/confiabilidade.md#m22conf)) exigem a integração prévia do app com um serviço de monitoramento (por exemplo, Sentry) e coleta de dados de uso real pelos usuários.
+Como o trabalho está focado na análise estática via SonarQube, sem acesso ao ambiente de produção e, consequentemente, aos logs do Sentry, essas métricas não puderam ser coletadas e foram marcadas como “não mensuráveis com os dados disponíveis”.
 
-### ✔ Tolerância a Falhas
-- M3.1: Code Smells relacionados a exceções  
-- M3.2: Duplicação de código  
+### Tolerância a Falhas
+
+- M3.1: Code Smells relacionados a exceções
+- M3.2: Duplicação de código
 - M3.3: Complexidade ciclomática
+
+### Maturidade (SonarQube)
+- [M3.1: Quantidade total de _bugs_](../fase-2/confiabilidade.md#m31conf)  
+- [M3.2: Severidade dos _bugs_](../fase-2/confiabilidade.md#m32conf) (Critical / Major / Minor)
 
 ---
 
@@ -116,4 +116,5 @@ Avaliar:
 | Versão | Data       | Descrição            | Autor(es)                                          |
 | ------ | ---------- | -------------------- | -------------------------------------------------- |
 | `1.0`  | 15/11/2025 | Criação do documento | [Arthur Carneiro](https://github.com/trindadea)   |
-| `1.2`  | 17/11/2025 | Confiabilidade pontos| [Uires Carlos de oliveira](https://github.com/uires2023)   |
+| `1.2`  | 17/11/2025 | Confiabilidade pontos | [Uires Carlos de oliveira](https://github.com/uires2023)   |
+| `1.3`  | 17/11/2025 | Adiciona justificativas e links | [Matheus Henrick](https://github.com/MatheusHenrickSantos) |

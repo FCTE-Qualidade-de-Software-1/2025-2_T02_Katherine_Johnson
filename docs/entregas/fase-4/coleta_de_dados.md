@@ -20,7 +20,7 @@ A avaliação foi conduzida utilizando:
 </div>
 
 <div align="center">
-    <img src="../../../assets/images/Principal.jpeg" width="70%" alt="Principal">
+    <img src="../../../assets/images/Principal.jpeg" width="100%" alt="Principal">
 </div>
 
 <div align="center" style="font-size: 12px; font-style: italic;">

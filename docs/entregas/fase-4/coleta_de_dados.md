@@ -16,11 +16,11 @@ A avaliação foi conduzida utilizando:
 - URL de acesso: `http://localhost:9000/dashboard?id=guardioes-app&codeScope=overall`
 
 <div align="center">
-    <p><strong>Figura 0 – Principal</strong></p>
+    <p><strong>Figura 0.0 – Principal</strong></p>
 </div>
 
 <div align="center">
-    <img src="../../../assets/images/Principal.jpeg" width="50%" alt="Principal">
+    <img src="../../../assets/images/Principal.jpeg" width="70%" alt="Principal">
 </div>
 
 <div align="center" style="font-size: 12px; font-style: italic;">

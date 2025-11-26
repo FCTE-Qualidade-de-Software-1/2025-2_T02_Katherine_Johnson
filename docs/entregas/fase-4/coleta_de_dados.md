@@ -243,21 +243,19 @@ Cada métrica apresenta:
 
 ## 4.4 Métricas Não Mensuráveis no Contexto Deste Estudo
 
-Conforme planejamento da Fase 3, as seguintes métricas foram declaradas
-explicitamente como **não mensuráveis**:
+Conforme definido no planejamento da Fase 3, algumas métricas dependem de ambiente em produção ou de informações técnicas que não estão disponíveis para a equipe de avaliação. Por esse motivo, não foi possível mensurá-las nesta fase.
 
-### Disponibilidade
 
-- **M1.1 – Availability Rate (%)**  
-  Requer ambiente em produção e ferramentas de monitoramento contínuo.
 
-### Tolerância a Falhas (Erros de runtime)
+### Disponibilidade (M1.1 – Availability Rate %)
 
-- **M2.1 – Erros sem queda (Sentry / logs de produção)**  
-- **M2.2 – Crashes (Firebase / Sentry)**  
+Para medir a disponibilidade seria necessário monitorar o endpoint principal do sistema. No entanto, a documentação consultada não apresentou o endpoint oficial da aplicação, o que impossibilitou a configuração de ferramentas de monitoramento, como o UptimeRobot. Uma alternativa seria utilizar ferramentas externas de inspeção de tráfego, como o Fiddler, para tentar identificar o endpoint real. Ainda assim, mesmo que esse endpoint fosse descoberto, seria indispensável a confirmação da equipe de desenvolvimento para validar se ele corresponde de fato ao ambiente de produção. Sem essa validação, os dados obtidos não poderiam ser considerados confiáveis.
 
-Essas métricas dependem de telemetria e acesso aos dados de uso real,
-inexistentes neste trabalho.
+
+
+### Tolerância a Falhas (M2.1/M2.2 – Erros sem queda e com queda)
+
+Para avaliar a tolerância a falhas seria necessário acesso direto ao código em execução ou aos logs de produção, o que não estava disponível para a equipe de avaliação. Uma alternativa seria solicitar à equipe de desenvolvimento que configurasse ferramentas de monitoramento, como o Sentry, para registrar erros e falhas. No entanto, devido ao tempo reduzido para a execução da avaliação, não foi viável abrir essa solicitação e aguardar a implementação. Por esse motivo, a métrica foi declarada como não mensurável nesta fase.
 
 ---
 
@@ -266,7 +264,7 @@ inexistentes neste trabalho.
 ### Q1. O sistema está disponível para uso na maior parte do tempo?
 
 - **Resposta:** Não mensurável  
-- **Justificativa:** ausência de ambiente de produção.
+- **Justificativa:** A ausência de informações sobre o endpoint oficial impossibilitou a configuração de monitoramento de disponibilidade. Embora seja tecnicamente possível descobrir o endpoint por meio de ferramentas externas usando o Fiddler, por exemplo, seria necessária a validação da equipe de desenvolvimento para garantir que o monitoramento reflita o ambiente real de produção. Sem essa confirmação, os dados não podem ser considerados confiáveis.
 
 ---
 
@@ -319,6 +317,7 @@ considerado **baixo** no estado atual do código.
 
 ## 4.7 Histórico de Versões
 
-| Versão | Data       | Descrição                          | Autor |
-|--------|------------|------------------------------------|-------|
-| `1.0`  | 25/11/2025 | Execução da Avaliação – Confiabilidade | Uires Carlos de Oliveira |
+| Versão | Data       | Descrição | Autor |
+| ------ | ---------- | --------- | ----- |
+| `1.0`  | 25/11/2025 | Execução da Avaliação – Confiabilidade | [Uires Carlos de Oliveira](https://github.com/uires2023) |
+| `1.1`  | 26/11/2025 | Adiciona a conclusão sobre as métricas não mensuráveis | [Matheus Henrick](https://github.com/MatheusHenrickSantos) |

@@ -1,304 +1,275 @@
 
 
-# FASE 4 – Confiabilidade - Executar o Planejamento (Execução + Análise + Interpretação)
-
-Nesta fase são exibidos os **dados coletados** e a **interpretação dos resultados**
-referentes à análise da característica **Confiabilidade** do projeto **Guardiões da Saúde – App**.
-
----
-
 # 4. Confiabilidade – Execução da Avaliação
 
 ## 4.1 Introdução
 
-Esta fase descreve a execução prática do planejamento definido na Fase 3, com foco em:
+A Fase 4 tem como objetivo executar o planejamento definido na Fase 3,
+realizando a coleta real dos dados e a interpretação dos resultados da
+característica **Confiabilidade** no projeto **Guardiões da Saúde – App**, por
+meio de análise estática do código-fonte.
 
-- coleta das métricas via **SonarQube Community Edition**;  
-- organização e registro dos dados;  
-- interpretação dos resultados à luz do modelo **GQM**;  
-- resposta às questões de Confiabilidade (maturidade, disponibilidade e tolerância a falhas).
+A avaliação foi conduzida utilizando:
 
-Conforme estabelecido na Fase 3:
+- **SonarQube Community Build v25.11.0.114957**
+- Modo **MQR**
+- URL de acesso: `http://localhost:9000/dashboard?id=guardioes-app&codeScope=overall`
 
-- métricas que dependem de **ambiente de produção** foram classificadas como **não mensuráveis** neste estudo;  
-- métricas obtidas por **análise estática do código-fonte** foram efetivamente coletadas e analisadas.
+Conforme estabelecido no planejamento:
+
+- Métricas dependentes de execução em produção → *não mensuráveis*  
+- Métricas obtidas por análise estática → *mensuráveis e analisadas nesta fase*
 
 ---
 
 ## 4.2 Execução da Análise
 
-A análise foi realizada em ambiente **Ubuntu**, utilizando o servidor local do SonarQube e o SonarScanner.
+A execução foi realizada em ambiente Ubuntu.
 
 ### Procedimentos executados
 
-1. Clonar o repositório do app Guardiões da Saúde – Frontend.  
-2. Iniciar o SonarQube no Ubuntu (`./sonar.sh start`).  
-3. Acessar o painel web em `http://localhost:9000`.  
-4. Criar o projeto no SonarQube e configurar o token de acesso.  
-5. Executar o **SonarScanner** no repositório clonado.  
-6. Aguardar o processamento de aproximadamente **21.000 linhas de código**.  
-7. Registrar os dashboards e métricas gerados pelo SonarQube.
+1. Inicialização do SonarQube (`./sonar.sh start`)  
+2. Execução do SonarScanner no repositório clonado  
+3. Processamento de aproximadamente **21.000 linhas de código**  
+4. Geração automática dos dashboards  
+5. Registro das métricas e capturas de tela  
 
-As figuras (prints de tela) dos dashboards podem ser armazenadas em  
-`/docs/assets/images/` e referenciadas nesta fase como evidências da execução.
+As evidências da execução (prints) estão armazenadas no diretório:
 
----
+/docs/assets/images/fase-4/
 
-## 4.3 Métricas Coletadas (SonarQube)
-
-Nesta seção são apresentadas as métricas efetivamente coletadas no SonarQube, com:
-
-- valor numérico obtido;  
-- conceito associado à Confiabilidade;  
-- interpretação do resultado;  
-- avaliação qualitativa (bom, regular, ruim).
-
-### 4.3.1 Reliability Rating – D
-
-- **Valor obtido:**
-  - *Reliability Rating*: **D**  
-  - *Bugs totais*: **206**  
-  - *High issue*: **1**
-
-- **Conceito:**  
-  O *Reliability Rating* resume a confiabilidade do sistema com base na
-  **quantidade** e **severidade** dos _bugs_ detectados.
-
-- **Interpretação:**  
-  A nota **D** indica uma probabilidade significativa de ocorrência de falhas em
-  execução, devido à presença de bugs relevantes.
-
-- **Avaliação:**  
-  - Classificação: **Ruim**  
-  - Impacto: sugere **baixa maturidade** e maior risco de falhas em produção.
+yaml
+Copiar código
 
 ---
 
-### 4.3.2 Bugs – 206
+## 4.3 Métricas Coletadas (SonarQube Community Build)
 
-- **Valor obtido:**  
-  - **206 _bugs_** detectados pelo SonarQube.
+Nesta seção são exibidas as métricas efetivamente coletadas pelo SonarQube.
 
-- **Conceito:**  
-  _Bugs_ representam erros de lógica, fluxo ou uso incorreto de recursos que
-  podem causar comportamento inesperado ou falha na aplicação.
+Cada métrica apresenta:
 
-- **Interpretação:**  
-  Para um projeto de aproximadamente **21k linhas de código**, a presença de
-  206 _bugs_ é considerada **elevada**, evidenciando fragilidades no código.
-
-- **Avaliação:**  
-  - Classificação: **Ruim**  
-  - Impacto: compromete diretamente a **confiabilidade** e a **robustez** do sistema.
+- valor obtido  
+- conceito  
+- interpretação  
+- avaliação qualitativa  
 
 ---
 
-### 4.3.3 Maintainability Rating – A
+### 4.3.1 Reliability Rating — D
 
-- **Valor obtido:**  
-  - *Maintainability Rating*: **A**
+- **Valor obtido**
+  - Reliability Rating: **D**
+  - Total de _bugs_: **206**
+  - _High issues_: **1**
 
-- **Conceito:**  
-  Mede o esforço estimado para **manter** e **refatorar** o código, levando em
-  conta dívida técnica, complexidade e organização do projeto.
+- **Conceito**  
+  O *Reliability Rating* representa a probabilidade de falhas em execução, baseada
+  na quantidade e severidade de bugs identificados.
 
-- **Interpretação:**  
-  Mesmo com problemas estruturais (smells, duplicação), o SonarQube indica que
-  o esforço para corrigir o código é relativamente **baixo**.
+- **Interpretação**  
+  A nota **D** indica presença de defeitos relevantes que impactam a estabilidade
+  e a confiabilidade.
 
-- **Avaliação:**  
-  - Classificação: **Excelente**  
-  - Impacto: facilita a implementação de correções e melhorias futuras.
-
----
-
-### 4.3.4 Code Smells – 355
-
-- **Valor obtido:**  
-  - **355 _code smells_**
-
-- **Conceito:**  
-  _Code smells_ são indícios de **má qualidade interna** (métodos longos,
-  nomes pouco claros, estruturas confusas, etc.) que não causam falha
-  imediata, mas prejudicam a **manutenibilidade** e podem introduzir erros no futuro.
-
-- **Interpretação:**  
-  A quantidade de 355 _smells_ é considerada **alta**, sugerindo necessidade
-  de refatoração em diversos pontos do código.
-
-- **Avaliação:**  
-  - Classificação: **Regular → Ruim**  
-  - Impacto: afeta a **tolerância a falhas** e a **evolução** do sistema.
+- **Avaliação:** **Ruim**
 
 ---
 
-### 4.3.5 Duplications – 39,1%
+### 4.3.2 Bugs — 206
 
-- **Valor obtido:**  
-  - **39,1%** de linhas duplicadas.
+- **Valor obtido:** **206 _bugs_**
 
-- **Conceito:**  
-  A métrica de *duplication* indica o percentual de código repetido.  
-  Boas práticas recomendam valores **abaixo de 5%**; valores acima de **20%**
-  já são considerados críticos.
+- **Conceito**  
+  Erros que podem causar comportamentos incorretos, falhas lógicas ou travamentos.
 
-- **Interpretação:**  
-  O valor de **39,1%** é **muito superior** ao limite desejável, indicando forte
-  dependência de trechos copiados e colados. Isso aumenta a probabilidade de erros
-  repetidos e dificulta a manutenção.
+- **Interpretação**  
+  Para um sistema de ~21k linhas, este valor é elevado, caracterizando baixa
+  maturidade do código.
 
-- **Avaliação:**  
-  - Classificação: **Péssimo**  
-  - Impacto: prejudica a **confiabilidade**, a **tolerância a falhas** e o custo de manutenção.
+- **Avaliação:** **Ruim**
 
 ---
 
-### 4.3.6 Coverage – 0%
+### 4.3.3 Maintainability Rating — A
 
-- **Valor obtido:**  
-  - **0% de cobertura de testes**.
+- **Valor obtido:** **A**
 
-- **Conceito:**  
-  *Coverage* mede a porcentagem de código executada por testes automatizados
-  (por exemplo, testes unitários).
+- **Conceito**  
+  Mede a facilidade de manutenção e refatoração, considerando dívida técnica e
+  complexidade.
 
-- **Interpretação:**  
-  O valor de **0%** significa que **não há testes automatizados** configurados
-  no projeto, impossibilitando a verificação sistemática das funcionalidades.
+- **Interpretação**  
+  Indica que o projeto é tecnicamente fácil de corrigir, apesar de problemas
+  estruturais.
 
-- **Avaliação:**  
-  - Classificação: **Péssimo**  
-  - Impacto: reduz drasticamente a **confiabilidade**, pois não há garantia
-    automatizada de que o código se comporta como esperado após mudanças.
+- **Avaliação:** **Excelente**
 
 ---
 
-### 4.3.7 Security Rating – A
+### 4.3.4 Code Smells — 355
 
-- **Valor obtido:**  
-  - *Security Rating*: **A**
+- **Valor obtido:** **355**
 
-- **Conceito:**  
-  Avalia a presença de vulnerabilidades de segurança detectáveis via análise estática.
+- **Conceito**  
+  Indicam problemas de organização e clareza que afetam a evolução do sistema.
 
-- **Interpretação:**  
-  A nota **A** indica que não foram identificadas vulnerabilidades relevantes no
-  código analisado.
+- **Interpretação**  
+  Quantidade elevada de _smells_ sugere estrutura fragilizada.
 
-- **Avaliação:**  
-  - Classificação: **Excelente**  
-  - Impacto: sugere um bom nível de **segurança estática**, embora não substitua
-    revisões manuais e testes específicos.
+- **Avaliação:** **Regular → Ruim**
 
 ---
 
-### 4.3.8 Security Hotspots Reviewed – E
+### 4.3.5 Duplications — 39.1%
 
-- **Valor obtido:**  
-  - Hotspots revisados: **0%**  
-  - Classificação: **E**
+- **Valor obtido:** **39.1%**
 
-- **Conceito:**  
-  *Security hotspots* são trechos de código potencialmente sensíveis, que exigem
-  **revisão manual** para confirmar se representam ou não um risco de segurança.
+- **Conceito**  
+  Mede o percentual de trechos de código repetidos.
 
-- **Interpretação:**  
-  A nota **E** indica que nenhum hotspot foi revisado. Embora a métrica de
-  vulnerabilidades seja A, a ausência de revisão manual deixa riscos em aberto.
+- **Interpretação**  
+  Acima de 20% já é considerado crítico; 39.1% representa altíssimo risco de
+  falhas e custo de manutenção.
 
-- **Avaliação:**  
-  - Classificação: **Ruim**  
-  - Impacto: aponta necessidade de maior atenção ao processo de revisão de segurança.
+- **Avaliação:** **Péssimo**
 
 ---
 
-### 4.3.9 Tamanho do Projeto – ~21.000 linhas
+### 4.3.6 Coverage — 0%
 
-- **Valor obtido:**  
-  - Aproximadamente **21k linhas de código**.
+- **Valor obtido:** **0%**
 
-- **Conceito:**  
-  Representa o tamanho total do código analisado (*ncloc*).
+- **Conceito**  
+  Mede a porcentagem de código coberto por testes automatizados.
 
-- **Interpretação:**  
-  Serve como base para contextualizar as demais métricas.  
-  Para esse volume de código, os valores de **206 bugs**, **355 _smells_** e
-  **39,1% de duplicação** são considerados **altos**.
+- **Interpretação**  
+  Nenhum teste foi implementado, impossibilitando validação automatizada.
+
+- **Avaliação:** **Péssimo**
 
 ---
 
-## 4.4 Respostas às Questões GQM
+### 4.3.7 Security Rating — A
 
-Nesta seção, os resultados são organizados em função das questões definidas na Fase 2.
+- **Valor obtido:** **A**
+
+- **Conceito**  
+  Avalia vulnerabilidades detectáveis por análise estática.
+
+- **Interpretação**  
+  Nenhuma vulnerabilidade crítica foi identificada.
+
+- **Avaliação:** **Excelente**
+
+---
+
+### 4.3.8 Security Hotspots Reviewed — E
+
+- **Valor obtido**
+  - Hotspots revisados: **0%**
+  - Nota: **E**
+
+- **Conceito**  
+  Pontos sensíveis do código que exigem revisão humana.
+
+- **Interpretação**  
+  Ausência total de revisão aumenta risco potencial.
+
+- **Avaliação:** **Ruim**
+
+---
+
+### 4.3.9 Tamanho do Projeto — ~21.000 linhas
+
+- **Valor obtido:** ~21k LOC
+
+- **Conceito**  
+  Volume total de código analisado.
+
+- **Interpretação**  
+  Contextualiza os indicadores: para esse tamanho, os valores encontrados são
+  considerados altos.
+
+---
+
+## 4.4 Métricas Não Mensuráveis no Contexto Deste Estudo
+
+Conforme planejamento da Fase 3, as seguintes métricas foram declaradas
+explicitamente como **não mensuráveis**:
+
+### Disponibilidade
+
+- **M1.1 – Availability Rate (%)**  
+  Requer ambiente em produção e ferramentas de monitoramento contínuo.
+
+### Tolerância a Falhas (Erros de runtime)
+
+- **M2.1 – Erros sem queda (Sentry / logs de produção)**  
+- **M2.2 – Crashes (Firebase / Sentry)**  
+
+Essas métricas dependem de telemetria e acesso aos dados de uso real,
+inexistentes neste trabalho.
+
+---
+
+## 4.5 Respostas às Questões GQM
 
 ### Q1. O sistema está disponível para uso na maior parte do tempo?
 
-- **Resposta:** *Não mensurável neste estudo.*  
-- **Justificativa:** a métrica de disponibilidade (_Availability Rate_) depende
-  de dados de **ambiente de produção** (como _uptime_ monitorado por ferramentas
-  externas), que não estão disponíveis no contexto da análise estática.
+- **Resposta:** Não mensurável  
+- **Justificativa:** ausência de ambiente de produção.
 
 ---
 
-### Q2. O sistema continua operando diante de falhas parciais sem queda total?
+### Q2. O sistema continua operando diante de falhas parciais?
 
-- **Resposta:** **Não.**
+- **Resposta:** **Não**
 
-- **Justificativa estrutural (análise estática):**
-  - duplicação elevada (**39,1%**);  
-  - grande quantidade de _code smells_ (**355**);  
-  - ausência completa de testes automatizados (**0% de coverage**);  
-  - presença de _bugs_ de maior severidade (1 *high issue*);  
-  - confiabilidade geral classificada como **D**.
-
-Esses fatores indicam baixa **tolerância estrutural a falhas**, mesmo sem dados de
-_execução_ em produção.
+- **Justificativas:**
+  - duplicação excessiva (39.1%)  
+  - muitos _code smells_ (355)  
+  - ausência de testes (0%)  
+  - presença de bugs críticos  
+  - confiabilidade classificada como D  
 
 ---
 
-### Q3. O sistema apresenta baixa incidência de _bugs_ que impactem a operação?
+### Q3. O sistema apresenta baixa incidência de bugs?
 
-- **Resposta:** **Não.**
+- **Resposta:** **Não**
 
-- **Evidências:**
-  - **206 _bugs_** detectados pelo SonarQube;  
-  - 1 _bug_ de severidade alta (*high*);  
-  - *Reliability Rating* classificado como **D**.
-
-Tais resultados apontam para **alta probabilidade de falhas** em execução.
+- **Justificativas:**
+  - 206 _bugs_  
+  - 1 _high issue_  
+  - _Reliability Rating_ = D  
 
 ---
 
-## 4.5 Conclusão da Fase 4
+## 4.6 Conclusão da Fase 4
 
-A análise estática realizada com o SonarQube indica que o nível de **Confiabilidade**
-do **Guardiões da Saúde – App** é **insatisfatório** no estado atual do código.
+A execução da análise estática evidenciou que o nível de **Confiabilidade** é
+considerado **baixo** no estado atual do código.
 
-**Síntese dos principais pontos:**
+### Síntese:
 
-- elevada **quantidade de _bugs_** (206);  
-- **duplicação** excessiva (**39,1%**);  
-- ausência de **testes automatizados** (0% de cobertura);  
-- grande número de **_code smells_** (355);  
-- avaliação de **confiabilidade D**;  
-- **hotspots de segurança** sem revisão (classificação E).
+- elevado número de bugs  
+- forte duplicação  
+- ausência de testes automatizados  
+- pontos críticos sem revisão  
+- confiabilidade classificada como D  
 
-Apesar da boa avaliação em **segurança estática** (Security Rating A) e em
-**manutenibilidade** (Maintainability Rating A), a combinação de muitos _bugs_,
-duplicação alta e ausência total de testes leva a um cenário de **baixa confiabilidade**.
+### Recomendações:
 
-### Recomendações
-
-- Implementar uma suíte mínima de **testes automatizados** (unitários e de integração).  
-- Priorizar a correção dos **_bugs_ de alta severidade**.  
-- Reduzir a **duplicação de código** por meio de refatoração.  
-- Tratar os principais **_code smells_** relacionados à complexidade e estrutura.  
-- Revisar manualmente os **security hotspots** sinalizados pelo SonarQube.  
+- criar suíte mínima de testes  
+- refatorar trechos duplicados  
+- corrigir _bugs_ críticos  
+- revisar _security hotspots_  
+- reduzir complexidade estrutural  
 
 ---
 
-## 4.6 Histórico de Versões
+## 4.7 Histórico de Versões
 
-| Versão | Data       | Descrição                            | Autor(es)          |
-| ------ | ---------- | ------------------------------------ | ------------------ |
-| `1.0`  | 25/11/2025 | Execução da avaliação – Confiabilidade | Uires Carlos de Oliveira |
+| Versão | Data       | Descrição                          | Autor |
+|--------|------------|------------------------------------|-------|
+| `1.0`  | 25/11/2025 | Execução da Avaliação – Confiabilidade | Uires Carlos de Oliveira |

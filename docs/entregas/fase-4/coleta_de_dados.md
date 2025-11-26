@@ -38,8 +38,6 @@ As evidências da execução (prints) estão armazenadas no diretório:
 
 /docs/assets/images/fase-4/
 
-yaml
-Copiar código
 
 ---
 
@@ -72,6 +70,19 @@ Cada métrica apresenta:
   e a confiabilidade.
 
 - **Avaliação:** **Ruim**
+
+<div align="center">
+    <p><strong>Figura 1 – Reliability_D</strong></p>
+</div>
+
+<div align="center">
+    <img src="../../../assets/images/Reliability_D.jpeg" width="30%" alt="Reliability_D">
+</div>
+
+<div align="center" style="font-size: 12px; font-style: italic;">
+    Fonte: Captura de tela SONAR v25.11.0.114957.
+</div>
+
 
 ---
 

@@ -18,20 +18,35 @@ Etapas executadas:
 ### 📸 **Evidências em Foto**
 
 <p align="center">
-  <img src="sonarqube_dashboard.png">
+  <img src="../../../assets/images/sonarqube_dashboard.png">
   <br>
   <strong>Figura 1 – Dashboard geral do Guardiões da Saúde – App no SonarQube</strong>
 </p>
-![[sonarqube_hotspots.png]]
-![[sonarqube_vulnerabilidades.png]]---
+<p align="center">
+  <img src="../../../assets/images/sonarqube_vulnerabilidades.png">
+  <br>
+  <strong>Figura 2 – Número de vulnerabilidades de segurança - App no SonarQube</strong>
+</p>
+<p align="center">
+  <img src="../../../assets/images/sonarqube_hotspots.png">
+  <br>
+  <strong>Figura 3 – Security Hotspots – App no SonarQube</strong>
+</p>
+<p align="center">
+  <img src="../../../assets/images/sonarqube_owasp.png">
+  <br>
+  <strong>Figura 4 – Vulnerabilidades OWASP Top 10 – App no SonarQube</strong>
+</p>
+
+
+---
 
 ### 🎥 **Evidências em Vídeo**
 
 Para assistir ao vídeo da execução real da análise no SonarQube, clique abaixo:
 
-👉 **[▶️ Assistir vídeo da análise](../evidencias/confiabilidade/sonar-analise-segurança.mp4)**
+👉 **[▶️ Assistir vídeo da análise](../../../assets/images/sonar-analise-segurança.mp4)**
 
-> *(Depois que você subir o arquivo para o GitHub, renomeie para `sonar-analise-segurança.mp4` ou ajuste o caminho.)*
 
 ---
 ## **2. Dados coletados**
@@ -86,7 +101,8 @@ Os resultados obtidos mostram:
 
 ---
 ## Histórico de Versões
-| Versão | Data | Descrição | Autor(es) |
-|---|---|---|---|
-| `1.0` | 24/11/2025 | Criação do documento | [Caio Pacheco](https://github.com/CaioPacheco) |
-| `1.1` | 25/11/2025 | Adição das Etapas, Dados, Interpretação e Conclusão | [Caio Pacheco](https://github.com/CaioPacheco) |
+| Versão | Data       | Descrição                                           | Autor(es) |
+|--------|------------|-----------------------------------------------------|---|
+| `1.0`  | 24/11/2025 | Criação do Documento                                | [Caio Pacheco](https://github.com/CaioPacheco) |
+| `1.1`  | 25/11/2025 | Adição das Etapas, Dados, Interpretação e Conclusão | [Caio Pacheco](https://github.com/CaioPacheco) |
+| `1.2`  | 26/11/2025 | Adição das Evidências                               | [Caio Pacheco](https://github.com/CaioPacheco) |

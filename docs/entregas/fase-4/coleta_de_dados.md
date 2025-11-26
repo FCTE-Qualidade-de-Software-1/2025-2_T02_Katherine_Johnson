@@ -15,6 +15,19 @@ A avaliação foi conduzida utilizando:
 - Modo **MQR**
 - URL de acesso: `http://localhost:9000/dashboard?id=guardioes-app&codeScope=overall`
 
+<div align="center">
+    <p><strong>Figura 0 – Principal</strong></p>
+</div>
+
+<div align="center">
+    <img src="../../../assets/images/Principal.jpeg" width="50%" alt="Principal">
+</div>
+
+<div align="center" style="font-size: 12px; font-style: italic;">
+    Fonte: Captura de tela SONAR v25.11.0.114957.
+</div>
+
+---
 Conforme estabelecido no planejamento:
 
 - Métricas dependentes de execução em produção → *não mensuráveis*  

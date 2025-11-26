@@ -76,7 +76,7 @@ Cada métrica apresenta:
 </div>
 
 <div align="center">
-    <img src="../../../assets/images/Reliability_D.jpeg" width="30%" alt="Reliability_D">
+    <img src="../../../assets/images/Reliability_D.jpeg" width="50%" alt="Reliability_D">
 </div>
 
 <div align="center" style="font-size: 12px; font-style: italic;">
@@ -120,7 +120,7 @@ Cada métrica apresenta:
 </div>
 
 <div align="center">
-    <img src="../../../assets/images/Maintainability_A.jpeg" width="30%" alt="Maintainability_A">
+    <img src="../../../assets/images/Maintainability_A.jpeg" width="50%" alt="Maintainability_A">
 </div>
 
 <div align="center" style="font-size: 12px; font-style: italic;">
@@ -164,7 +164,7 @@ Cada métrica apresenta:
     <img src="../../../assets/images/Duplications.jpeg" width="50%" alt="Duplications">
 </div>
 
-<div align="center" style="font-size: 20px; font-style: italic;">
+<div align="center" style="font-size: 12px; font-style: italic;">
     Fonte: Captura de tela SONAR v25.11.0.114957.
 </div>
 

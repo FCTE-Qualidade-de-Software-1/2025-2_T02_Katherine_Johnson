@@ -156,6 +156,19 @@ Cada métrica apresenta:
 
 - **Avaliação:** **Péssimo**
 
+<div align="center">
+    <p><strong>Figura 3 – Duplications</strong></p>
+</div>
+
+<div align="center">
+    <img src="../../../assets/images/Duplications.jpeg" width="50%" alt="Duplications">
+</div>
+
+<div align="center" style="font-size: 20px; font-style: italic;">
+    Fonte: Captura de tela SONAR v25.11.0.114957.
+</div>
+
+
 ---
 
 ### 4.3.6 Coverage — 0%

@@ -115,6 +115,18 @@ Cada métrica apresenta:
 
 - **Avaliação:** **Excelente**
 
+<div align="center">
+    <p><strong>Figura 2 – Maintainability_A</strong></p>
+</div>
+
+<div align="center">
+    <img src="../../../assets/images/Maintainability_A.jpeg" width="30%" alt="Maintainability_A">
+</div>
+
+<div align="center" style="font-size: 12px; font-style: italic;">
+    Fonte: Captura de tela SONAR v25.11.0.114957.
+</div>
+
 ---
 
 ### 4.3.4 Code Smells — 355

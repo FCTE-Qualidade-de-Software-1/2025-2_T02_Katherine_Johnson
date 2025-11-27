@@ -78,6 +78,7 @@ nav:
     - Sobre o Projeto:
           - Visão Geral: sobre/visao-geral.md
           - Equipe: sobre/equipe.md
+    - Declaração de IA: entregas/declaracao_ia.md
     - Fase 1 - Requisitos de Avaliação:
           - 1. Propósito da Avaliação: entregas/fase-1/proposito-da-avaliacao.md
           - 2. Requisitante e Partes Interessadas: entregas/fase-1/partes-interessadas.md
@@ -98,8 +99,13 @@ nav:
           - 4. Segurança: entregas/fase-3/seguranca.md
           - 5. Tabela de Contribuição: entregas/fase-3/tabela_contribuicao.md
     - Fase 4 - Execução da Avaliação:
-          - 1. Coleta de Dados: entregas/fase-4/coleta_de_dados.md
-          - 2. Gravações da Coleta: entregas/fase-4/gravacoes_da_coleta.md
+          - 1. Resultados - Manutenibilidade: entregas/fase-4/resultados_manutenibilidade.md
+          - 2. Resultados - Confiabilidade: entregas/fase-4/resultados_confiabilidade.md
+          - 3. Resultados - Segurança: entregas/fase-4/resultados_seguranca.md
+          - 4. Coleta de Dados: entregas/fase-4/coleta_de_dados.md
+          - 5. Gravações da Coleta: entregas/fase-4/gravacoes_da_coleta.md
+          - 6. Conclusão Geral: entregas/fase-4/conclusao_geral.md
+          - 7. Tabela de Contribuição: entregas/fase-4/tabela_contribuicao.md
 
 extra:
     social:

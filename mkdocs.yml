@@ -94,18 +94,17 @@ nav:
           - 5. Tabela de Contribuição: entregas/fase-2/tabela_contribuicao.md
     - Fase 3 - Planejamento da Avaliação:
           - 1. Visão Geral: entregas/fase-3/visao_geral.md
-          - 2. Manutenabilidade: entregas/fase-3/manutenabilidade.md
-          - 3. Confiabilidade: entregas/fase-3/confiabilidade.md
-          - 4. Segurança: entregas/fase-3/seguranca.md
+          - 2. Planejamento - Manutenabilidade: entregas/fase-3/manutenabilidade.md
+          - 3. Planejamento - Confiabilidade: entregas/fase-3/confiabilidade.md
+          - 4. Planejamento - Segurança: entregas/fase-3/seguranca.md
           - 5. Tabela de Contribuição: entregas/fase-3/tabela_contribuicao.md
     - Fase 4 - Execução da Avaliação:
-          - 1. Resultados - Manutenibilidade: entregas/fase-4/resultados_manutenibilidade.md
-          - 2. Resultados - Confiabilidade: entregas/fase-4/resultados_confiabilidade.md
-          - 3. Resultados - Segurança: entregas/fase-4/resultados_seguranca.md
-          - 4. Coleta de Dados: entregas/fase-4/coleta_de_dados.md
-          - 5. Gravações da Coleta: entregas/fase-4/gravacoes_da_coleta.md
-          - 6. Conclusão Geral: entregas/fase-4/conclusao_geral.md
-          - 7. Tabela de Contribuição: entregas/fase-4/tabela_contribuicao.md
+          - 1. Visão Geral: entregas/fase-4/visao_geral.md
+          - 2. Resultados - Manutenibilidade: entregas/fase-4/resultados_manutenibilidade.md
+          - 3. Resultados - Confiabilidade: entregas/fase-4/resultados_confiabilidade.md
+          - 4. Resultados - Segurança: entregas/fase-4/resultados_seguranca.md
+          - 5. Conclusão Geral: entregas/fase-4/conclusao_geral.md
+          - 6. Tabela de Contribuição: entregas/fase-4/tabela_contribuicao.md
 
 extra:
     social:

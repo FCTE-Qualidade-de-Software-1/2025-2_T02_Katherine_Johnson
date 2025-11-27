@@ -1,4 +1,4 @@
-# Fase 4 — Manutenibilidade (Execução + Análise + Interpretação)
+# Manutenibilidade - Execução, Análise e Interpretação
 
 ## 1. Introdução
 _Objetivo, escopo e relação com o plano da Fase 3. Liste aqui o que é mensurável/não mensurável._
@@ -34,6 +34,6 @@ _Objetivo, escopo e relação com o plano da Fase 3. Liste aqui o que é mensur�
 - 3–5 ações priorizadas.
 
 ## 8. Histórico de Versões
-| Versão | Data | Descrição | Autor(es) |
-| --- | --- | --- | --- |
-| `0.1` | dd/mm/2025 | Estrutura inicial | |
+| Versão | Data       | Descrição                      | Autor(es) |
+| ------ | ---------- | ------------------------------ | --------- |
+| `1.0`  | 27/11/2025 | Criação do documento | [Arthur Carneiro](https://github.com/trindadea)   |

@@ -74,21 +74,7 @@ A escolha do **SonarQube** como ferramenta principal se deve à sua capacidade d
 
 ---
 
-## 1.5 Uso de IA no Desenvolvimento do Trabalho
-
-Durante a elaboração desta fase do projeto, foram utilizados recursos de **inteligência artificial generativa**, em especial o modelo _ChatGPT_, como **apoio à estruturação textual, correções ortográficas e padronização da redação e da documentação**.
-
-As contribuições da IA incluíram:
-
--   auxílio na **formatação** e **revisão gramatical** do texto;
--   **padronização** da estrutura do documento;
--   e **sugestões** de transições entre seções;
-
-Nenhum conteúdo foi gerado sem **validação e revisão humana** e todo o material técnico foi desenvolvido e revisado pela equipe.
-
----
-
-## 1.6 Referências Bibliográficas
+## 1.5 Referências Bibliográficas
 
 > BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, Hans Dieter. _The Goal Question Metric (GQM) Approach._ In: MARCINIAK, J. J. (ed.). _Encyclopedia of Software Engineering._ New York: John Wiley & Sons, 1994.
 > VAN SOLINGEN, R.; BERGHOUT, E. _The Goal/Question/Metric Method: A Practical Guide for Quality Improvement of Software Development._ London: McGraw-Hill, 1999.
@@ -97,7 +83,7 @@ Nenhum conteúdo foi gerado sem **validação e revisão humana** e todo o mater
 
 ---
 
-## 1.7 Histórico de Versões
+## 1.6 Histórico de Versões
 
 | Versão | Data       | Descrição                                                                                                      | Autor(es)                                                                                                            |
 | ------ | ---------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |

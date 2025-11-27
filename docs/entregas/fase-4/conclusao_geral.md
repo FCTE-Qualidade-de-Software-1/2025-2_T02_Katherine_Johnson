@@ -1,4 +1,4 @@
-# Fase 4 — Conclusão Geral e Recomendações
+# Conclusão Geral e Recomendações
 
 ## 1. Síntese por Característica
 - Manutenibilidade: resumo dos achados principais e nível de qualidade.

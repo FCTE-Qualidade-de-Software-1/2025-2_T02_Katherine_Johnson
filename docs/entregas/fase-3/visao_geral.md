@@ -31,7 +31,7 @@ Cada característica de qualidade (Manutenibilidade, Confiabilidade e Segurança
 
 ## 1.3 Estrutura do Planejamento
 
-A estrutura de planejamento desta fase foi organizada para refletir diretamente as três características de qualidade avaliadas, cada uma com seu próprio artefato contendo os procedimentos específicos de coleta. As métricas definidas na Fase 2 para cada característica são operacionalizadas nos respectivos documentos de planejamento.
+Para tornar o plano de avaliação mais claro e navegável, a Fase 3 foi organizada em artefatos específicos para cada característica de qualidade priorizada. Em cada um desses documentos são descritos, de forma detalhada, os procedimentos de coleta, as ferramentas utilizadas, os outputs esperados e a forma de armazenamento dos dados. Assim, as métricas definidas na Fase 2 são operacionalizadas de maneira sistemática e rastreável, conforme sintetizado na tabela a seguir.
 
 | Característica       | Objetivo                                                                 | Link                             |
 | -------------------- | ------------------------------------------------------------------------ | -------------------------------- |
@@ -97,7 +97,8 @@ Para garantir a **reproduzibilidade** e fornecer evidências da execução, cada
 
 ### 1.5.3 Armazenamento dos dados
 
-Todos os dados, evidências e documentação coletados durante a execução dos procedimentos serão armazenados neste repositório, organizados por característica de qualidade. Os resultados completos da coleta, incluindo vídeos, cálculos, status dos testes e conclusões, serão apresentados e analisados na [Fase 4 - Execução da Avaliação](../fase-4/coleta_de_dados.md).
+Todos os dados, evidências e documentação coletados durante a execução dos procedimentos serão armazenados neste repositório, organizados por **característica de qualidade**, em pastas específicas (por exemplo, `docs/evidencias/manutenabilidade/`, `docs/evidencias/confiabilidade/`, `docs/evidencias/seguranca/`).  
+Os resultados completos da coleta, incluindo vídeos, cálculos, status dos testes e conclusões, serão apresentados e analisados nas páginas de resultados da [Fase 4 - Execução da Avaliação](../fase-4/visao_geral.md) para cada característica, bem como na conclusão geral da Fase 4.
 
 ---
 

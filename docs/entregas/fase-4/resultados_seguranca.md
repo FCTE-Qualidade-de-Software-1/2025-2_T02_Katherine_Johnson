@@ -174,7 +174,7 @@ A falta completa de mecanismos de Log e Auditoria (identificada na inspeção ma
 
 ---
 ## 4.5 Conclusão da Fase 4
-As conclusões consolidadas sobre Segurança e as recomendações prioritárias estão apresentadas de forma integrada na [Conclusão Geral da Fase 4](conclusao_geral.md).
+As conclusões consolidadas sobre Segurança e as recomendações prioritárias estão apresentadas de forma integrada na [Conclusão Geral](conclusao_geral.md).
 
 ---
 # 4.6 Histórico de Versões

@@ -332,7 +332,7 @@ Para avaliar a tolerância a falhas seria necessário acesso direto ao código e
 ---
 
 ## 3.6 Conclusão da Fase 4
-As conclusões consolidadas sobre Confiabilidade e as recomendações prioritárias estão apresentadas de forma integrada na [Conclusão Geral da Fase 4](conclusao_geral.md).
+As conclusões consolidadas sobre Confiabilidade e as recomendações prioritárias estão apresentadas de forma integrada na [Conclusão Geral](conclusao_geral.md).
 
 ---
 

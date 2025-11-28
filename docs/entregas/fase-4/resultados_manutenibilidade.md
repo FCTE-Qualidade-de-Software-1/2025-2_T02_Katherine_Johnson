@@ -328,7 +328,7 @@ Ambas foram devidamente justificadas nas suas seções e registradas como **não
 ---
 
 ## 2.6 Conclusão e Recomendações
-As conclusões consolidadas sobre Manutenibilidade e as recomendações prioritárias estão apresentadas de forma integrada na [Conclusão Geral da Fase 4](conclusao_geral.md).
+As conclusões consolidadas sobre Manutenibilidade e as recomendações prioritárias estão apresentadas de forma integrada na [Conclusão Geral](conclusao_geral.md).
 
 ---
 

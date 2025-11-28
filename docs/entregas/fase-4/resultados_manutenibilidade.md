@@ -65,15 +65,25 @@ A distribuição observada sugere que a estrutura modular do projeto não é equ
 
 #### 3.1.4 Evidências
 
-<p align="center">
-  <em>Figura 1 – Visão de Complexidade Ciclomática no SonarCloud (árvore de arquivos).</em><br><br>
-  <img src="../../../assets/evidencias/manutenabilidade/m11_sonar_complexity_tree.jpeg" width="750"/>
-</p>
+<div align="center">
+  <p><strong>Figura 1 – Visão de complexidade ciclomática no SonarCloud (árvore de arquivos).</strong></p>
+</div>
+<div align="center">
+  <img src="../../../assets/evidencias/manutenabilidade/m11_sonar_complexity_tree.jpeg" width="750" alt="Visão de complexidade ciclomática no SonarCloud"/>
+</div>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Fonte: Autores.
+</div>
 
-<p align="center">
-  <em>Vídeo 1 – Navegação no SonarCloud para coleta da complexidade.</em><br><br>
+<div align="center">
+  <p><strong>Vídeo 1 – Navegação no SonarCloud para coleta da complexidade.</strong></p>
+</div>
+<div align="center">
   <video src="../../../assets/evidencias/manutenabilidade/m11_sonar_complexity.mp4" width="750" controls></video>
-</p>
+</div>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Fonte: Autores.
+</div>
 
 
 ---
@@ -137,15 +147,25 @@ Mesmo com a execução bem-sucedida do Jest, a estrutura do projeto não contém
 
 #### 3.4.3 Evidências
 
-<p align="center">
-  <em>Figura 2 – Relatório completo de cobertura do Jest exibindo 0%.</em><br><br>
-  <img src="../../../assets/evidencias/manutenabilidade/m31_coverage_full.png" width="750"/>
-</p>
+<div align="center">
+  <p><strong>Figura 2 – Relatório completo de cobertura do Jest exibindo 0%.</strong></p>
+</div>
+<div align="center">
+  <img src="../../../assets/evidencias/manutenabilidade/m31_coverage_full.png" width="750" alt="Relatório de cobertura do Jest"/>
+</div>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Fonte: Autores.
+</div>
 
-<p align="center">
-  <em>Vídeo 2 – Execução do comando <code>npm test -- --coverage</code> mostrando a geração do relatório.</em><br><br>
+<div align="center">
+  <p><strong>Vídeo 2 – Execução do comando <code>npm test -- --coverage</code> mostrando a geração do relatório.</strong></p>
+</div>
+<div align="center">
   <video src="../../../assets/evidencias/manutenabilidade/m31_jest_run.mp4" width="750" controls></video>
-</p>
+</div>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Fonte: Autores.
+</div>
 
 
 ---
@@ -164,6 +184,10 @@ Mesmo com a execução bem-sucedida do Jest, a estrutura do projeto não contém
 
 A inspeção do repositório identificou os seguintes artefatos:
 
+<div align="center">
+  <p><strong>Tabela 1 – Artefatos de documentação identificados no repositório do Guardiões da Saúde.</strong></p>
+</div>
+
 | Documento | Presença | Caminho |
 |-----------|----------|---------|
 | README principal | **Sim** | `/README.md` |
@@ -171,6 +195,11 @@ A inspeção do repositório identificou os seguintes artefatos:
 | Documentação de API | **Não** | — |
 | Guia de contribuição | **Sim** | `/CONTRIBUTING.md` |
 | Documentação técnica em `/docs` | **NÃO** | `/docs` |
+
+
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Fonte: Autores.
+</div>
 
 Conclusão: **Documentação disponível: Parcial**
 
@@ -195,31 +224,36 @@ Isso impacta diretamente a mantenibilidade, pois novos desenvolvedores precisam 
 #### 3.6.1 Procedimento executado
 
 1. Considerar os artefatos identificados na M4.1:
-
-   - `README.md`
-   - `CONTRIBUTING.md`
+      - `README.md`
+      - `CONTRIBUTING.md`
 2. Para cada documento, aplicar o checklist definido na Fase 3, atribuindo notas de **1 a 5** para:
-
-   - **Clareza**
-   - **Completude**
-   - **Atualização**
-
+    - **Clareza**
+    - **Completude**
+    - **Atualização**
 3. Calcular a média das três notas para cada artefato.
 4. Classificar a qualidade geral de cada documento:
-
-   - 4–5: Boa
-   - 3: Regular
-   - 1–2: Ruim
+    - 4–5: Boa
+    - 3: Regular
+    - 1–2: Ruim
 
 #### 3.6.1 Resultados
 
 Cada documento identificado em M4.1 foi avaliado segundo os critérios: **clareza**, **completude** e **atualização**, com notas de 1 a 5.
+
+<div align="center">
+  <p><strong>Tabela 2 – Avaliação de clareza, completude e atualização da documentação.</strong></p>
+</div>
 
 | Documento | Clareza | Completude | Atualização | Média |
 |-----------|--------:|-----------:|------------:|------:|
 | README.md | 4 | 2 | 3 | **3,0** |
 | CONTRIBUTING.md | 4 | 3 | 3 | **3,3** |
 | Templates de Issue/PR | 4 | 4 | 4 | **4,0** |
+
+
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Fonte: Autores.
+</div>
 
 Média geral ponderada da documentação técnica: **3,1 (Regular)**
 
@@ -232,20 +266,34 @@ A ausência de descrição de arquitetura e módulos impacta a nota final, resul
 
 #### 3.6.3 Evidências
 
-<p align="center">
-  <em>Figura 3 – Documentação do Guardiões da Saúde.</em><br><br>
-  <img src="../../../assets/evidencias/manutenabilidade/m42_docs.jpeg" width="750"/>
-</p>
+<div align="center">
+  <p><strong>Figura 3 – Documentação do Guardiões da Saúde.</strong></p>
+</div>
+<div align="center">
+  <img src="../../../assets/evidencias/manutenabilidade/m42_docs.jpeg" width="750" alt="Documentação do Guardiões da Saúde"/>
+</div>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Fonte: Autores.
+</div>
 
 ---
 
 ## 5. Métricas Coletadas
+
+<div align="center">
+  <p><strong>Tabela 3 – Síntese das métricas de manutenibilidade coletadas.</strong></p>
+</div>
+
 | Métrica | Valor | Evidência | Interpretação | Julgamento |
 | --- | --- | --- | --- | --- |
 | **M1.1 – Complexidade Ciclomática** | Complexidade total: **1.419** | Print/relatório do SonarCloud | Complexidade elevada e concentrada em `src/`, dificultando manutenção e extensão do código. | **Insuficiente** |
 | **M3.1 – Cobertura de Testes Automatizados (%)** | **0%** | Relatório completo do Jest (coverage) | Não há testes cobrindo o código crítico da aplicação, aumentando risco de regressões. | **Insuficiente** |
 | **M4.1 – Disponibilidade da Documentação** | **Parcial** | Checklist dos artefatos identificados | Documentação colaborativa existe, mas documentação técnica é ausente. | **Regular** |
 | **M4.2 – Qualidade da Documentação** | Média geral: **3,1** | Planilha de notas (clareza/completude/atualização) | Documentação clara, mas incompleta e pouco técnica; insuficiente para onboarding e manutenção. | **Regular** |
+
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Fonte: Autores.
+</div>
 
 ### 5.1 Métricas não mensuráveis
 
@@ -261,20 +309,20 @@ Ambas foram devidamente justificadas nas suas seções e registradas como **não
 ## 6. Respostas às Questões GQM
 
 - **Q1. Qual o nível de complexidade estrutural do código-fonte do sistema?**  
-  - **Resposta:** **Alto**  
-  - **Justificativa:** a complexidade total de **1.419**, concentrada quase totalmente na pasta `src/`, indica elevado número de caminhos independentes e módulos extensos, tornando o código mais difícil de compreender e modificar.
+    - **Resposta:** **Alto**  
+    - **Justificativa:** a complexidade total de **1.419**, concentrada quase totalmente na pasta `src/`, indica elevado número de caminhos independentes e módulos extensos, tornando o código mais difícil de compreender e modificar.
 
 - **Q2. As responsabilidades dos módulos estão bem separadas?**  
-  - **Resposta:** **Não é possível afirmar**  
-  - **Justificativa:** as métricas de acoplamento (M2.1) e ciclos (M2.2) não puderam ser medidas no SonarCloud para JavaScript. Não foram identificados ciclos manualmente, mas a ausência de ferramentas torna a avaliação inconclusiva.
+    - **Resposta:** **Não é possível afirmar**  
+    - **Justificativa:** as métricas de acoplamento (M2.1) e ciclos (M2.2) não puderam ser medidas no SonarCloud para JavaScript. Não foram identificados ciclos manualmente, mas a ausência de ferramentas torna a avaliação inconclusiva.
 
 - **Q3. O código está suficientemente coberto por testes automatizados?**  
-  - **Resposta:** **Não**  
-  - **Justificativa:** a métrica M3.1 apontou **0%** de cobertura, indicando que funcionalidades críticas não possuem testes e que não há apoio automatizado para evitar regressões.
+    - **Resposta:** **Não**  
+    - **Justificativa:** a métrica M3.1 apontou **0%** de cobertura, indicando que funcionalidades críticas não possuem testes e que não há apoio automatizado para evitar regressões.
 
 - **Q4. A documentação técnica existente é suficiente para apoiar futuras manutenções?**  
-  - **Resposta:** **Parcialmente**  
-  - **Justificativa:** a documentação disponível cobre aspectos colaborativos (issues, PRs, código de conduta), porém **não existe documentação técnica**, reduzindo completude e sustentação ao processo de manutenção (M4.1 e M4.2).
+    - **Resposta:** **Parcialmente**  
+    - **Justificativa:** a documentação disponível cobre aspectos colaborativos (issues, PRs, código de conduta), porém **não existe documentação técnica**, reduzindo completude e sustentação ao processo de manutenção (M4.1 e M4.2).
 
 
 ---
@@ -293,13 +341,15 @@ Os principais fatores que levaram a essa classificação foram:
 
 ### Recomendações Prioritárias
 
-1. **Reduzir complexidade ciclomática**, dividindo módulos grandes em componentes menores e funções mais coesas.  
-2. **Introduzir testes automatizados**, começando pelas telas e serviços mais críticos, visando atingir ao menos 30–40% nas primeiras iterações.  
+1. **Reduzir complexidade ciclomática**, dividindo módulos grandes em componentes menores e funções mais coesas.
+
+2. **Introduzir testes automatizados**, começando pelas telas e serviços mais críticos, visando atingir ao menos 30–40% nas primeiras iterações.
+
 3. **Criar documentação técnica mínima**, incluindo:
-   - visão de arquitetura,
-   - fluxos principais,
-   - responsabilidades por pasta/módulo,
-   - requisitos de build/execução.  
+    - visão de arquitetura;
+    - fluxos principais;
+    - responsabilidades por pasta/módulo;
+    - requisitos de build/execução.
 
 Essas ações aumentariam significativamente a previsibilidade das futuras manutenções e diminuiriam riscos de regressão e falhas estruturais.
 

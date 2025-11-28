@@ -57,26 +57,45 @@ Etapas executadas:
 
 ### 📸 **Evidências em Foto**
 
-<p align="center">
-  <img src="../../../assets/images/sonarqube_dashboard.png">
-  <br>
-  <strong>Figura 1 – Dashboard geral do Guardiões da Saúde – App no SonarQube</strong>
-</p>
-<p align="center">
-  <img src="../../../assets/images/sonarqube_vulnerabilidades.png">
-  <br>
-  <strong>Figura 2 – Número de vulnerabilidades de segurança - App no SonarQube</strong>
-</p>
-<p align="center">
-  <img src="../../../assets/images/sonarqube_hotspots.png">
-  <br>
-  <strong>Figura 3 – Security Hotspots – App no SonarQube</strong>
-</p>
-<p align="center">
-  <img src="../../../assets/images/sonarqube_owasp.png">
-  <br>
-  <strong>Figura 4 – Vulnerabilidades OWASP Top 10 – App no SonarQube</strong>
-</p>
+<div align="center">
+  <p><strong>Figura 1 – Dashboard geral do Guardiões da Saúde – App no SonarQube.</strong></p>
+</div>
+<div align="center">
+  <img src="../../../assets/evidencias/seguranca/m11_seg_sonar_dashboard.png" width="750" alt="Dashboard geral do Guardiões da Saúde – App no SonarQube">
+</div>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Fonte: Autores.
+</div>
+
+<div align="center">
+  <p><strong>Figura 2 – Número de vulnerabilidades de segurança - App no SonarQube.</strong></p>
+</div>
+<div align="center">
+  <img src="../../../assets/evidencias/seguranca/m11_seg_vulnerabilities.png" width="750" alt="Vulnerabilidades de segurança no SonarQube">
+</div>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Fonte: Autores.
+</div>
+
+<div align="center">
+  <p><strong>Figura 3 – Security Hotspots – App no SonarQube.</strong></p>
+</div>
+<div align="center">
+  <img src="../../../assets/evidencias/seguranca/m13_seg_hotspots.png" width="750" alt="Security Hotspots no SonarQube">
+</div>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Fonte: Autores.
+</div>
+
+<div align="center">
+  <p><strong>Figura 4 – Vulnerabilidades OWASP Top 10 – App no SonarQube.</strong></p>
+</div>
+<div align="center">
+  <img src="../../../assets/evidencias/seguranca/m12_seg_owasp_top10.png" width="750" alt="Vulnerabilidades OWASP Top 10 no SonarQube">
+</div>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Fonte: Autores.
+</div>
 
 
 ---
@@ -85,12 +104,28 @@ Etapas executadas:
 
 Para assistir ao vídeo da execução real da análise no SonarQube, clique abaixo:
 
-👉 **[▶️ Assistir vídeo da análise](../../../assets/images/sonar-analise-segurança.mp4)**
+<div align="center">
+  <p><strong>Vídeo 1 – Execução da análise de segurança no SonarQube.</strong></p>
+</div>
+<div align="center">
+  <video width="750" controls>
+    <source src="../../../assets/evidencias/seguranca/m1x_seg_sonar_analysis.mp4" type="video/mp4" />
+    Seu navegador não suporta a reprodução de vídeo.
+  </video>
+</div>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Fonte: Autores.
+</div>
 
 
 ---
 ## **2. Dados coletados**
 ### Via SonarQube
+
+<div align="center">
+  <p><strong>Tabela 1 – Métricas de segurança coletadas via SonarQube.</strong></p>
+</div>
+
 | Métrica                                                    | Valor        |
 |------------------------------------------------------------|--------------|
 | N° de vulnerabilidades **Críticas** encontradas            | **0**        |
@@ -99,9 +134,18 @@ Para assistir ao vídeo da execução real da análise no SonarQube, clique abai
 | Percentual de Security Hotspots Revisados                  | **100%**     |
 
 ### Via Inspeção Manual
+
+<div align="center">
+  <p><strong>Tabela 2 – Métrica de segurança coletada via inspeção manual.</strong></p>
+</div>
+
 | Métrica                                | Valor   |
 |----------------------------------------|---------|
 | Implementa mecanismos de Log/Auditoria | **Não** |
+
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Fonte: Autores.
+</div>
 
 ---
 ## **3. Interpretação das métricas**

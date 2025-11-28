@@ -55,15 +55,15 @@ A avaliação foi conduzida utilizando:
 - URL de acesso: `http://localhost:9000/dashboard?id=guardioes-app&codeScope=overall`
 
 <div align="center">
-    <p><strong>Figura 0.0 – Principal</strong></p>
+    <p><strong>Figura 1 – Dashboard principal do projeto no SonarQube.</strong></p>
 </div>
 
 <div align="center">
-    <img src="../../../assets/images/Principal.jpeg" width="100%" alt="Principal">
+    <img src="../../../assets/evidencias/confiabilidade/m31_conf_dashboard_principal.jpeg" width="750" alt="Dashboard principal do projeto no SonarQube">
 </div>
 
 <div align="center" style="font-size: 12px; font-style: italic;">
-    Fonte: Captura de tela SONAR v25.11.0.114957.
+    Fonte: Autores.
 </div>
 
 ---
@@ -124,15 +124,15 @@ Cada métrica apresenta:
 - **Avaliação:** **Ruim**
 
 <div align="center">
-    <p><strong>Figura 1 – Reliability_D</strong></p>
+    <p><strong>Figura 2 – Reliability Rating D – visão de confiabilidade.</strong></p>
 </div>
 
 <div align="center">
-    <img src="../../../assets/images/Reliability_D.jpeg" width="50%" alt="Reliability_D">
+    <img src="../../../assets/evidencias/confiabilidade/m31_conf_reliability_d.jpeg" width="750" alt="Reliability D no SonarQube">
 </div>
 
 <div align="center" style="font-size: 12px; font-style: italic;">
-    Fonte: Captura de tela SONAR v25.11.0.114957.
+    Fonte: Autores.
 </div>
 
 
@@ -168,15 +168,15 @@ Cada métrica apresenta:
 - **Avaliação:** **Excelente**
 
 <div align="center">
-    <p><strong>Figura 2 – Maintainability_A</strong></p>
+    <p><strong>Figura 3 – Maintainability Rating A – visão de manutenibilidade.</strong></p>
 </div>
 
 <div align="center">
-    <img src="../../../assets/images/Maintainability_A.jpeg" width="50%" alt="Maintainability_A">
+    <img src="../../../assets/evidencias/confiabilidade/m32_conf_maintainability_a.jpeg" width="750" alt="Maintainability A no SonarQube">
 </div>
 
 <div align="center" style="font-size: 12px; font-style: italic;">
-    Fonte: Captura de tela SONAR v25.11.0.114957.
+    Fonte: Autores.
 </div>
 
 ---
@@ -209,15 +209,15 @@ Cada métrica apresenta:
 - **Avaliação:** **Péssimo**
 
 <div align="center">
-    <p><strong>Figura 3 – Duplications</strong></p>
+    <p><strong>Figura 4 – Duplicações de código do projeto.</strong></p>
 </div>
 
 <div align="center">
-    <img src="../../../assets/images/Duplications.jpeg" width="50%" alt="Duplications">
+    <img src="../../../assets/evidencias/confiabilidade/m33_conf_duplications.jpeg" width="750" alt="Duplicações de código no SonarQube">
 </div>
 
 <div align="center" style="font-size: 12px; font-style: italic;">
-    Fonte: Captura de tela SONAR v25.11.0.114957.
+    Fonte: Autores.
 </div>
 
 
@@ -355,7 +355,6 @@ considerado **baixo** no estado atual do código.
 ---
 
 ## 4.7 Histórico de Versões
-
 | Versão | Data       | Descrição | Autor |
 | ------ | ---------- | --------- | ----- |
 | `1.0`  | 25/11/2025 | Execução da Avaliação – Confiabilidade | [Uires Carlos de Oliveira](https://github.com/uires2023) |

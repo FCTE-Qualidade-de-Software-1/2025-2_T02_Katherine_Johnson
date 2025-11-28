@@ -328,30 +328,7 @@ Ambas foram devidamente justificadas nas suas seções e registradas como **não
 ---
 
 ## 2.6 Conclusão e Recomendações
-
-Com base nas métricas coletadas e nas respostas GQM, o nível geral de **Manutenibilidade** do Guardiões da Saúde – App foi avaliado como:  
-### **🔴 Crítico**
-
-Os principais fatores que levaram a essa classificação foram:
-
-- complexidade estrutural elevada e concentrada em poucos arquivos;
-- total ausência de testes automatizados (0% de cobertura);
-- documentação técnica insuficiente para apoiar entendimento e evolução;
-- impossibilidade de avaliar acoplamento e ciclos devido às limitações da ferramenta.
-
-### Recomendações Prioritárias
-
-1. **Reduzir complexidade ciclomática**, dividindo módulos grandes em componentes menores e funções mais coesas.
-
-2. **Introduzir testes automatizados**, começando pelas telas e serviços mais críticos, visando atingir ao menos 30–40% nas primeiras iterações.
-
-3. **Criar documentação técnica mínima**, incluindo:
-    - visão de arquitetura;
-    - fluxos principais;
-    - responsabilidades por pasta/módulo;
-    - requisitos de build/execução.
-
-Essas ações aumentariam significativamente a previsibilidade das futuras manutenções e diminuiriam riscos de regressão e falhas estruturais.
+As conclusões consolidadas sobre Manutenibilidade e as recomendações prioritárias estão apresentadas de forma integrada na [Conclusão Geral da Fase 4](conclusao_geral.md).
 
 ---
 

@@ -174,14 +174,7 @@ A falta completa de mecanismos de Log e Auditoria (identificada na inspeção ma
 
 ---
 ## 4.5 Conclusão da Fase 4
-Os resultados obtidos mostram:
-
-- **Alta maturidade de código** (Zero vulnerabilidades críticas ou altas detectadas).
-- **Integridade e Confidencialidade preservadas** contra ataques técnicos comuns (OWASP Top 10).
-- **Rastreabilidade inexistente** devido à falta de mecanismos de log.
-- **Monitoramento comprometido**, impossibilitando auditorias de segurança.
-
-> ➡ **Conclusão geral:** O nível de Segurança do aplicativo é **parcial**. Embora a estrutura do código demonstre excelente robustez contra invasões, a ausência de mecanismos de auditoria (Logs) cria um "ponto cego" crítico, exigindo a implementação urgente de registros de atividades para garantir conformidade e detecção de incidentes.
+As conclusões consolidadas sobre Segurança e as recomendações prioritárias estão apresentadas de forma integrada na [Conclusão Geral da Fase 4](conclusao_geral.md).
 
 ---
 # 4.6 Histórico de Versões

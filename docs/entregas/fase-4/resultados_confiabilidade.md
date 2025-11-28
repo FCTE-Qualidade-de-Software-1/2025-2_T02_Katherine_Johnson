@@ -1,44 +1,3 @@
-<!-- # Confiabilidade - Execução, Análise e Interpretação
-
-## 1. Introdução
-_Objetivo, escopo e relação com o plano da Fase 3. Liste aqui o que é mensurável/não mensurável._
-
-## 2. Ambiente e Recursos
-- SO, versões de ferramentas (ex.: SonarQube/Scanner), commit/branch analisado.
-- Referência da pasta de dados brutos e evidências no repositório.
-
-## 3. Procedimentos Executados (reprodutibilidade)
-1. Passo a passo seguido, alinhado ao plano da Fase 3.
-2. Anote qualquer desvio do plano.
-
-## 4. Evidências e Dados Brutos
-- Links para prints/relatórios/vídeos usados nas métricas (armazenar em `docs/assets/...`).
-- Se houver planilha/CSV/JSON, referenciar o arquivo.
-
-## 5. Métricas Coletadas
-| Métrica | Valor | Evidência | Interpretação | Julgamento |
-| --- | --- | --- | --- | --- |
-| (ex.: Bugs, Reliability Rating, Code Smells, Duplicação, Cobertura) | | | | |
-
-### 5.1 Métricas não mensuráveis (se houver)
-- Descrever e justificar.
-
-## 6. Respostas às Questões GQM
-- Q1 …
-- Q2 …
-- Q3 …
-
-## 7. Conclusão e Recomendações
-- Síntese do nível de Confiabilidade.
-- 3–5 ações priorizadas.
-
-## 8. Histórico de Versões
-| Versão | Data       | Descrição                      | Autor(es) |
-| ------ | ---------- | ------------------------------ | --------- |
-| `1.0`  | 27/11/2025 | Criação do documento | [Arthur Carneiro](https://github.com/trindadea)   | -->
-
-
-
 # Confiabilidade – Execução, Análise e Interpretação
 
 ## 1. Introdução
@@ -94,14 +53,58 @@ produção, telemetria e logs de execução.
 ## 4. Evidências e Dados Brutos
 
 - Prints dos dashboards:
-  - Geral / Overview
-  - Reliability
-  - Maintainability
-  - Security
-  - Security Hotspots
-  - Coverage
-  - Duplications
-  - Size / Languages
+    - Geral / Overview
+    <div align="center">
+      <p><strong>Figura 1 – Visão geral.</strong></p>
+    </div>
+    <div align="center">
+      <img src="../../../assets/evidencias/confiabilidade/m31_conf_dashboard_principal.jpeg" width="750" alt="Visão geral"/>
+    </div>
+    <div align="center" style="font-size: 12px; font-style: italic;">
+      Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
+    </div>
+  
+    - Reliability
+    <div align="center">
+      <p><strong>Figura 2 – Confiabilidade.</strong></p>
+    </div>
+    <div align="center">
+      <img src="../../../assets/evidencias/confiabilidade/m31_conf_reliability_d.jpeg" width="500" alt="Confiabilidade"/>
+    </div>
+    <div align="center" style="font-size: 12px; font-style: italic;">
+      Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
+    </div>
+  
+    - Maintainability
+    <div align="center">
+      <p><strong>Figura 3 – Manutenibilidade.</strong></p>
+    </div>
+    <div align="center">
+      <img src="../../../assets/evidencias/confiabilidade/m32_conf_maintainability_a.jpeg" width="500" alt="Manutenibilidade"/>
+    </div>
+    <div align="center" style="font-size: 12px; font-style: italic;">
+      Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
+    </div>
+
+    - Security
+
+    - Security Hotspots
+
+    - Coverage
+
+    - Duplications
+    <div align="center">
+      <p><strong>Figura 4 – Duplicações de Código.</strong></p>
+    </div>
+    <div align="center">
+      <img src="../../../assets/evidencias/confiabilidade/m33_conf_duplications.jpeg" width="500" alt="Duplicações de Código"/>
+    </div>
+    <div align="center" style="font-size: 12px; font-style: italic;">
+      Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
+    </div>
+
+    - Size / Languages
+
 - Local: `/docs/assets/images/fase-4/`
 - Planilhas/relatórios adicionais: *(não aplicável, se não houver)*
 
@@ -125,16 +128,13 @@ produção, telemetria e logs de execução.
 
 ### 5.1 Métricas não mensuráveis
 
-- **M1.1 – Availability Rate (%)**  
-  Requer endpoint validado em produção e monitoramento contínuo (ex.: UptimeRobot).
+Conforme definido no planejamento da **Fase 3**, algumas métricas dependem de ambiente em produção ou de informações técnicas que não estão disponíveis para a equipe de avaliação. Por esse motivo, não foi possível mensurá-las nesta fase.
 
-- **M2.1 – Erros sem queda (runtime)**  
-  Depende de telemetria e logs em produção (ex.: Sentry).
+- **M1.1 – _Availability Rate_ (%)**  
+  Para medir a disponibilidade seria necessário monitorar o endpoint principal do sistema. No entanto, a documentação consultada não apresentou o endpoint oficial da aplicação, o que impossibilitou a configuração de ferramentas de monitoramento, como o UptimeRobot. Uma alternativa seria utilizar ferramentas externas de inspeção de tráfego, como o Fiddler, para tentar identificar o endpoint real. Ainda assim, mesmo que esse endpoint fosse descoberto, seria indispensável a confirmação da equipe de desenvolvimento para validar se ele corresponde de fato ao ambiente de produção. Sem essa validação, os dados obtidos não poderiam ser considerados confiáveis.
 
-- **M2.2 – Crashes**  
-  Exige ferramentas de monitoramento de falhas (ex.: Crashlytics/Sentry).
-
-*Justificativa comum:* inexistência de ambiente de produção e instrumentação.
+- **M2.1/M2.2 – Erros sem queda (_runtime_) e Erros com queda (_Crashes_)**  
+  Para avaliar a tolerância a falhas seria necessário acesso direto ao código em execução ou aos logs de produção, o que não estava disponível para a equipe de avaliação. Uma alternativa seria solicitar à equipe de desenvolvimento que configurasse ferramentas de monitoramento, como o Sentry, para registrar erros e falhas. No entanto, devido ao tempo reduzido para a execução da avaliação, não foi viável abrir essa solicitação e aguardar a implementação. Por esse motivo, a métrica foi declarada como não mensurável nesta fase.
 
 ---
 
@@ -142,7 +142,7 @@ produção, telemetria e logs de execução.
 
 ### Q1 — O sistema está disponível para uso na maior parte do tempo?
 - **Resposta:** Não mensurável.  
-- **Justificativa:** ausência de endpoint oficial e dados de produção.
+- **Justificativa:** A ausência de informações sobre o endpoint oficial impossibilitou a configuração de monitoramento de disponibilidade. Embora seja tecnicamente possível descobrir o endpoint por meio de ferramentas externas usando o Fiddler, por exemplo, seria necessária a validação da equipe de desenvolvimento para garantir que o monitoramento reflita o ambiente real de produção. Sem essa confirmação, os dados não podem ser considerados confiáveis.
 
 ### Q2 — O sistema continua operando diante de falhas parciais?
 - **Resposta:** Não.  
@@ -176,3 +176,4 @@ duplicação elevada e ausência de testes automatizados.
 | `1.0`  | 25/11/2025 | Execução da Avaliação – Confiabilidade | [Uires Carlos de Oliveira](https://github.com/uires2023) |
 | `1.1`  | 26/11/2025 | Adiciona a conclusão sobre as métricas não mensuráveis | [Matheus Henrick](https://github.com/MatheusHenrickSantos) |
 | `1.2` | 27/11/2025 | Execução e análise (SonarQube v25.11.0.114957) | Uires Carlos de Oliveira |
+| `1.3`  | 28/11/2025 | Adiciona novamente a conclusão sobre as métricas não mensuráveis e adiciona imagens de evidências | [Matheus Henrick](https://github.com/MatheusHenrickSantos) |

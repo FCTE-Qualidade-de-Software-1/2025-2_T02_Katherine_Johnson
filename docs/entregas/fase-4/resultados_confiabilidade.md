@@ -332,25 +332,7 @@ Para avaliar a tolerância a falhas seria necessário acesso direto ao código e
 ---
 
 ## 3.6 Conclusão da Fase 4
-
-A execução da análise estática evidenciou que o nível de **Confiabilidade** é
-considerado **baixo** no estado atual do código.
-
-### Síntese:
-
-- elevado número de bugs  
-- forte duplicação  
-- ausência de testes automatizados  
-- pontos críticos sem revisão  
-- confiabilidade classificada como D  
-
-### Recomendações:
-
-- criar suíte mínima de testes  
-- refatorar trechos duplicados  
-- corrigir _bugs_ críticos  
-- revisar _security hotspots_  
-- reduzir complexidade estrutural  
+As conclusões consolidadas sobre Confiabilidade e as recomendações prioritárias estão apresentadas de forma integrada na [Conclusão Geral da Fase 4](conclusao_geral.md).
 
 ---
 

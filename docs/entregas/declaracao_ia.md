@@ -9,7 +9,7 @@ Durante a elaboração deste projeto, a equipe utilizou recursos de inteligênci
 - Padronização de estilo dos arquivos *markdown*.
 
 ## Limitações e validação humana
-Nenhum conteúdo foi gerado sem **validação e revisão humana** e todas as secisões de projeto, métricas, análises e julgamentos foi de responsabilidade da equipe.
+Nenhum conteúdo foi gerado sem **validação e revisão humana**, e todas as decisões de projeto, métricas, análises e julgamentos foram responsabilidade da equipe.
 
 ## Histórico de Versões
 | Versão | Data       | Descrição                         | Autor(es) |

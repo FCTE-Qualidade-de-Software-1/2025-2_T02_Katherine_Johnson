@@ -38,7 +38,7 @@ _Objetivo, escopo e relação com o plano da Fase 3. Liste aqui o que é mensur�
 | ------ | ---------- | ------------------------------ | --------- |
 | `1.0`  | 27/11/2025 | Criação do documento | [Arthur Carneiro](https://github.com/trindadea)   | -->
 
-# FASE 4 – Segurança - Executar o Planejamento (Execução + Análise + Interpretação)
+# Segurança - Execução da Avaliação
 Nesta fase são exibidas as **evidências**, os **dados coletados** e a **interpretação dos resultados** referentes à análise da Segurança.
 
 ---

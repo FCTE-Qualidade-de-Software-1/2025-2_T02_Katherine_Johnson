@@ -1,4 +1,4 @@
-# 1. Visão Geral da Execução (Fase 4)
+# 1. Execução da Avaliação
 
 ## 1.1 Objetivo
 Esta fase tem como objetivo executar o planejamento definido na Fase 3, coletando **dados brutos**, **evidências** e **interpretações** para as três características de qualidade selecionadas (Manutenibilidade, Confiabilidade e Segurança). Os procedimentos seguem o GQM da Fase 2 e mantêm coerência com o propósito e escopo estabelecidos na Fase 1. A ênfase é em **reprodutibilidade**, **rastreabilidade** e **julgamento claro** com base nos critérios definidos.

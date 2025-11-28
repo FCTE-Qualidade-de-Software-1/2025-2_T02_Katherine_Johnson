@@ -82,14 +82,7 @@ Para garantir a **reproduzibilidade** e fornecer evidências da execução, cada
 -   **Registro de cálculos**: Todos os cálculos realizados para obter métricas derivadas devem ser documentados, incluindo fórmulas utilizadas e valores intermediários;
 -   **Planilhas de cálculo**: Manter planilhas eletrônicas com as fórmulas e dados brutos utilizados, permitindo verificação e reprodução dos cálculos;
 
-#### 1.5.2.3 Status do Teste
-
-- **Registro de status**: Para cada métrica coletada, documentar o status da execução:
-  - <span style="color:green;">**Sucesso**</span>: Métrica coletada com sucesso, dados válidos;
-  - <span style="color:orange;">**Parcial**</span>: Coleta parcial devido a limitações identificadas;
-  - <span style="color:red;">**Falha**</span>: Não foi possível coletar a métrica (documentar motivo);
-
-#### 1.5.2.4 Conclusão Final
+#### 1.5.2.3 Conclusão Final
 
 -   **Síntese dos resultados**: Para cada característica, elaborar uma conclusão que sintetize os resultados obtidos;
 -   **Interpretação**: Relacionar os resultados com os critérios de julgamento estabelecidos na Fase 2;

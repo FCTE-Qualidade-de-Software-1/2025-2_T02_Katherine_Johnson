@@ -1,4 +1,4 @@
-# Manutenibilidade - Execução, Análise e Interpretação
+# Manutenibilidade - Execução da Avaliação
 
 ## 1. Introdução
 Esta seção apresenta a execução do plano definido na Fase 3 para a característica **Manutenibilidade** do Guardiões da Saúde – App. As métricas previstas na Fase 2 (M1.1, M2.1, M2.2, M3.1, M4.1, M4.2) foram operacionalizadas conforme o planejamento, com foco em:
@@ -66,14 +66,15 @@ A distribuição observada sugere que a estrutura modular do projeto não é equ
 #### 3.1.4 Evidências
 
 <p align="center">
-  <em>Figura 1 – Visão de Complexidade Ciclomática no SonarCloud (árvore de arquivos).</em><br>
-  <strong>Arquivo:</strong> <code>docs/assets/images/manutenibilidade/m11_sonar_complexity_tree.png</code>
+  <em>Figura 1 – Visão de Complexidade Ciclomática no SonarCloud (árvore de arquivos).</em><br><br>
+  <img src="../../../assets/evidencias/manutenabilidade/m11_sonar_complexity_tree.jpeg" width="750"/>
 </p>
 
 <p align="center">
-  <em>Vídeo 1 – Navegação no SonarCloud para coleta da complexidade.</em><br>
-  <strong>Arquivo:</strong> <code>docs/evidencias/manutenibilidade/videos/m11_sonar_complexity.mp4</code>
+  <em>Vídeo 1 – Navegação no SonarCloud para coleta da complexidade.</em><br><br>
+  <video src="../../../assets/evidencias/manutenabilidade/m11_sonar_complexity.mp4" width="750" controls></video>
 </p>
+
 
 ---
 
@@ -105,7 +106,7 @@ Ainda assim, a métrica foi classificada como **“não mensurável”** devido 
 
 ---
 
-### 3.4 M3.1 – Cobertura de Testes Automatizados (%)
+### 3.4 M3.1 – Cobertura de Testes Automatizados
 
 **Questão relacionada:** Q3 – O código está suficientemente coberto por testes automatizados?
 
@@ -137,14 +138,15 @@ Mesmo com a execução bem-sucedida do Jest, a estrutura do projeto não contém
 #### 3.4.3 Evidências
 
 <p align="center">
-  <em>Figura 4 – Relatório completo de cobertura do Jest exibindo 0%.</em><br>
-  <strong>Arquivo:</strong> <code>docs/assets/images/manutenibilidade/m31_coverage_full.png</code>
+  <em>Figura 2 – Relatório completo de cobertura do Jest exibindo 0%.</em><br><br>
+  <img src="../../../assets/evidencias/manutenabilidade/m31_coverage_full.png" width="750"/>
 </p>
 
 <p align="center">
-  <em>Vídeo 4 – Execução do comando <code>npm test -- --coverage</code> mostrando a geração do relatório.</em><br>
-  <strong>Arquivo:</strong> <code>docs/evidencias/manutenibilidade/videos/m31_jest_run.mp4</code>
+  <em>Vídeo 2 – Execução do comando <code>npm test -- --coverage</code> mostrando a geração do relatório.</em><br><br>
+  <video src="../../../assets/evidencias/manutenabilidade/m31_jest_run.mp4" width="750" controls></video>
 </p>
+
 
 ---
 
@@ -183,18 +185,6 @@ O repositório possui uma boa base de arquivos voltados à colaboração (issues
 - contratos de API.
 
 Isso impacta diretamente a mantenibilidade, pois novos desenvolvedores precisam explorar manualmente o código para compreender suas responsabilidades e dependências.
-
-#### 3.5.3 Evidências
-
-<p align="center">
-  <em>Figura 5 – Visualização do README principal no GitHub.</em><br>
-  <strong>Arquivo:</strong> <code>docs/assets/images/manutenibilidade/m41_readme.png</code>
-</p>
-
-<p align="center">
-  <em>Figura 6 – Guia de contribuição encontrado no repositório.</em><br>
-  <strong>Arquivo:</strong> <code>docs/assets/images/manutenibilidade/m41_contributing.png</code>
-</p>
 
 ---
 
@@ -240,13 +230,20 @@ Não há documentação técnica profunda, o que reduz significativamente a comp
 
 A ausência de descrição de arquitetura e módulos impacta a nota final, resultando em uma avaliação **regular**, com necessidade de expansão futura.
 
+#### 3.6.3 Evidências
+
+<p align="center">
+  <em>Figura 3 – Documentação do Guardiões da Saúde.</em><br><br>
+  <img src="../../../assets/evidencias/manutenabilidade/m42_docs.jpeg" width="750"/>
+</p>
+
 ---
 
 ## 5. Métricas Coletadas
 | Métrica | Valor | Evidência | Interpretação | Julgamento |
 | --- | --- | --- | --- | --- |
-| **M1.1 – Complexidade Ciclomática** | Complexidade total: **1.419** (pasta `src/`: **1.401**) | Print/relatório do SonarCloud | Complexidade elevada e concentrada em `src/`, dificultando manutenção e extensão do código. | **Insuficiente** |
-| **M3.1 – Cobertura de Testes Automatizados (%)** | **0%** (nenhum arquivo de `src/` coberto) | Relatório completo do Jest (coverage) | Não há testes cobrindo o código crítico da aplicação, aumentando risco de regressões. | **Insuficiente** |
+| **M1.1 – Complexidade Ciclomática** | Complexidade total: **1.419** | Print/relatório do SonarCloud | Complexidade elevada e concentrada em `src/`, dificultando manutenção e extensão do código. | **Insuficiente** |
+| **M3.1 – Cobertura de Testes Automatizados (%)** | **0%** | Relatório completo do Jest (coverage) | Não há testes cobrindo o código crítico da aplicação, aumentando risco de regressões. | **Insuficiente** |
 | **M4.1 – Disponibilidade da Documentação** | **Parcial** | Checklist dos artefatos identificados | Documentação colaborativa existe, mas documentação técnica é ausente. | **Regular** |
 | **M4.2 – Qualidade da Documentação** | Média geral: **3,1** | Planilha de notas (clareza/completude/atualização) | Documentação clara, mas incompleta e pouco técnica; insuficiente para onboarding e manutenção. | **Regular** |
 
@@ -312,4 +309,6 @@ Essas ações aumentariam significativamente a previsibilidade das futuras manut
 | Versão | Data       | Descrição                      | Autor(es) |
 | ------ | ---------- | ------------------------------ | --------- |
 | `1.0`  | 26/11/2025 | Criação do documento           | [Arthur Carneiro](https://github.com/trindadea) |
-| `1.1`  | 27/11/2025 | Preenchimento da Fase 4 | [Arthur Carneiro](https://github.com/trindadea) |
+| `1.1`  | 27/11/2025 | Preenchimento da Fase 4        | [Arthur Carneiro](https://github.com/trindadea) |
+| `1.2`  | 27/11/2025 | Adição das evidências | [Gabriela Tiago](https://github.com/GabrielaTiago) |
+| `1.3`  | 27/11/2025 | Revisão e Ajustes | [Gabriela Tiago](https://github.com/GabrielaTiago) |

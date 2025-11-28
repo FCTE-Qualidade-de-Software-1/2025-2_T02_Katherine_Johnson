@@ -1,4 +1,4 @@
-# 5. Tabela de Contribuição
+# 6. Tabela de Contribuição
 
 Esta seção apresenta a tabela de contribuição dos integrantes do grupo na Fase 4 desse projeto.
 
@@ -16,7 +16,7 @@ Esta seção apresenta a tabela de contribuição dos integrantes do grupo na Fa
 
 ---
 
-## 5.1 Histórico de Versões
+## 6.1 Histórico de Versões
 
 | Versão | Data       | Descrição            | Autor(es) |
 | ------ | ---------- | -------------------- | --------- |

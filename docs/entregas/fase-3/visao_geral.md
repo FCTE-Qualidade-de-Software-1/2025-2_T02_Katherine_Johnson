@@ -35,9 +35,9 @@ Para tornar o plano de avaliação mais claro e navegável, a Fase 3 foi organiz
 
 | Característica       | Objetivo                                                                 | Link                             |
 | -------------------- | ------------------------------------------------------------------------ | -------------------------------- |
-| **Manutenibilidade** | Operacionalizar a coleta de [métricas](../fase-2/manutenabilidade.md#25-métricas) de manutenibilidade do código     | [Ver seção](manutenabilidade.md) |
-| **Confiabilidade**   | Operacionalizar a coleta de [métricas](../fase-2/confiabilidade.md#35-métricas) de confiabilidade do sistema       | [Ver seção](confiabilidade.md)  |
-| **Segurança**        | Operacionalizar a coleta de [métricas](../fase-2/seguranca.md#45-métricas) de segurança e vulnerabilidades    | [Ver seção](seguranca.md)        |
+| **Manutenibilidade** | Operacionalizar a coleta de [métricas](../fase-2/manutenabilidade.md#25-metricas) de manutenibilidade do código     | [Ver seção](manutenabilidade.md) |
+| **Confiabilidade**   | Operacionalizar a coleta de [métricas](../fase-2/confiabilidade.md#35-metricas) de confiabilidade do sistema       | [Ver seção](confiabilidade.md)  |
+| **Segurança**        | Operacionalizar a coleta de [métricas](../fase-2/seguranca.md#45-metricas) de segurança e vulnerabilidades    | [Ver seção](seguranca.md)        |
 
 ---
 

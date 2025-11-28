@@ -14,4 +14,4 @@ Nenhum conteúdo foi gerado sem **validação e revisão humana**, e todas as de
 ## Histórico de Versões
 | Versão | Data       | Descrição                         | Autor(es) |
 | ------ | ---------- | --------------------------------- | --------- |
-| `1.0`  | 27/11/2025 | Criação da declaração de uso de IA | |
+| `1.0`  | 27/11/2025 | Criação da declaração de uso de IA | [Arthur Carneiro](https://github.com/trindadea) |

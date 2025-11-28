@@ -39,9 +39,9 @@ _Objetivo, escopo e relação com o plano da Fase 3. Liste aqui o que é mensur�
 
 
 
-# 4. Confiabilidade – Execução da Avaliação
+# 3. Confiabilidade – Execução da Avaliação
 
-## 4.1 Introdução
+## 3.1 Introdução
 
 A Fase 4 tem como objetivo executar o planejamento definido na Fase 3,
 realizando a coleta real dos dados e a interpretação dos resultados da
@@ -74,7 +74,7 @@ Conforme estabelecido no planejamento:
 
 ---
 
-## 4.2 Execução da Análise
+## 3.2 Execução da Análise
 
 A execução foi realizada em ambiente Ubuntu.
 
@@ -93,7 +93,7 @@ As evidências da execução (prints) estão armazenadas no diretório:
 
 ---
 
-## 4.3 Métricas Coletadas (SonarQube Community Build)
+## 3.3 Métricas Coletadas (SonarQube Community Build)
 
 Nesta seção são exibidas as métricas efetivamente coletadas pelo SonarQube.
 
@@ -106,7 +106,7 @@ Cada métrica apresenta:
 
 ---
 
-### 4.3.1 Reliability Rating — D
+### 3.3.1 Reliability Rating — D
 
 - **Valor obtido**
   - Reliability Rating: **D**
@@ -138,7 +138,7 @@ Cada métrica apresenta:
 
 ---
 
-### 4.3.2 Bugs — 206
+### 3.3.2 Bugs — 206
 
 - **Valor obtido:** **206 _bugs_**
 
@@ -153,7 +153,7 @@ Cada métrica apresenta:
 
 ---
 
-### 4.3.3 Maintainability Rating — A
+### 3.3.3 Maintainability Rating — A
 
 - **Valor obtido:** **A**
 
@@ -181,7 +181,7 @@ Cada métrica apresenta:
 
 ---
 
-### 4.3.4 Code Smells — 355
+### 3.3.4 Code Smells — 355
 
 - **Valor obtido:** **355**
 
@@ -195,7 +195,7 @@ Cada métrica apresenta:
 
 ---
 
-### 4.3.5 Duplications — 39.1%
+### 3.3.5 Duplications — 39.1%
 
 - **Valor obtido:** **39.1%**
 
@@ -223,7 +223,7 @@ Cada métrica apresenta:
 
 ---
 
-### 4.3.6 Coverage — 0%
+### 3.3.6 Coverage — 0%
 
 - **Valor obtido:** **0%**
 
@@ -237,7 +237,7 @@ Cada métrica apresenta:
 
 ---
 
-### 4.3.7 Security Rating — A
+### 3.3.7 Security Rating — A
 
 - **Valor obtido:** **A**
 
@@ -251,7 +251,7 @@ Cada métrica apresenta:
 
 ---
 
-### 4.3.8 Security Hotspots Reviewed — E
+### 3.3.8 Security Hotspots Reviewed — E
 
 - **Valor obtido**
   - Hotspots revisados: **0%**
@@ -267,7 +267,7 @@ Cada métrica apresenta:
 
 ---
 
-### 4.3.9 Tamanho do Projeto — ~21.000 linhas
+### 3.3.9 Tamanho do Projeto — ~21.000 linhas
 
 - **Valor obtido:** ~21k LOC
 
@@ -280,7 +280,7 @@ Cada métrica apresenta:
 
 ---
 
-## 4.4 Métricas Não Mensuráveis no Contexto Deste Estudo
+## 3.4 Métricas Não Mensuráveis no Contexto Deste Estudo
 
 Conforme definido no planejamento da Fase 3, algumas métricas dependem de ambiente em produção ou de informações técnicas que não estão disponíveis para a equipe de avaliação. Por esse motivo, não foi possível mensurá-las nesta fase.
 
@@ -298,7 +298,7 @@ Para avaliar a tolerância a falhas seria necessário acesso direto ao código e
 
 ---
 
-## 4.5 Respostas às Questões GQM
+## 3.5 Respostas às Questões GQM
 
 ### Q1. O sistema está disponível para uso na maior parte do tempo?
 
@@ -331,7 +331,7 @@ Para avaliar a tolerância a falhas seria necessário acesso direto ao código e
 
 ---
 
-## 4.6 Conclusão da Fase 4
+## 3.6 Conclusão da Fase 4
 
 A execução da análise estática evidenciou que o nível de **Confiabilidade** é
 considerado **baixo** no estado atual do código.
@@ -354,7 +354,7 @@ considerado **baixo** no estado atual do código.
 
 ---
 
-## 4.7 Histórico de Versões
+## 3.7 Histórico de Versões
 | Versão | Data       | Descrição | Autor |
 | ------ | ---------- | --------- | ----- |
 | `1.0`  | 25/11/2025 | Execução da Avaliação – Confiabilidade | [Uires Carlos de Oliveira](https://github.com/uires2023) |

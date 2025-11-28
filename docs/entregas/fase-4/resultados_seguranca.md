@@ -38,11 +38,11 @@ _Objetivo, escopo e relação com o plano da Fase 3. Liste aqui o que é mensur�
 | ------ | ---------- | ------------------------------ | --------- |
 | `1.0`  | 27/11/2025 | Criação do documento | [Arthur Carneiro](https://github.com/trindadea)   | -->
 
-# Segurança - Execução da Avaliação
+# 4. Segurança – Execução da Avaliação
 Nesta fase são exibidas as **evidências**, os **dados coletados** e a **interpretação dos resultados** referentes à análise da Segurança.
 
 ---
-## **1. Gravações das coletas e execução dos testes**
+## 4.1 Gravações da coleta e execução dos testes
 A análise foi realizada online, utilizando o [SonarQube Cloud](https://sonarcloud.io/)
 
 Etapas executadas:
@@ -55,7 +55,7 @@ Etapas executadas:
 
 [^Porque?]: Necessário, pois o SonarQube Cloud não permite analisar repositórios que você não administra.
 
-### 📸 **Evidências em Foto**
+### Evidências em Foto
 
 <div align="center">
   <p><strong>Figura 1 – Dashboard geral do Guardiões da Saúde – App no SonarQube.</strong></p>
@@ -100,7 +100,7 @@ Etapas executadas:
 
 ---
 
-### 🎥 **Evidências em Vídeo**
+### Evidências em Vídeo
 
 Para assistir ao vídeo da execução real da análise no SonarQube, clique abaixo:
 
@@ -119,8 +119,8 @@ Para assistir ao vídeo da execução real da análise no SonarQube, clique abai
 
 
 ---
-## **2. Dados coletados**
-### Via SonarQube
+## 4.2 Dados coletados
+### 4.2.1 Via SonarQube
 
 <div align="center">
   <p><strong>Tabela 1 – Métricas de segurança coletadas via SonarQube.</strong></p>
@@ -133,7 +133,7 @@ Para assistir ao vídeo da execução real da análise no SonarQube, clique abai
 | Tipos de Vulnerabilidades OWASP Top 10 (`A01,A02,A03,A07`) | `0, 0, 0, 0` |
 | Percentual de Security Hotspots Revisados                  | **100%**     |
 
-### Via Inspeção Manual
+### 4.2.2 Via Inspeção Manual
 
 <div align="center">
   <p><strong>Tabela 2 – Métrica de segurança coletada via inspeção manual.</strong></p>
@@ -148,7 +148,7 @@ Para assistir ao vídeo da execução real da análise no SonarQube, clique abai
 </div>
 
 ---
-## **3. Interpretação das métricas**
+## 4.3 Interpretação das métricas
 ### ✔ Integridade – Alta
 A ausência de vulnerabilidades de Injeção (`A03`) e de Quebra de Controle de Acesso (`A01`) indica que o código é robusto contra manipulações indevidas ou alterações não autorizadas de dados via exploração técnica.
 
@@ -159,7 +159,7 @@ Com zero falhas criptográficas (`A02`) e zero problemas de identificação/aute
 A falta completa de mecanismos de Log e Auditoria (identificada na inspeção manual) torna impossível o rastreio de ações de usuários, impedindo a imputabilidade (saber "quem fez o quê") e a investigação de incidentes.
 
 ---
-## **4. Respostas das Questões GQM**
+## 4.4 Respostas das Questões GQM
 - **Q1.** O sistema protege adequadamente os dados sensíveis dos usuários?
 **Sim** - O sistema não apresenta vulnerabilidades conhecidas relacionadas a Falhas Criptográficas.
 
@@ -173,7 +173,7 @@ A falta completa de mecanismos de Log e Auditoria (identificada na inspeção ma
 **Sim** - O sistema não apresenta vulnerabilidades conhecidas relacionadas a Falhas de Identificação e Autenticação.
 
 ---
-## **5. Conclusão da Fase 4**
+## 4.5 Conclusão da Fase 4
 Os resultados obtidos mostram:
 
 - **Alta maturidade de código** (Zero vulnerabilidades críticas ou altas detectadas).
@@ -184,7 +184,7 @@ Os resultados obtidos mostram:
 > ➡ **Conclusão geral:** O nível de Segurança do aplicativo é **parcial**. Embora a estrutura do código demonstre excelente robustez contra invasões, a ausência de mecanismos de auditoria (Logs) cria um "ponto cego" crítico, exigindo a implementação urgente de registros de atividades para garantir conformidade e detecção de incidentes.
 
 ---
-## Histórico de Versões
+# 4.6 Histórico de Versões
 | Versão | Data       | Descrição                                           | Autor(es)                                      |
 |--------|------------|-----------------------------------------------------|------------------------------------------------|
 | `1.0`  | 24/11/2025 | Criação do Documento                                | [Caio Pacheco](https://github.com/CaioPacheco) |

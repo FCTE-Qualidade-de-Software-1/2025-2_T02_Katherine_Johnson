@@ -1,6 +1,6 @@
-# Manutenibilidade - Execução da Avaliação
+# 2. Manutenibilidade – Execução da Avaliação
 
-## 1. Introdução
+## 2.1 Introdução
 Esta seção apresenta a execução do plano definido na Fase 3 para a característica **Manutenibilidade** do Guardiões da Saúde – App. As métricas previstas na Fase 2 (M1.1, M2.1, M2.2, M3.1, M4.1, M4.2) foram operacionalizadas conforme o planejamento, com foco em:
 
 - avaliar a **complexidade estrutural** do código;
@@ -12,15 +12,15 @@ Sempre que possível, as métricas foram coletadas de forma automatizada com apo
 
 ---
 
-## 2. Ambiente e Recursos
+## 2.2 Ambiente e Recursos
 
-### 2.1 Código-fonte analisado
+### 2.2.1 Código-fonte analisado
 
 - **Projeto:** Guardiões da Saúde – App.
-- **Repositório de origem:** fork a partir do [repositório oficial da ProEpi](https://github.com/ProEpiDesenvolvimento').
+- **Repositório de origem:** fork a partir do [repositório oficial da ProEpi](https://github.com/ProEpiDesenvolvimento).
 - **Branch analisada:** `master`.
 
-### 2.2 Ambiente de execução local
+### 2.2.2 Ambiente de execução local
 
 - **Sistema Operacional:** Windows 11 25H2.
 - **Terminal utilizado:** PowerShell.
@@ -29,14 +29,14 @@ Sempre que possível, as métricas foram coletadas de forma automatizada com apo
 
 ---
 
-## 3. Procedimentos Executados (reprodutibilidade)
+## 2.3 Procedimentos Executados (reprodutibilidade)
 A seguir são descritos, para cada métrica, o procedimento efetivamente executado, observações relevantes e as principais evidências geradas.
 
-### 3.1 M1.1 – Complexidade Ciclomática
+### 2.3.1 M1.1 – Complexidade Ciclomática
 
 **Questão relacionada:** Q1 – Qual o nível de complexidade estrutural do código-fonte do sistema?
 
-#### 3.1.1 Procedimento executado
+#### 2.3.1.1 Procedimento executado
 
 1. Acessar o projeto `guardioes-app` no SonarCloud.
 2. Selecionar a branch `master`.
@@ -47,7 +47,7 @@ A seguir são descritos, para cada métrica, o procedimento efetivamente executa
      - pasta `src/` (código principal do app);
 5. Registrar os valores coletados na planilha de evidências.
 
-#### 3.1.2 Resultados
+#### 2.3.1.2 Resultados
 
 A análise de complexidade ciclomática realizada no SonarCloud apresentou os seguintes valores:
 
@@ -57,13 +57,13 @@ A análise de complexidade ciclomática realizada no SonarCloud apresentou os se
 
 Esses valores indicam que praticamente toda a complexidade estrutural relevante do aplicativo está localizada dentro das pastas internas do código-fonte principal.
 
-#### 3.1.3 Observações
+#### 2.3.1.3 Observações
 
 O SonarCloud não disponibiliza métricas detalhadas de complexidade para projetos JavaScript em nível de método ou função individual, tais como complexidade média por método, complexidade máxima ou listagem de funções com complexidade acima de limiares específicos (10, 20, 30). Assim, a avaliação da complexidade ciclomática foi conduzida no nível de pastas e arquivos, com foco principal na pasta `src/`, onde se concentra a maior parte da lógica do aplicativo.
 
 A distribuição observada sugere que a estrutura modular do projeto não é equilibrada em termos de complexidade, alguns diretórios acumulam a maior parte dos caminhos independentes do sistema, o que pode indicar a presença de componentes muito grandes, telas com múltiplas responsabilidades ou hooks utilitários extensos.
 
-#### 3.1.4 Evidências
+#### 2.3.1.4 Evidências
 
 <div align="center">
   <p><strong>Figura 1 – Visão de complexidade ciclomática no SonarCloud (árvore de arquivos).</strong></p>
@@ -88,11 +88,11 @@ A distribuição observada sugere que a estrutura modular do projeto não é equ
 
 ---
 
-### 3.2 M2.1 – Nível de Acoplamento entre Módulos
+### 2.3.2 M2.1 – Nível de Acoplamento entre Módulos
 
 **Questão relacionada:** Q2 – As responsabilidades dos módulos estão bem separadas?
 
-#### 3.2.1 Observações
+#### 2.3.2.1 Observações
 
 O SonarCloud limita sua análise estrutural para projetos JavaScript, não oferecendo mecanismos automáticos para mapear relações entre módulos ou determinar acoplamento estrutural.  
 Ferramentas assim só estão disponíveis para linguagens como Java, C#, C/C++, Kotlin e outras que possuem modelos de AST mais completos.
@@ -103,11 +103,11 @@ Assim, esta métrica foi registrada como **não mensurável via SonarCloud**, co
 
 ---
 
-### 3.3 M2.2 – Detecção de Ciclos de Dependência
+### 2.3.3 M2.2 – Detecção de Ciclos de Dependência
 
 **Questão relacionada:** Q2 – As responsabilidades dos módulos estão bem separadas?
 
-#### 3.3.1 Observações
+#### 2.3.3.1 Observações
 
 Na implementação atual da análise para JavaScript, o SonarCloud não constrói um grafo de dependências capaz de identificar ciclos entre módulos. Essa limitação está documentada nas próprias notas de suporte da ferramenta para linguagens interpretadas.
 
@@ -116,11 +116,11 @@ Ainda assim, a métrica foi classificada como **“não mensurável”** devido 
 
 ---
 
-### 3.4 M3.1 – Cobertura de Testes Automatizados
+### 2.3.4 M3.1 – Cobertura de Testes Automatizados
 
 **Questão relacionada:** Q3 – O código está suficientemente coberto por testes automatizados?
 
-#### 3.4.1 Procedimento executado
+#### 2.3.4.1 Procedimento executado
 
 1. Na raiz do projeto `guardioes-app`, executar:
    ```bash
@@ -130,7 +130,7 @@ Ainda assim, a métrica foi classificada como **“não mensurável”** devido 
 
 3. Registrar o arquivo `coverage/lcov-report/index.html` no navegador.
 
-#### 3.4.1 Resultados
+#### 2.3.4.2 Resultados
 
 A execução da suíte de testes via Jest gerou:
 
@@ -141,11 +141,11 @@ A execução da suíte de testes via Jest gerou:
 
 Apesar de o Jest ter rodado corretamente, **nenhum dos arquivos de `src/` foi coberto**, resultando em cobertura total igual a zero.
 
-#### 3.4.2 Observações
+#### 2.3.4.3 Observações
 
 Mesmo com a execução bem-sucedida do Jest, a estrutura do projeto não contém testes para componentes, telas, hooks ou utilitários, apenas o teste gerado automaticamente pelo template do React Native.
 
-#### 3.4.3 Evidências
+#### 2.3.4.4 Evidências
 
 <div align="center">
   <p><strong>Figura 2 – Relatório completo de cobertura do Jest exibindo 0%.</strong></p>
@@ -170,17 +170,17 @@ Mesmo com a execução bem-sucedida do Jest, a estrutura do projeto não contém
 
 ---
 
-### 3.5 M4.1 – Disponibilidade da Documentação
+### 2.3.5 M4.1 – Disponibilidade da Documentação
 
 **Questão relacionada:** Q4 – A documentação técnica existente é suficiente para apoiar futuras manutenções?
 
-#### 3.5.1 Procedimento executado
+#### 2.3.5.1 Procedimento executado
 
 1. Abrir o repositório `guardioes-app` no VSCode/GitHub.
 2. Inspecionar a raiz do projeto e a pasta `doc/`, verificando a presença dos artefatos definidos na Fase 3.
 3. Registrar, em checklist, **Sim / Não / Parcial** para cada artefato e o respectivo caminho.
 
-#### 3.5.1 Resultados
+#### 2.3.5.2 Resultados
 
 A inspeção do repositório identificou os seguintes artefatos:
 
@@ -203,7 +203,7 @@ A inspeção do repositório identificou os seguintes artefatos:
 
 Conclusão: **Documentação disponível: Parcial**
 
-#### 3.5.2 Observações
+#### 2.3.5.3 Observações
 
 O repositório possui uma boa base de arquivos voltados à colaboração (issues, PRs, código de conduta), mas **carece totalmente de documentação técnica do sistema**, incluindo:
 
@@ -217,11 +217,11 @@ Isso impacta diretamente a mantenibilidade, pois novos desenvolvedores precisam 
 
 ---
 
-### 3.6 M4.2 – Qualidade da Documentação
+### 2.3.6 M4.2 – Qualidade da Documentação
 
 **Questão relacionada:** Q4 – A documentação técnica existente é suficiente para apoiar futuras manutenções?
 
-#### 3.6.1 Procedimento executado
+#### 2.3.6.1 Procedimento executado
 
 1. Considerar os artefatos identificados na M4.1:
       - `README.md`
@@ -236,7 +236,7 @@ Isso impacta diretamente a mantenibilidade, pois novos desenvolvedores precisam 
     - 3: Regular
     - 1–2: Ruim
 
-#### 3.6.1 Resultados
+#### 2.3.6.2 Resultados
 
 Cada documento identificado em M4.1 foi avaliado segundo os critérios: **clareza**, **completude** e **atualização**, com notas de 1 a 5.
 
@@ -257,14 +257,14 @@ Cada documento identificado em M4.1 foi avaliado segundo os critérios: **clarez
 
 Média geral ponderada da documentação técnica: **3,1 (Regular)**
 
-#### 3.6.2 Observações
+#### 2.3.6.3 Observações
 
 A documentação voltada ao fluxo de contribuição apresenta boa clareza e está relativamente atualizada, mas representa apenas o aspecto colaborativo do projeto.  
 Não há documentação técnica profunda, o que reduz significativamente a completude geral.  
 
 A ausência de descrição de arquitetura e módulos impacta a nota final, resultando em uma avaliação **regular**, com necessidade de expansão futura.
 
-#### 3.6.3 Evidências
+#### 2.3.6.4 Evidências
 
 <div align="center">
   <p><strong>Figura 3 – Documentação do Guardiões da Saúde.</strong></p>
@@ -278,7 +278,7 @@ A ausência de descrição de arquitetura e módulos impacta a nota final, resul
 
 ---
 
-## 5. Métricas Coletadas
+## 2.4 Métricas Coletadas
 
 <div align="center">
   <p><strong>Tabela 3 – Síntese das métricas de manutenibilidade coletadas.</strong></p>
@@ -295,7 +295,7 @@ A ausência de descrição de arquitetura e módulos impacta a nota final, resul
   Fonte: Autores.
 </div>
 
-### 5.1 Métricas não mensuráveis
+### 2.4.1 Métricas não mensuráveis
 
 Diferentemente do previsto no planejamento, **duas métricas não puderam ser mensuradas** devido a limitações técnicas do SonarCloud para projetos JavaScript/React Native:
 
@@ -306,7 +306,7 @@ Ambas foram devidamente justificadas nas suas seções e registradas como **não
 
 ---
 
-## 6. Respostas às Questões GQM
+## 2.5 Respostas às Questões GQM
 
 - **Q1. Qual o nível de complexidade estrutural do código-fonte do sistema?**  
     - **Resposta:** **Alto**  
@@ -327,7 +327,7 @@ Ambas foram devidamente justificadas nas suas seções e registradas como **não
 
 ---
 
-## 7. Conclusão e Recomendações
+## 2.6 Conclusão e Recomendações
 
 Com base nas métricas coletadas e nas respostas GQM, o nível geral de **Manutenibilidade** do Guardiões da Saúde – App foi avaliado como:  
 ### **🔴 Crítico**
@@ -355,7 +355,7 @@ Essas ações aumentariam significativamente a previsibilidade das futuras manut
 
 ---
 
-## 8. Histórico de Versões
+## 2.7 Histórico de Versões
 | Versão | Data       | Descrição                      | Autor(es) |
 | ------ | ---------- | ------------------------------ | --------- |
 | `1.0`  | 26/11/2025 | Criação do documento           | [Arthur Carneiro](https://github.com/trindadea) |

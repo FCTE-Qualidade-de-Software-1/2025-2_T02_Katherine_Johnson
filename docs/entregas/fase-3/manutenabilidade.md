@@ -22,16 +22,8 @@ As métricas a serem coletadas são:
 | Ferramenta      | Uso                                    | Métricas Suportadas                    |
 | --------------- | -------------------------------------- | -------------------------------------- |
 | **SonarQube**   | Análise estática do código             | M1.1, M2.1, M2.2                       |
-| **SimpleCov**   | Cobertura de testes (Ruby/Rails)       | M3.1                                   |
 | **Jest**        | Cobertura de testes (JavaScript/React) | M3.1                                   |
 | **Inspeção Manual** | Verificação de documentação        | M4.1, M4.2                             |
-
-### Configuração do SonarQube
-
--   **Versão**: Community Edition 9.x ou superior;
--   **Regras habilitadas**: Complexidade Ciclomática, Acoplamento, Dependências;
--   **Linguagens**: Ruby, JavaScript, TypeScript;
--   **Configuração de qualidade**: Perfil padrão com ajustes específicos para o projeto.
 
 ### Ferramentas Auxiliares
 
@@ -125,12 +117,8 @@ As métricas a serem coletadas são:
 **Procedimento**:
 
 1.  Preparar ambiente de testes do projeto (instalar dependências);
-2.  Executar a suíte de testes automatizados:
-    -   **Backend (Ruby/Rails)**: `bundle exec rspec --format documentation`
-    -   **Frontend (React Native)**: `npm test -- --coverage`
-3.  Coletar relatórios de cobertura gerados pelas ferramentas:
-    -   SimpleCov para Ruby (geralmente em `coverage/index.html`);
-    -   Jest Coverage para JavaScript/React (geralmente em `coverage/coverage-summary.json`);
+2.  Executar a suíte de testes automatizados com `npm test -- --coverage`
+3.  Coletar relatórios de cobertura gerados pelo Jest Coverage em `coverage/index.html`;
 4.  Extrair percentual de cobertura geral e por módulo;
 5.  Identificar módulos com cobertura < 70%;
 6.  Registrar o valor de cobertura geral e classificar conforme critérios:
@@ -140,7 +128,7 @@ As métricas a serem coletadas são:
 
 **Outputs esperados**:
 - Percentual de cobertura geral e por módulo (SimpleCov/Jest).
-- Print/relatório de cobertura (ex.: `coverage/index.html` ou `coverage-summary.json`).
+- Print/relatório de cobertura.
 - Lista dos módulos com cobertura < 70%.
 
 ---
@@ -218,7 +206,6 @@ Todos os dados brutos e evidências visuais desta característica serão armazen
 ## 2.6 Referências Bibliográficas
 
 > SONARQUBE. _SonarQube Documentation._ Disponível em: <https://docs.sonarqube.org/>. Acesso em: 25 out. 2025.
-> SIMPLECOV. _SimpleCov Documentation._ Disponível em: <https://github.com/simplecov-ruby/simplecov>. Acesso em: 25 out. 2025.
 > JEST. _Jest Documentation._ Disponível em: <https://jestjs.io/>. Acesso em: 25 out. 2025.
 
 ---

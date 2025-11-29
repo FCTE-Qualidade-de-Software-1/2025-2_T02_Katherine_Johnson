@@ -116,7 +116,10 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
+      ----------------------------
   
+
+
     - Maintainability
     <div align="center">
       <p><strong>Figura 3 – Manutenibilidade.</strong></p>
@@ -127,6 +130,9 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
+      ----------------------------
+
+
 
     - Security
 
@@ -139,6 +145,9 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
+    ----------------------------
+
+
 
     - Security Hotspots
 
@@ -151,6 +160,9 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
+    ----------------------------
+
+
 
     - Coverage
 
@@ -163,6 +175,10 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
+    ----------------------------
+
+
+
 
 
     - Duplications
@@ -175,6 +191,9 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
+    ----------------------------
+
+
 
     - Size 
     <div align="center">
@@ -186,7 +205,9 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
+    ----------------------------
 
+    
 
     - Languages
     <div align="center">

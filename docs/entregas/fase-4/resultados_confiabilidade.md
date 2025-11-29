@@ -207,8 +207,8 @@ produção, telemetria e logs de execução.
     ---
 
 
-  ## ---------Coverage:-------------------
-  ### Valor coletado:
+## ---------Coverage:-------------------
+### Valor coletado:
 * 0%
 * Classificação: **E**
 ### Definição:
@@ -236,7 +236,7 @@ produção, telemetria e logs de execução.
 
 
 
-    ## ---------Duplications:-------------------
+## ---------Duplications:-------------------
     
     <div align="center">
       <p><strong>Figura 7 – Duplicações de Código.</strong></p>

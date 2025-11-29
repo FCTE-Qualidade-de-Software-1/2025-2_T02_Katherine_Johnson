@@ -184,8 +184,23 @@ produção, telemetria e logs de execução.
     ---
 
 
-    ## ---------Security Hotspots:-------------------
-    
+  ## ---------Security Hotspots (Pontos de Segurança):-------------------
+
+### Valor coletado:
+* 0% revisado
+* Classificação: **E**
+### Definição:
+ * Aponta trechos do código potencialmente sensíveis à segurança que exigem análise manual para confirmação de risco.
+### Critério de avaliação SonarQube:
+ * A: ≥ 80% revisado
+ * E: < 30% revisado
+### Justificativa técnica:
+- Nenhum dos pontos sinalizados foi revisado manualmente, o que acarreta automaticamente nota **E**.
+### Interpretação no relatório:
+> “Risco não revisado”
+### Concordância
+ - Sim. Está de acordo com o critério da ferramenta
+
      <div align="center">
       <p><strong>Figura 5 – Security Hotspots</strong></p>
     </div>

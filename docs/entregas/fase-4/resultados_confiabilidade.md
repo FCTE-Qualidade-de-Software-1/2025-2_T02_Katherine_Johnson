@@ -153,11 +153,7 @@ produção, telemetria e logs de execução.
     </div>
     ---
 
-
-
-
-    ## ---------Security:-------------------
-    
+## ---------Security:-------------------
 ### Valor coletado:
 * Security Rating: **A**
 ### Definição:
@@ -183,9 +179,7 @@ produção, telemetria e logs de execução.
     </div>
     ---
 
-
-  ## ---------Security Hotspots:-------------------
-
+## ---------Security Hotspots:-------------------
 ### Valor coletado:
 * 0% revisado
 * Classificação: **E**

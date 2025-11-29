@@ -113,6 +113,16 @@ produção, telemetria e logs de execução.
 
     - Security Hotspots
 
+     <div align="center">
+      <p><strong>Figura 5 – Security Hotspots</strong></p>
+    </div>
+    <div align="center">
+      <img src="../../../assets/evidencias/confiabilidade/Security_Hotspots_E.jpeg" width="500" alt="Security Hotspots"/>
+    </div>
+    <div align="center" style="font-size: 12px; font-style: italic;">
+      Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
+    </div>
+
     - Coverage
 
     - Duplications

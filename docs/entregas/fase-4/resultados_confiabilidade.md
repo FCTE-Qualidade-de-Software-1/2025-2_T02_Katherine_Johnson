@@ -237,16 +237,15 @@ produção, telemetria e logs de execução.
 
 
 ## ---------Duplications:-------------------
-   
-   <div align="center">
-     <p><strong>Figura 7 – Duplicações de Código.</strong></p>
+  <div align="center">
+      <p><strong>Figura 7 – Duplicações de Código.</strong></p>
     </div>
     <div align="center">
      <img src="../../../assets/evidencias/confiabilidade/m33_conf_duplications.jpeg" width="500" alt="Duplicações de Código"/>
     </div>
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
-    </div>
+  </div>
     ---
 
 

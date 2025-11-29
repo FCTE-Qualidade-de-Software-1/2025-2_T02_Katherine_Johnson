@@ -207,8 +207,22 @@ produção, telemetria e logs de execução.
     ---
 
 
-    ## ---------Coverage:-------------------
-    
+  ## ---------Coverage:-------------------
+  ### Valor coletado:
+* 0%
+* Classificação: **E**
+### Definição:
+ * Mede a porcentagem de linhas de código cobertas por testes automatizados (unitários ou de integração).
+### Critério de avaliação SonarQube:
+ * A: ≥ 80%
+ * E: < 30%
+### Justificativa técnica:
+- O projeto não possui testes automatizados com cobertura mensurável, o que justifica a nota mínima **E**.
+### Interpretação no relatório:
+> “Ausência de testes”
+### Concordância
+ - Sim. A descrição está alinhada com a avaliação do SonarQube.
+
     <div align="center">
       <p><strong>Figura 6 – Coverage</strong></p>
     </div>

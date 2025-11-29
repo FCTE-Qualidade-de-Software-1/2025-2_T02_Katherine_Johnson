@@ -234,7 +234,7 @@ produção, telemetria e logs de execução.
     </div>
     ---
     
-  ## ---------Duplications:-------------------
+    ## ---------Duplications:-------------------
     <div align="center">
       <p><strong>Figura 7 – Duplicações de Código.</strong></p>
     </div>

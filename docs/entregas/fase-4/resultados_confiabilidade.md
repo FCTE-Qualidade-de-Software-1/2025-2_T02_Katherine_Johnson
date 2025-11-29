@@ -101,13 +101,23 @@ produção, telemetria e logs de execução.
 
     - Security
 
+    <div align="center">
+      <p><strong>Figura 4 – Security</strong></p>
+    </div>
+    <div align="center">
+      <img src="../../../assets/evidencias/confiabilidade/Security_A.jpeg" width="500" alt="Security"/>
+    </div>
+    <div align="center" style="font-size: 12px; font-style: italic;">
+      Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
+    </div>
+
     - Security Hotspots
 
     - Coverage
 
     - Duplications
     <div align="center">
-      <p><strong>Figura 4 – Duplicações de Código.</strong></p>
+      <p><strong>Figura 7 – Duplicações de Código.</strong></p>
     </div>
     <div align="center">
       <img src="../../../assets/evidencias/confiabilidade/m33_conf_duplications.jpeg" width="500" alt="Duplicações de Código"/>

@@ -259,10 +259,10 @@ produção, telemetria e logs de execução.
     </div>
     ---
 
-  ## ---------Size:-------------------
+    ## ---------Size:-------------------
   
-  ### Valor coletado:
-* Aproximadamente 21.000 linhas de código (LOC)
+### Valor coletado:
+ * Aproximadamente 21.000 linhas de código (LOC)
 ### Definição:
  * Número total de linhas de código-fonte. Não recebe nota, mas serve como base para avaliar a densidade de problemas.
 ### Critério de avaliação SonarQube:
@@ -289,7 +289,7 @@ Essa métrica é usada para contextualizar:
   ---
   
   ## ---------Languages:-------------------
-  
+
     <div align="center">
       <p><strong>Figura 9 – Languages</strong></p>
     </div>

@@ -235,6 +235,19 @@ produção, telemetria e logs de execução.
     ---
     
     ## ---------Duplications:-------------------
+    ### Valor coletado:
+* 39,1%
+### Definição:
+ * Avalia a proporção do código que é duplicada no sistema, o que impacta negativamente na manutenibilidade e aumenta o risco de inconsistências.
+### Critério de avaliação SonarQube:
+ * Não utiliza notas alfabéticas, mas valores acima de **20%** são destacados como críticos.
+### Justificativa técnica:
+- O índice de duplicação de 39,1% é considerado excessivo e prejudica a saúde estrutural do projeto.
+### Interpretação no relatório:
+> “Código excessivamente repetido”
+### Concordância
+ - Sim. A leitura está correta e bem contextualizada.
+
     <div align="center">
       <p><strong>Figura 7 – Duplicações de Código.</strong></p>
     </div>

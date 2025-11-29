@@ -184,7 +184,7 @@ produção, telemetria e logs de execução.
     ---
 
 
-  ## ---------Security Hotspots (Pontos de Segurança):-------------------
+  ## ---------Security Hotspots:-------------------
 
 ### Valor coletado:
 * 0% revisado

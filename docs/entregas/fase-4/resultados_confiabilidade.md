@@ -118,8 +118,41 @@ produção, telemetria e logs de execução.
     ---
   
 
-    ## ---------Maintainability:-------------------
-     
+## ---------Maintainability:-------------------
+
+### Valor coletado:
+
+* 355 code smells
+* Maintainability Rating: **A**
+
+### Definição:
+ * Reflete o esforço necessário para corrigir problemas estruturais ou de estilo (code smells), que podem impactar a legibilidade, consistência e manutenção do sistema.
+
+### Critério de avaliação SonarQube:
+ * Baseado no índice de dívida técnica (Technical Debt Ratio):
+
+\[
+\text{(tempo estimado para correção / tempo de desenvolvimento)} \times 100
+\]
+
+* Classificação:
+- A: ≤ 5%
+- B: ≤ 10%
+- C: ≤ 20%
+- D: ≤ 50%
+- E: > 50%
+### Justificativa técnica:
+
+- Apesar do número elevado de *code smells*, o esforço estimado de correção ficou abaixo de 5% do esforço total de desenvolvimento, o que garante a nota **A**.
+
+### Interpretação no relatório:
+
+> “Esforço baixo de correção”
+
+### Concordância
+- Sim. A análise foi feita com base nos critérios corretos.
+
+
     <div align="center">
       <p><strong>Figura 3 – Manutenibilidade.</strong></p>
     </div>
@@ -130,6 +163,8 @@ produção, telemetria e logs de execução.
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
     ---
+
+
 
 
     ## ---------Security:-------------------

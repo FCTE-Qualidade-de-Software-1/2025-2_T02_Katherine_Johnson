@@ -1,6 +1,6 @@
-# Confiabilidade – Execução, Análise e Interpretação
+# 3. Confiabilidade – Execução, Análise e Interpretação
 
-## 1. Introdução
+## 3.1 Introdução
 
 Este documento apresenta a execução da avaliação da característica **Confiabilidade**
 do projeto **Guardiões da Saúde – App**, conforme o planejamento definido na **Fase 3**.
@@ -21,7 +21,7 @@ produção, telemetria e logs de execução.
 
 ---
 
-## 2. Ambiente e Recursos
+## 3.2 Ambiente e Recursos
 
 - **Sistema Operacional:** Ubuntu Linux  
 - **Ferramenta de análise:** SonarQube Community Build **v25.11.0.114957**  
@@ -36,7 +36,7 @@ produção, telemetria e logs de execução.
 
 ---
 
-## 3. Procedimentos Executados (reprodutibilidade)
+## 3.3 Procedimentos Executados (reprodutibilidade)
 
 1. Inicialização do SonarQube (`./sonar.sh start`).  
 2. Acesso ao painel web (`http://localhost:9000`).  
@@ -50,7 +50,7 @@ produção, telemetria e logs de execução.
 
 ---
 
-## 4. Evidências e Dados Brutos
+## 3.4 Evidências e Dados Brutos
 
 - Vídeo Sonar em execução:
 
@@ -305,7 +305,7 @@ Essa métrica é usada para contextualizar:
 
 ---
 
-## 5. Métricas Coletadas
+## 3.5. Métricas Coletadas
 
 | Métrica | Valor | Evidência | Interpretação | Julgamento |
 | --- | --- | --- | --- | --- |
@@ -321,7 +321,7 @@ Essa métrica é usada para contextualizar:
 
 ---
 
-### 5.1 Métricas não mensuráveis
+### 3.6 Métricas não mensuráveis
 
 Conforme definido no planejamento da **Fase 3**, algumas métricas dependem de ambiente em produção ou de informações técnicas que não estão disponíveis para a equipe de avaliação. Por esse motivo, não foi possível mensurá-las nesta fase.
 
@@ -333,7 +333,7 @@ Conforme definido no planejamento da **Fase 3**, algumas métricas dependem de a
 
 ---
 
-## 6. Respostas às Questões GQM
+## 3.7. Respostas às Questões GQM
 
 ### Q1 — O sistema está disponível para uso na maior parte do tempo?
 - **Resposta:** Não mensurável.  
@@ -349,7 +349,7 @@ Conforme definido no planejamento da **Fase 3**, algumas métricas dependem de a
 
 ---
 
-## 7. Conclusão e Recomendações
+## 3.8 Conclusão e Recomendações
 
 ### Síntese
 A **Confiabilidade** é considerada **baixa**, devido ao alto volume de defeitos,
@@ -364,7 +364,7 @@ duplicação elevada e ausência de testes automatizados.
 
 ---
 
-## 8. Histórico de Versões
+## 3.9. Histórico de Versões
 
 | Versão | Data       | Descrição | Autor |
 | ------ | ---------- | --------- | ----- |

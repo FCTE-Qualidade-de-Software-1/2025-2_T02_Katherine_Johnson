@@ -119,22 +119,16 @@ produção, telemetria e logs de execução.
   
 
 ## ---------Maintainability:-------------------
-
 ### Valor coletado:
-
 * 355 code smells
 * Maintainability Rating: **A**
-
 ### Definição:
  * Reflete o esforço necessário para corrigir problemas estruturais ou de estilo (code smells), que podem impactar a legibilidade, consistência e manutenção do sistema.
-
 ### Critério de avaliação SonarQube:
  * Baseado no índice de dívida técnica (Technical Debt Ratio):
-
 \[
 \text{(tempo estimado para correção / tempo de desenvolvimento)} \times 100
 \]
-
 * Classificação:
 - A: ≤ 5%
 - B: ≤ 10%
@@ -142,16 +136,11 @@ produção, telemetria e logs de execução.
 - D: ≤ 50%
 - E: > 50%
 ### Justificativa técnica:
-
 - Apesar do número elevado de *code smells*, o esforço estimado de correção ficou abaixo de 5% do esforço total de desenvolvimento, o que garante a nota **A**.
-
 ### Interpretação no relatório:
-
 > “Esforço baixo de correção”
-
 ### Concordância
 - Sim. A análise foi feita com base nos critérios corretos.
-
 
     <div align="center">
       <p><strong>Figura 3 – Manutenibilidade.</strong></p>
@@ -169,6 +158,20 @@ produção, telemetria e logs de execução.
 
     ## ---------Security:-------------------
     
+### Valor coletado:
+* Security Rating: **A**
+### Definição:
+ * Avalia a presença de vulnerabilidades de segurança reais no código.
+### Critério de avaliação SonarQube:
+ * A: Nenhuma vulnerabilidade real;
+ * D ou E: Presença de vulnerabilidades críticas
+### Justificativa técnica:
+- O Sonar não identificou falhas de segurança reais — apenas mensagens informativas — o que justifica a nota máxima **A**.
+### Interpretação no relatório:
+> “Sem vulnerabilidades críticas”
+### Concordância
+- Sim. Condiz com o funcionamento da métrica.
+
     <div align="center">
       <p><strong>Figura 4 – Security</strong></p>
     </div>

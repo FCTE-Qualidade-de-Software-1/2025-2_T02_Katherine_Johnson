@@ -78,7 +78,7 @@ produção, telemetria e logs de execução.
     </div>
   ---
 
-## ---------## Reliability:-------------------
+## ---------Reliability:-------------------
 
 ### Valor coletado:
 
@@ -118,8 +118,8 @@ produção, telemetria e logs de execução.
     ---
   
 
-
-    - Maintainability
+    ## ---------Maintainability:-------------------
+     
     <div align="center">
       <p><strong>Figura 3 – Manutenibilidade.</strong></p>
     </div>
@@ -129,12 +129,11 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
-    ## ----------------------------
+    ---
 
 
-
-    - Security
-
+    ## ---------Security:-------------------
+    
     <div align="center">
       <p><strong>Figura 4 – Security</strong></p>
     </div>
@@ -144,12 +143,11 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
-    ## ----------------------------
+    ---
 
 
-
-    - Security Hotspots
-
+    ## ---------Security Hotspots:-------------------
+    
      <div align="center">
       <p><strong>Figura 5 – Security Hotspots</strong></p>
     </div>
@@ -159,13 +157,12 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
-    ## ----------------------------
+    ---
 
 
-
-    - Coverage
-
-       <div align="center">
+    ## ---------Coverage:-------------------
+    
+    <div align="center">
       <p><strong>Figura 6 – Coverage</strong></p>
     </div>
     <div align="center">
@@ -174,13 +171,12 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
-    ## ----------------------------
+    ---
 
 
 
-
-
-    - Duplications
+    ## ---------Duplications:-------------------
+    
     <div align="center">
       <p><strong>Figura 7 – Duplicações de Código.</strong></p>
     </div>
@@ -190,11 +186,11 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
-    ## ----------------------------
+    ---
 
 
-
-    - Size 
+    ## ---------Size:-------------------
+     
     <div align="center">
       <p><strong>Figura 8 – Size</strong></p>
     </div>
@@ -204,11 +200,11 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
-    ## ----------------------------
+  ---
 
     
-
-    - Languages
+    ## ---------Languages:-------------------
+    
     <div align="center">
       <p><strong>Figura 9 – Languages</strong></p>
     </div>

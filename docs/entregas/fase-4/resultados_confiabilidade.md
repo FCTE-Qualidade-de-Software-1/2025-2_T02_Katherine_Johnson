@@ -116,7 +116,7 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
-      ----------------------------
+    ## ----------------------------
   
 
 
@@ -130,7 +130,7 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
-      ----------------------------
+    ## ----------------------------
 
 
 
@@ -145,7 +145,7 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
-    ----------------------------
+    ## ----------------------------
 
 
 
@@ -160,7 +160,7 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
-    ----------------------------
+    ## ----------------------------
 
 
 
@@ -175,7 +175,7 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
-    ----------------------------
+    ## ----------------------------
 
 
 
@@ -191,7 +191,7 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
-    ----------------------------
+    ## ----------------------------
 
 
 
@@ -205,7 +205,7 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
-    ----------------------------
+    ## ----------------------------
 
     
 

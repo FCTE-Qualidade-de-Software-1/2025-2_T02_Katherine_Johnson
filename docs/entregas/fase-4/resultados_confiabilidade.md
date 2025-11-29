@@ -125,6 +125,17 @@ produção, telemetria e logs de execução.
 
     - Coverage
 
+       <div align="center">
+      <p><strong>Figura 6 – Coverage</strong></p>
+    </div>
+    <div align="center">
+      <img src="../../../assets/evidencias/confiabilidade/Coverage1.jpeg" width="500" alt="Coverage"/>
+    </div>
+    <div align="center" style="font-size: 12px; font-style: italic;">
+      Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
+    </div>
+
+
     - Duplications
     <div align="center">
       <p><strong>Figura 7 – Duplicações de Código.</strong></p>
@@ -136,7 +147,18 @@ produção, telemetria e logs de execução.
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
 
-    - Size / Languages
+    - Size 
+    <div align="center">
+      <p><strong>Figura 8 – Size</strong></p>
+    </div>
+    <div align="center">
+      <img src="../../../assets/evidencias/confiabilidade/Size.jpeg" width="500" alt="Size"/>
+    </div>
+    <div align="center" style="font-size: 12px; font-style: italic;">
+      Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
+    </div>
+
+    - Languages
 
 - Local: `/docs/assets/images/fase-4/`
 - Planilhas/relatórios adicionais: *(não aplicável, se não houver)*

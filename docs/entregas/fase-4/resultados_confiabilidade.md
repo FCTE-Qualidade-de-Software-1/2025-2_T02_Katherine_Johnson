@@ -79,34 +79,33 @@ produção, telemetria e logs de execução.
   ---
 
    
-<!-- BLOCO 1 -->
+## Reliability:
 
-<div style="border: 1px solid #ccc; padding: 10px; border-radius: 8px; background-color: #f9f9f9; margin-bottom: 12px; line-height: 0.9;">
+### Valor coletado:
 
-### Reliability
+* 206 bugs
+* Reliability Rating: **D**
 
-**Valor coletado:**
-- 206 bugs  
-- Reliability Rating: **D**
+### Definição:
+ * Mede a presença de defeitos com potencial de causar falhas em tempo de execução.
 
-**Definição:**  
-Mede a presença de defeitos com potencial de causar falhas em tempo de execução.
+### Critério de avaliação SonarQube:
+- A: 0 bugs
+- B: ≥ 1 bug low
+- C: ≥ 1 bug medium
+- D: ≥ 1 bug high
+- E: ≥ 1 bug blocker
 
-**Critério SonarQube:**  
-- A: 0 bugs  
-- B: ≥ 1 low  
-- C: ≥ 1 medium  
-- D: ≥ 1 high  
-- E: ≥ 1 blocker  
+### Critério de avaliação SonarQube:
 
-**Justificativa técnica:**  
-A presença de um bug com severidade "high" resulta diretamente na nota D.
+- A presença de ao menos um bug de severidade alta (**high**) é suficiente para que o SonarQube classifique a confiabilidade como **D**, independentemente da quantidade total.
 
-**Avaliação no relatório:**  
+### Interpretação no relatório:
+
 > “Alta probabilidade de falhas”
 
-**Concordância:**  
-- Sim.
+### Concordância
+- Sim. A interpretação está correta e segue a lógica da ferramenta.
     
     <div align="center">
       <p><strong>Figura 2 – Confiabilidade.</strong></p>
@@ -128,9 +127,6 @@ A presença de um bug com severidade "high" resulta diretamente na nota D.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
-    </div>
-    ----------------------------
-
 
     - Security
 

@@ -234,8 +234,8 @@ produção, telemetria e logs de execução.
     </div>
     ---
     
-## ---------Duplications:-------------------
-   <div align="center">
+  ## ---------Duplications:-------------------
+    <div align="center">
       <p><strong>Figura 7 – Duplicações de Código.</strong></p>
     </div>
     <div align="center">
@@ -247,8 +247,8 @@ produção, telemetria e logs de execução.
     ---
 
 
-## ---------Size:-------------------
-   <div align="center">
+  ## ---------Size:-------------------
+    <div align="center">
       <p><strong>Figura 8 – Size</strong></p>
     </div>
     <div align="center">
@@ -259,8 +259,8 @@ produção, telemetria e logs de execução.
     </div>
   ---
   
-## ---------Languages:-------------------
-   <div align="center">
+  ## ---------Languages:-------------------
+    <div align="center">
       <p><strong>Figura 9 – Languages</strong></p>
     </div>
     <div align="center">

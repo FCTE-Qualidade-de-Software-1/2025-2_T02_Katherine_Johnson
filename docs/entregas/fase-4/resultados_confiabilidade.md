@@ -64,7 +64,7 @@ produção, telemetria e logs de execução.
   Fonte: Autores Uires Carlos de Oliveira
 </div>
 
-
+---
 - Prints dos dashboards:
     - Geral / Overview
     <div align="center">
@@ -76,8 +76,10 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
-  
+  ---
+
     - Reliability
+        
     <div align="center">
       <p><strong>Figura 2 – Confiabilidade.</strong></p>
     </div>
@@ -87,7 +89,7 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
-  
+  ---
     - Maintainability
     <div align="center">
       <p><strong>Figura 3 – Manutenibilidade.</strong></p>
@@ -98,7 +100,8 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
-
+  ---
+    
     - Security
 
     <div align="center">
@@ -110,6 +113,7 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
+  ---
 
     - Security Hotspots
 
@@ -122,7 +126,7 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
-
+  ---
     - Coverage
 
        <div align="center">
@@ -134,7 +138,7 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
-
+  ---
 
     - Duplications
     <div align="center">
@@ -146,6 +150,7 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
+  ---
 
     - Size 
     <div align="center">
@@ -157,7 +162,7 @@ produção, telemetria e logs de execução.
     <div align="center" style="font-size: 12px; font-style: italic;">
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
-
+  ---
 
     - Languages
     <div align="center">

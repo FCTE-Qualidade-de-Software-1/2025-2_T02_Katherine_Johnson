@@ -259,7 +259,6 @@ produção, telemetria e logs de execução.
     </div>
     ---
 
-
   ## ---------Size:-------------------
   ### Valor coletado:
 * Aproximadamente 21.000 linhas de código (LOC)

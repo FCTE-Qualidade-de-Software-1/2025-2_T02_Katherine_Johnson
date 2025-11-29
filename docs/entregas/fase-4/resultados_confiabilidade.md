@@ -79,17 +79,18 @@ produção, telemetria e logs de execução.
   ---
 
    - Reliability
-      ## <p>Valor coletado:</p>
+       <p>Valor coletado:</p>
       - 206 bugs
       - Reliability Rating: **D**
-      ## <p>Definição:</p>  
-      Mede a presença de defeitos com potencial de causar falhas em tempo de execução.
-      ## <p>Justificativa técnica:</p>  
-      A presença de ao menos um bug de severidade alta (**high**) é suficiente para que o SonarQube classifique a confiabilidade como **D**, independentemente da quantidade total.
-      ## Interpretação no relatório: 
-      ## “Alta probabilidade de falhas
-      ## Concordância: 
-      Sim. A interpretação está correta e segue a lógica da ferramenta.
+      <p>Definição:</p>  
+      - Mede a presença de defeitos com potencial de causar falhas em tempo de execução.
+      <p>Justificativa técnica:</p>  
+      - A presença de ao menos um bug de severidade alta (**high**) é suficiente para que o SonarQube classifique a confiabilidade como **D**, independentemente da quantidade total.
+      **Interpretação no relatório:** 
+      > “Alta probabilidade de falhas”
+      **Concordância:** 
+      - Sim. A interpretação está correta e segue a lógica da ferramenta.
+    
     <div align="center">
       <p><strong>Figura 2 – Confiabilidade.</strong></p>
     </div>

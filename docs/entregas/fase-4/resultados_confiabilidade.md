@@ -233,9 +233,7 @@ produção, telemetria e logs de execução.
       Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
     </div>
     ---
-
-
-
+    
 ## ---------Duplications:-------------------
    <div align="center">
       <p><strong>Figura 7 – Duplicações de Código.</strong></p>

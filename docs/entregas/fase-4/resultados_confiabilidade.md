@@ -52,6 +52,19 @@ produção, telemetria e logs de execução.
 
 ## 4. Evidências e Dados Brutos
 
+- Vídeo Sonar em execução:
+
+<div align="center">
+  <p><strong>Vídeo 1 – Execução do scanner no APP Guardiões da Saúde </strong></p>
+</div>
+<div align="center">
+  <video src="../../../assets/evidencias/confiabilidade/sonar.mp4" width="750" controls></video>
+</div>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Fonte: Autores Uires Carlos de Oliveira
+</div>
+
+
 - Prints dos dashboards:
     - Geral / Overview
     <div align="center">

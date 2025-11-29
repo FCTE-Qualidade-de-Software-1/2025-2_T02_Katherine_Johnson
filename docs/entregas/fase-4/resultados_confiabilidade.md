@@ -260,6 +260,7 @@ produção, telemetria e logs de execução.
     ---
 
   ## ---------Size:-------------------
+  
   ### Valor coletado:
 * Aproximadamente 21.000 linhas de código (LOC)
 ### Definição:
@@ -288,6 +289,7 @@ Essa métrica é usada para contextualizar:
   ---
   
   ## ---------Languages:-------------------
+  
     <div align="center">
       <p><strong>Figura 9 – Languages</strong></p>
     </div>

@@ -261,6 +261,22 @@ produção, telemetria e logs de execução.
 
 
   ## ---------Size:-------------------
+  ### Valor coletado:
+* Aproximadamente 21.000 linhas de código (LOC)
+### Definição:
+ * Número total de linhas de código-fonte. Não recebe nota, mas serve como base para avaliar a densidade de problemas.
+### Critério de avaliação SonarQube:
+Essa métrica é usada para contextualizar:
+- Densidade de *bugs*  
+- *Code smells*  
+- Duplicações
+### Justificativa técnica:
+- Com esse volume de código, os altos índices de bugs e duplicações indicam densidade crítica de problemas.
+### Interpretação no relatório:
+> “Alta densidade de problemas”
+### Concordância
+ - Sim. O uso da métrica como suporte contextual está adequado.
+
     <div align="center">
       <p><strong>Figura 8 – Size</strong></p>
     </div>

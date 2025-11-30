@@ -1,0 +1,1274 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="pt">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Documentação do projeto Guardiões da Saúde, relacionada à matéria de " curso="" da="" de="" do="" engenharia="" fcte."="" name="description" qualidade="" software="" software"="" unb=""/>
+<link href="https://fcte-qualidade-de-software-1.github.io/2025-2_T02_Katherine_Johnson/entregas/fase-2/manutenabilidade/" rel="canonical"/>
+<link href="../visao_geral/" rel="prev"/>
+<link href="../confiabilidade/" rel="next"/>
+<link href="../../../assets/images/icon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.0" name="generator"/>
+<title>2. Manutenabilidade - Guardiões da Saúde</title>
+<link href="../../../assets/stylesheets/main.618322db.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../../stylesheets/theme-overrides.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="green" data-md-color-primary="teal" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#2-manutenibilidade">
+          Pular para conteúdo
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Cabeçalho" class="md-header__inner md-grid">
+<a aria-label="Guardiões da Saúde" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="Guardiões da Saúde">
+<img alt="logo" src="../../../assets/images/icon.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Guardiões da Saúde
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              2. Manutenabilidade
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Mudar para modo escuro" class="md-option" data-md-color-accent="green" data-md-color-media="" data-md-color-primary="teal" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Mudar para modo escuro">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+<input aria-label="Mudar para modo claro" class="md-option" data-md-color-accent="green" data-md-color-media="" data-md-color-primary="teal" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Mudar para modo claro">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Buscar" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Buscar" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Pesquisar" class="md-search__options">
+<a aria-label="Compartilhar" class="md-search__icon md-icon" data-clipboard="" data-clipboard-text="" data-md-component="search-share" href="javascript:void(0)" tabindex="-1" title="Compartilhar">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
+</a>
+<button aria-label="Limpar" class="md-search__icon md-icon" tabindex="-1" title="Limpar" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_Katherine_Johnson" title="Ir para repositório">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+</div>
+<div class="md-source__repository">
+    FCTE-Qualidade-de-Software-1/2025-2_T02_Katherine_Johnson
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Abas" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../..">
+        
+  
+  
+    
+  
+  Página Inicial
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../sobre/visao-geral/">
+          
+  
+  
+  Sobre o Projeto
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../fase-1/proposito-da-avaliacao/">
+          
+  
+  
+  Fase 1 - Requisitos de Avaliação
+
+        </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../visao_geral/">
+          
+  
+  
+  Fase 2 - Especificação da Avaliação
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../fase-3/visao_geral/">
+          
+  
+  
+  Fase 3 - Planejamento da Avaliação
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../fase-4/visao_geral/">
+          
+  
+  
+  Fase 4 - Execução da Avaliação
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../declaracao_ia/">
+        
+  
+  
+    
+  
+  Declaração do uso de IA
+
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navegação" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Guardiões da Saúde" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="Guardiões da Saúde">
+<img alt="logo" src="../../../assets/images/icon.png"/>
+</a>
+    Guardiões da Saúde
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_Katherine_Johnson" title="Ir para repositório">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+</div>
+<div class="md-source__repository">
+    FCTE-Qualidade-de-Software-1/2025-2_T02_Katherine_Johnson
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+<span class="md-ellipsis">
+    
+  
+    Página Inicial
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Sobre o Projeto
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Sobre o Projeto
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../sobre/visao-geral/">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../sobre/equipe/">
+<span class="md-ellipsis">
+    
+  
+    Equipe
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Fase 1 - Requisitos de Avaliação
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 1 - Requisitos de Avaliação
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-1/proposito-da-avaliacao/">
+<span class="md-ellipsis">
+    
+  
+    1. Propósito da Avaliação
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-1/partes-interessadas/">
+<span class="md-ellipsis">
+    
+  
+    2. Requisitante e Partes Interessadas
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-1/caracteristicas-produto/">
+<span class="md-ellipsis">
+    
+  
+    3. Características do Produto
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-1/especificacao-modelo-qualidade/">
+<span class="md-ellipsis">
+    
+  
+    4. Especificação do modelo de qualidade
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-1/selecao-caracteristicas-avaliadas/">
+<span class="md-ellipsis">
+    
+  
+    5. Seleção das características avaliadas
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-1/ods-relacionados/">
+<span class="md-ellipsis">
+    
+  
+    6. ODS Relacionados
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Fase 2 - Especificação da Avaliação
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 2 - Especificação da Avaliação
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../visao_geral/">
+<span class="md-ellipsis">
+    
+  
+    1. Visão Geral
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    
+  
+    2. Manutenabilidade
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    
+  
+    2. Manutenabilidade
+  
+
+    
+  </span>
+</a>
+<nav aria-label="Índice" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#21-introducao">
+<span class="md-ellipsis">
+      
+        2.1 Introdução
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#22-objetivo-gqm">
+<span class="md-ellipsis">
+      
+        2.2 Objetivo GQM
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#23-questoes">
+<span class="md-ellipsis">
+      
+        2.3 Questões
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#24-hipoteses">
+<span class="md-ellipsis">
+      
+        2.4 Hipóteses
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#25-metricas">
+<span class="md-ellipsis">
+      
+        2.5 Métricas
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#26-plano-de-medicao">
+<span class="md-ellipsis">
+      
+        2.6 Plano de Medição
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#27-niveis-de-pontuacao-e-criterios-de-julgamento">
+<span class="md-ellipsis">
+      
+        2.7 Níveis de Pontuação e Critérios de Julgamento
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#28-tabela-gqm">
+<span class="md-ellipsis">
+      
+        2.8 Tabela GQM
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#29-diagrama-gqm">
+<span class="md-ellipsis">
+      
+        2.9 Diagrama GQM
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#210-referencias-bibliograficas">
+<span class="md-ellipsis">
+      
+        2.10 Referências Bibliográficas
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#210-historico-de-versoes">
+<span class="md-ellipsis">
+      
+        2.10 Histórico de Versões
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../confiabilidade/">
+<span class="md-ellipsis">
+    
+  
+    3. Confiabilidade
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../seguranca/">
+<span class="md-ellipsis">
+    
+  
+    4. Segurança
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tabela_contribuicao/">
+<span class="md-ellipsis">
+    
+  
+    5. Tabela de Contribuição
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Fase 3 - Planejamento da Avaliação
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 3 - Planejamento da Avaliação
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-3/visao_geral/">
+<span class="md-ellipsis">
+    
+  
+    1. Visão Geral
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-3/manutenabilidade/">
+<span class="md-ellipsis">
+    
+  
+    2. Planejamento - Manutenabilidade
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-3/confiabilidade/">
+<span class="md-ellipsis">
+    
+  
+    3. Planejamento - Confiabilidade
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-3/seguranca/">
+<span class="md-ellipsis">
+    
+  
+    4. Planejamento - Segurança
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-3/tabela_contribuicao/">
+<span class="md-ellipsis">
+    
+  
+    5. Tabela de Contribuição
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Fase 4 - Execução da Avaliação
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 4 - Execução da Avaliação
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-4/visao_geral/">
+<span class="md-ellipsis">
+    
+  
+    1. Visão Geral
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-4/resultados_manutenibilidade/">
+<span class="md-ellipsis">
+    
+  
+    2. Resultados - Manutenibilidade
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-4/resultados_confiabilidade/">
+<span class="md-ellipsis">
+    
+  
+    3. Resultados - Confiabilidade
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-4/resultados_seguranca/">
+<span class="md-ellipsis">
+    
+  
+    4. Resultados - Segurança
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-4/conclusao_geral/">
+<span class="md-ellipsis">
+    
+  
+    5. Conclusão Geral
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-4/tabela_contribuicao/">
+<span class="md-ellipsis">
+    
+  
+    6. Tabela de Contribuição
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../declaracao_ia/">
+<span class="md-ellipsis">
+    
+  
+    Declaração do uso de IA
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Índice" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#21-introducao">
+<span class="md-ellipsis">
+      
+        2.1 Introdução
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#22-objetivo-gqm">
+<span class="md-ellipsis">
+      
+        2.2 Objetivo GQM
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#23-questoes">
+<span class="md-ellipsis">
+      
+        2.3 Questões
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#24-hipoteses">
+<span class="md-ellipsis">
+      
+        2.4 Hipóteses
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#25-metricas">
+<span class="md-ellipsis">
+      
+        2.5 Métricas
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#26-plano-de-medicao">
+<span class="md-ellipsis">
+      
+        2.6 Plano de Medição
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#27-niveis-de-pontuacao-e-criterios-de-julgamento">
+<span class="md-ellipsis">
+      
+        2.7 Níveis de Pontuação e Critérios de Julgamento
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#28-tabela-gqm">
+<span class="md-ellipsis">
+      
+        2.8 Tabela GQM
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#29-diagrama-gqm">
+<span class="md-ellipsis">
+      
+        2.9 Diagrama GQM
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#210-referencias-bibliograficas">
+<span class="md-ellipsis">
+      
+        2.10 Referências Bibliográficas
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#210-historico-de-versoes">
+<span class="md-ellipsis">
+      
+        2.10 Histórico de Versões
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<nav aria-label="Navegação" class="md-path">
+<ol class="md-path__list">
+<li class="md-path__item">
+<a class="md-path__link" href="../../..">
+<span class="md-ellipsis">
+    Página Inicial
+  </span>
+</a>
+</li>
+<li class="md-path__item">
+<a class="md-path__link" href="../visao_geral/">
+<span class="md-ellipsis">
+    Fase 2 - Especificação da Avaliação
+  </span>
+</a>
+</li>
+</ol>
+</nav>
+<article class="md-content__inner md-typeset">
+<h1 id="2-manutenibilidade">2. Manutenibilidade</h1>
+<h2 id="21-introducao">2.1 Introdução</h2>
+<p>A <strong>manutenibilidade</strong> é uma característica fundamental para garantir a evolução contínua e a longevidade de um software. Ela reflete a facilidade com que o sistema pode ser <strong>compreendido, modificado, corrigido e evoluído</strong> ao longo do tempo.</p>
+<p>Para o Guardiões da Saúde — uma plataforma usada em monitoramento participativo de sintomas — assegurar uma boa manutenibilidade é crucial para evolução contínua do código e rápida resposta às demandas de saúde pública.</p>
+<p>Nesta fase, a manutenibilidade será avaliada com base em três subcaracterísticas priorizadas na Fase 1: <strong>analisabilidade</strong> e <strong>testabilidade</strong>.</p>
+<p>A análise de manutenibilidade busca identificar aspectos estruturais e técnicos que influenciam a facilidade de manutenção, como <strong>modularidade, complexidade, duplicação de código, documentação e cobertura de testes</strong></p>
+<h2 id="22-objetivo-gqm">2.2 Objetivo GQM</h2>
+<table>
+<tr><th>Analisar</th><td>o Guardiões da Saúde</td></tr>
+<tr><th>Para o propósito de</th><td>Entender</td></tr>
+<tr><th>Com respeito a</th><td>manutenibilidade</td></tr>
+<tr><th>Do ponto de vista da</th><td>equipe de desenvolvimento</td></tr>
+<tr><th>No contexto da</th><td>disciplina de Qualidade de Software</td></tr>
+</table>
+<div align="center">
+<span style="font-size: 12px; font-style: italic;">
+    Autor: <a href="https://github.com/MatheusHenrickSantos">Matheus Henrick</a>
+</span>
+</div>
+<hr/>
+<h2 id="23-questoes">2.3 Questões</h2>
+<p>As questões definidas para uma característica visam direcionar a avaliação e verificar se o objetivo de medição está sendo atingido.</p>
+<p>As questões avaliativas foram definidas com base nas subcaracterísticas selecionadas na Fase 1.</p>
+<p><strong>Analisabilidade/ Testabilidade</strong>
+<br/></p>
+<p><strong>Q1</strong>. Qual o nível de complexidade estrutural do código-fonte do sistema?</p>
+<p><strong>Q2</strong>. As responsabilidades dos módulos estão bem separadas?</p>
+<p><strong>Q3</strong>. O código está suficientemente coberto por testes automatizados?</p>
+<p><strong>Q4</strong>. A documentação técnica existente é suficiente para apoiar futuras manutenções?</p>
+<hr/>
+<h2 id="24-hipoteses">2.4 Hipóteses</h2>
+<p>As hipóteses representam <strong>expectativas sobre o comportamento ideal do software</strong> em relação às <a href="#23-questões">questões formuladas</a>.
+Elas orientam a interpretação dos resultados das medições e permitem comparar o desempenho real do sistema com o esperado, fornecendo base para o julgamento qualitativo.</p>
+<p><br/></p>
+<p><strong>H1:</strong> O grau de acoplamento entre os módulos é baixo, com poucas dependências diretas, permitindo modificações locais sem impacto significativo.</p>
+<p><strong>H2:</strong> Não há ciclos de dependência entre pacotes ou módulos, garantindo arquitetura modular e reusável.</p>
+<p><strong>H3:</strong> O código possui cobertura de testes automatizados de pelo menos 70%.</p>
+<p><strong>H4:</strong> Espera-se que a documentação de arquitetura geral exista, mas que a documentação detalhada de componentes seja limitada ou desatualizada.</p>
+<hr/>
+<h2 id="25-metricas">2.5 Métricas</h2>
+<p>As métricas foram selecionadas com base nas <a href="#23-questões">questões</a> e <a href="#24-hipóteses">hipóteses propostas</a>, seguindo o princípio do GQM de alinhar cada medida a um objetivo claro.</p>
+<p><br/></p>
+<p><strong>M1.1 (Q1):</strong> Complexidade Ciclomática: Mede a complexidade de um programa contando o número de caminhos linearmente independentes através do código-fonte. Um número alto indica um código mais complexo e difícil de testar e manter.</p>
+<p><strong>M2.1 (Q2):</strong> Nível de Acoplamento entre Módulos: Mede o grau de interdependência entre os módulos do software. Um acoplamento alto significa que uma mudança em um módulo tem grande probabilidade de impactar outros, dificultando a manutenção.</p>
+<p><strong>M2.2 (Q2):</strong> Detecção de Ciclos de Dependência: Verifica a existência de dependências circulares entre módulos ou pacotes (ex: Módulo A depende de B, que depende de C, que depende de A). Ciclos de dependência violam o princípio do design modular e dificultam a reutilização e o teste.</p>
+<p><strong>M3.1 (Q3):</strong> Cobertura de Testes Automatizados (%): Mede a porcentagem do código-fonte que é executada por uma suíte de testes automatizados. Uma cobertura alta indica maior testabilidade e menor risco de regressões.</p>
+<p><strong>M4.1 (Q4):</strong> Disponibilidade da Documentação: Verifica a existência (Sim/Não) de artefatos de documentação considerados essenciais, como o documento de arquitetura e os manuais de API.</p>
+<p><strong>M4.2 (Q4):</strong> Qualidade da Documentação: Avalia a documentação existente com base em critérios como clareza, completude e atualização, usando uma escala predefinida.</p>
+<hr/>
+<h2 id="26-plano-de-medicao">2.6 Plano de Medição</h2>
+<p>O plano de medição detalha como cada métrica será coletada, incluindo as ferramentas utilizadas, a frequência de coleta e os responsáveis pela execução.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">ID</th>
+<th>Métrica</th>
+<th>Descrição</th>
+<th>Tipo</th>
+<th>Escala</th>
+<th>Fonte de Coleta</th>
+<th>Ferramenta</th>
+<th>Procedimento de Coleta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">M1.1</td>
+<td>Complexidade Ciclomática</td>
+<td>Contagem do número de caminhos independentes em um módulo.</td>
+<td>Indireta</td>
+<td>De Razão</td>
+<td>Código-fonte</td>
+<td>SonarQube</td>
+<td>Executar a análise estática do SonarQube no código-fonte. A ferramenta calcula automaticamente a complexidade para cada método.</td>
+</tr>
+<tr>
+<td style="text-align: center;">M2.1</td>
+<td>Nível de Acoplamento</td>
+<td>Medida do grau de interdependência entre módulos (ex: número de chamadas externas).</td>
+<td>Indireta</td>
+<td>De Razão</td>
+<td>Código-fonte</td>
+<td>SonarQube</td>
+<td>Analisar os relatórios de dependência gerados pelo SonarQube para identificar o número de classes/módulos dos quais um módulo depende.</td>
+</tr>
+<tr>
+<td style="text-align: center;">M2.2</td>
+<td>Detecção de Ciclos de Dependência</td>
+<td>Verificação da existência de dependências circulares entre módulos.</td>
+<td>Direta</td>
+<td>Nominal</td>
+<td>Código-fonte</td>
+<td>SonarQube / Brakeman</td>
+<td>Executar a análise estática da ferramenta, que reportará a existência (Sim) ou ausência (Não) de ciclos de dependência.</td>
+</tr>
+<tr>
+<td style="text-align: center;">M3.1</td>
+<td>Cobertura de Testes (%)</td>
+<td>Percentual do código-fonte executado por testes automatizados.</td>
+<td>Indireta</td>
+<td>De Razão</td>
+<td>Repositório de código</td>
+<td>Ferramentas de cobertura</td>
+<td>Analisar os relatórios de cobertura gerados automaticamente durante a execução da suíte de testes no ambiente de integração contínua.</td>
+</tr>
+<tr>
+<td style="text-align: center;">M4.1</td>
+<td>Disponibilidade da Documentação</td>
+<td>Verificação da existência de documentos-chave (arquitetura, API).</td>
+<td>Direta</td>
+<td>Nominal</td>
+<td>Repositório</td>
+<td>Manual</td>
+<td>Inspeção do repositório para verificar a presença (Sim) ou ausência (Não) dos artefatos de documentação definidos como essenciais.</td>
+</tr>
+<tr>
+<td style="text-align: center;">M4.2</td>
+<td>Qualidade da Documentação</td>
+<td>Avaliação da documentação com base em clareza, completude e atualização (1=Ruim, 5=Excelente).</td>
+<td>Direta</td>
+<td>Ordinal</td>
+<td>Documentação</td>
+<td>Manual (Checklist)</td>
+<td>Um membro da equipe utilizará um checklist para avaliar cada documento e atribuir uma nota de 1 a 5.</td>
+</tr>
+</tbody>
+</table>
+<div align="center">
+<span style="font-size: 12px; font-style: italic;">
+    Autora: <a href="https://github.com/GabrielaTiago">Gabriela Tiago</a>
+</span>
+</div>
+<h2 id="27-niveis-de-pontuacao-e-criterios-de-julgamento">2.7 Níveis de Pontuação e Critérios de Julgamento</h2>
+<p>Os <strong>níveis de pontuação</strong> foram definidos para possibilitar uma <strong>interpretação padronizada dos resultados</strong> das <a href="#25-métricas">medições</a>.
+Cada métrica é associada a uma escala de valores que varia de <em>insuficiente</em> a <em>excelente</em>, permitindo avaliar o grau de atendimento das boas práticas de qualidade de software.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">ID</th>
+<th>Métrica</th>
+<th>Nível de Pontuação</th>
+<th>Critérios de Julgamento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">M1.1</td>
+<td>Complexidade Ciclomática</td>
+<td><strong>&lt; 10:</strong> Baixa complexidade (Aceitável) <strong>11-20:</strong> Complexidade moderada (Atenção) <strong>20:</strong> Alta complexidade (Crítico)</td>
+<td>Módulos com complexidade "Crítica" são fortes candidatos a refatoração e indicam baixa manutenibilidade.</td>
+</tr>
+<tr>
+<td style="text-align: center;">M2.2</td>
+<td>Detecção de Ciclos de Dependência</td>
+<td><strong>Não:</strong> Aceitável <strong>Sim:</strong> Crítico</td>
+<td>A existência de ciclos de dependência é uma falha arquitetural grave que impacta negativamente a manutenibilidade.</td>
+</tr>
+<tr>
+<td style="text-align: center;">M3.1</td>
+<td>Cobertura de Testes (%)</td>
+<td><strong>&gt; 70%:</strong> Adequada <strong>50-70%:</strong> A melhorar <strong>&lt; 50%:</strong> Insuficiente</td>
+<td>Uma cobertura "Insuficiente" indica alto risco de regressão e baixa testabilidade.</td>
+</tr>
+<tr>
+<td style="text-align: center;">M4.2</td>
+<td>Qualidade da Documentação</td>
+<td><strong>4-5:</strong> Boa <strong>3:</strong> Regular <strong>1-2:</strong> Ruim"</td>
+<td>Uma avaliação "Ruim" indica que a documentação não é confiável para guiar novas manutenções.</td>
+</tr>
+</tbody>
+</table>
+<div align="center">
+<span style="font-size: 12px; font-style: italic;">
+    Autores:  <a href="https://github.com/trindadea">Arthur Trindade</a> e <a href="https://github.com/GabrielaTiago">Gabriela Tiago</a>
+</span>
+</div>
+<hr/>
+<h2 id="28-tabela-gqm">2.8 Tabela GQM</h2>
+<p>A tabela GQM consolida as relações entre <strong>objetivos, questões, métricas, fontes de dados e periodicidade de coleta</strong>.<br>
+Essa visão integrada facilita o acompanhamento das medições e a verificação contínua da qualidade, garantindo que as decisões sejam tomadas com base em evidências quantitativas e consistentes.</br></p>
+<table>
+<thead>
+<tr>
+<th>Objetivo</th>
+<th>Questão</th>
+<th>Métrica</th>
+<th>Fonte</th>
+<th>Periodicidade</th>
+<th>Alvo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Entender a facilidade de manutenção e evolução do código do Guardiões da Saúde.</td>
+<td>Q1. Qual o nível de complexidade estrutural do código-fonte do sistema?</td>
+<td>Complexidade Ciclomática</td>
+<td>SonarQube</td>
+<td>Uma vez</td>
+<td>Média &lt; 10</td>
+</tr>
+<tr>
+<td></td>
+<td>Q2. As responsabilidades dos módulos estão bem separadas?</td>
+<td>Nível de Acoplamento</td>
+<td>SonarQube</td>
+<td>Uma vez</td>
+<td>Baixo</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Detecção de Ciclos de Dependência</td>
+<td>SonarQube</td>
+<td>Uma vez</td>
+<td>Não</td>
+</tr>
+<tr>
+<td></td>
+<td>Q3. O código está suficientemente coberto por testes automatizados?</td>
+<td>Cobertura de Testes (%)</td>
+<td>Ferramentas de Cobertura</td>
+<td>Uma vez</td>
+<td>&gt; 70%</td>
+</tr>
+<tr>
+<td></td>
+<td>Q4. A documentação técnica existente é suficiente para apoiar futuras manutenções?</td>
+<td>Disponibilidade da Documentação</td>
+<td>Manual</td>
+<td>Uma vez</td>
+<td>Sim</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Qualidade da Documentação</td>
+<td>Manual (Checklist)</td>
+<td>Uma vez</td>
+<td>4-5 (Boa)</td>
+</tr>
+</tbody>
+</table>
+<div align="center">
+<span style="font-size: 12px; font-style: italic;">
+    Autores:  <a href="https://github.com/trindadea">Arthur Trindade</a> e <a href="https://github.com/GabrielaTiago">Gabriela Tiago</a>
+</span>
+</div>
+<hr/>
+<h2 id="29-diagrama-gqm">2.9 Diagrama GQM</h2>
+<pre class="mermaid"><code>graph TD
+G(G1: Entender a Manutenibilidade) --&gt; Q1(Q1: Complexidade estrutural?)
+  G --&gt; Q2(Q2: Separação de responsabilidades?)
+  G --&gt; Q3(Q3: Cobertura de testes?)
+  G --&gt; Q4(Q4: Documentação suficiente?)
+
+  Q1 --&gt; M1_1(M1.1: Complexidade Ciclomática)
+
+  Q2 --&gt; M2_1(M2.1: Nível de Acoplamento)
+  Q2 --&gt; M2_2(M2.2: Detecção de Ciclos de Dependência)
+
+  Q3 --&gt; M3_1(M3.1: Cobertura de Testes)
+
+  Q4 --&gt; M4_1(M4.1: Disponibilidade da Documentação)
+  Q4 --&gt; M4_2(M4.2: Qualidade da Documentação)</code></pre>
+<div align="center">
+<span style="font-size: 12px; font-style: italic;">
+    Autora: <a href="https://github.com/GabrielaTiago">Gabriela Tiago</a>
+</span>
+</div>
+<hr/>
+<h2 id="210-referencias-bibliograficas">2.10 Referências Bibliográficas</h2>
+<blockquote>
+<p>BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, Hans Dieter. <em>The Goal Question Metric (GQM) Approach.</em> In: MARCINIAK, J. J. (ed.). <em>Encyclopedia of Software Engineering.</em> New York: John Wiley &amp; Sons, 1994. cap. 6, p. 51–55.
+INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. <em>ISO/IEC 25023:2011.</em> Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models. Genebra: ISO, 2011.</p>
+</blockquote>
+<hr/>
+<h2 id="210-historico-de-versoes">2.10 Histórico de Versões</h2>
+<table>
+<thead>
+<tr>
+<th>Versão</th>
+<th>Data</th>
+<th>Descrição</th>
+<th>Autor(es)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>1.0</code></td>
+<td>14/10/2025</td>
+<td>Criação do documento</td>
+<td><a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>, <a href="https://github.com/MatheusHenrickSantos">Matheus Henrick</a></td>
+</tr>
+<tr>
+<td><code>1.1</code></td>
+<td>15/10/2025</td>
+<td>Formatação do texto, remoção de informações redundantes</td>
+<td><a href="https://github.com/GabrielaTiago">Gabriela Tiago</a></td>
+</tr>
+<tr>
+<td><code>1.2</code></td>
+<td>24/10/2025</td>
+<td>Reestruturação do artefato, adição da introdução e dos links de navegação</td>
+<td><a href="https://github.com/trindadea">Arthur Carneiro</a></td>
+</tr>
+<tr>
+<td><code>1.3</code></td>
+<td>25/10/2025</td>
+<td>Ajuste dos itens 2.2 - 3.2 - 4.2 (propósitos somente o verbo no infinitivo)</td>
+<td><a href="https://github.com/uires2023">Uires Carlos de Oliveira</a></td>
+</tr>
+<tr>
+<td><code>1.4</code></td>
+<td>25/10/2025</td>
+<td>Revisão e atualização da seção de Manutenibilidade, incluindo ajustes nas métricas, tabelas e diagrama</td>
+<td><a href="https://github.com/GabrielaTiago">Gabriela Tiago</a></td>
+</tr>
+<tr>
+<td><code>1.5</code></td>
+<td>25/10/2025</td>
+<td>inclusão dos termos: Analisabilidade/ Testabilidade</td>
+<td><a href="https://github.com/uires2023">Uires Carlos de Oliveira</a></td>
+</tr>
+</tbody>
+</table>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Voltar para o topo
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      Copyright © 2025 - T02 Katherine Johnson
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+<div class="md-social">
+<a class="md-social__link" href="https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_Katherine_Johnson" rel="noopener" target="_blank" title="github.com">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "search.highlight", "search.share", "toc.follow", "content.code.annotate", "content.code.copy", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+<script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+</body>
+</html>

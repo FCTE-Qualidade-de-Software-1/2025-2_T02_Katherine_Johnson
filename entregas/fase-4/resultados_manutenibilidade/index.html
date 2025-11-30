@@ -1,0 +1,2921 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentação do projeto Guardiões da Saúde, relacionada à matéria de "Qualidade de Software" do curso de Engenharia de Software da UnB FCTE.">
+      
+      
+      
+        <link rel="canonical" href="https://fcte-qualidade-de-software-1.github.io/2025-2_T02_Katherine_Johnson/entregas/fase-4/resultados_manutenibilidade/">
+      
+      
+        <link rel="prev" href="../visao_geral/">
+      
+      
+        <link rel="next" href="../resultados_confiabilidade/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/icon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>2. Resultados - Manutenibilidade - Guardiões da Saúde</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/theme-overrides.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2-manutenibilidade-execucao-da-avaliacao" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../../.." title="Guardiões da Saúde" class="md-header__button md-logo" aria-label="Guardiões da Saúde" data-md-component="logo">
+      
+  <img src="../../../assets/images/icon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Guardiões da Saúde
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2. Resultados - Manutenibilidade
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="green"  aria-label="Mudar para modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="green"  aria-label="Mudar para modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartilhar" aria-label="Compartilhar" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_Katherine_Johnson" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    FCTE-Qualidade-de-Software-1/2025-2_T02_Katherine_Johnson
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Página Inicial
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../sobre/visao-geral/" class="md-tabs__link">
+          
+  
+  
+  Sobre o Projeto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../fase-1/proposito-da-avaliacao/" class="md-tabs__link">
+          
+  
+  
+  Fase 1 - Requisitos de Avaliação
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../fase-2/visao_geral/" class="md-tabs__link">
+          
+  
+  
+  Fase 2 - Especificação da Avaliação
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../fase-3/visao_geral/" class="md-tabs__link">
+          
+  
+  
+  Fase 3 - Planejamento da Avaliação
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../visao_geral/" class="md-tabs__link">
+          
+  
+  
+  Fase 4 - Execução da Avaliação
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../declaracao_ia/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Declaração do uso de IA
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Guardiões da Saúde" class="md-nav__button md-logo" aria-label="Guardiões da Saúde" data-md-component="logo">
+      
+  <img src="../../../assets/images/icon.png" alt="logo">
+
+    </a>
+    Guardiões da Saúde
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_Katherine_Johnson" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    FCTE-Qualidade-de-Software-1/2025-2_T02_Katherine_Johnson
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Página Inicial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sobre o Projeto
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sobre o Projeto
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sobre/visao-geral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sobre/equipe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Equipe
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 1 - Requisitos de Avaliação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 1 - Requisitos de Avaliação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-1/proposito-da-avaliacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Propósito da Avaliação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-1/partes-interessadas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Requisitante e Partes Interessadas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-1/caracteristicas-produto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Características do Produto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-1/especificacao-modelo-qualidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Especificação do modelo de qualidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-1/selecao-caracteristicas-avaliadas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Seleção das características avaliadas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-1/ods-relacionados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. ODS Relacionados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 2 - Especificação da Avaliação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 2 - Especificação da Avaliação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-2/visao_geral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-2/manutenabilidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Manutenabilidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-2/confiabilidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Confiabilidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-2/seguranca/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Segurança
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-2/tabela_contribuicao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Tabela de Contribuição
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 3 - Planejamento da Avaliação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 3 - Planejamento da Avaliação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-3/visao_geral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-3/manutenabilidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Planejamento - Manutenabilidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-3/confiabilidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Planejamento - Confiabilidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-3/seguranca/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Planejamento - Segurança
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-3/tabela_contribuicao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Tabela de Contribuição
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 4 - Execução da Avaliação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 4 - Execução da Avaliação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visao_geral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Resultados - Manutenibilidade
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Resultados - Manutenibilidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#21-introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Introdução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-ambiente-e-recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Ambiente e Recursos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 Ambiente e Recursos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#221-codigo-fonte-analisado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.1 Código-fonte analisado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#222-ambiente-de-execucao-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.2 Ambiente de execução local
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-procedimentos-executados-reprodutibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Procedimentos Executados (reprodutibilidade)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3 Procedimentos Executados (reprodutibilidade)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231-m11-complexidade-ciclomatica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.1 M1.1 – Complexidade Ciclomática
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.1 M1.1 – Complexidade Ciclomática">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2311-procedimento-executado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.1.1 Procedimento executado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2312-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.1.2 Resultados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2313-observacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.1.3 Observações
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2314-evidencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.1.4 Evidências
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#232-m21-nivel-de-acoplamento-entre-modulos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.2 M2.1 – Nível de Acoplamento entre Módulos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.2 M2.1 – Nível de Acoplamento entre Módulos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2321-observacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.2.1 Observações
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#233-m22-deteccao-de-ciclos-de-dependencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.3 M2.2 – Detecção de Ciclos de Dependência
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.3 M2.2 – Detecção de Ciclos de Dependência">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2331-observacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.3.1 Observações
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#234-m31-cobertura-de-testes-automatizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.4 M3.1 – Cobertura de Testes Automatizados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.4 M3.1 – Cobertura de Testes Automatizados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2341-procedimento-executado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.4.1 Procedimento executado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2342-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.4.2 Resultados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2343-observacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.4.3 Observações
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2344-evidencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.4.4 Evidências
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#235-m41-disponibilidade-da-documentacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.5 M4.1 – Disponibilidade da Documentação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.5 M4.1 – Disponibilidade da Documentação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2351-procedimento-executado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.5.1 Procedimento executado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2352-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.5.2 Resultados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2353-observacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.5.3 Observações
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#236-m42-qualidade-da-documentacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.6 M4.2 – Qualidade da Documentação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.6 M4.2 – Qualidade da Documentação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2361-procedimento-executado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.6.1 Procedimento executado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2362-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.6.2 Resultados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2363-observacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.6.3 Observações
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2364-evidencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.6.4 Evidências
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-metricas-coletadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Métricas Coletadas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4 Métricas Coletadas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#241-metricas-nao-mensuraveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.1 Métricas não mensuráveis
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-respostas-as-questoes-gqm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 Respostas às Questões GQM
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#26-conclusao-e-recomendacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 Conclusão e Recomendações
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#27-historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7 Histórico de Versões
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resultados_confiabilidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Resultados - Confiabilidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resultados_seguranca/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Resultados - Segurança
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conclusao_geral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Conclusão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabela_contribuicao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Tabela de Contribuição
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../declaracao_ia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Declaração do uso de IA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#21-introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Introdução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-ambiente-e-recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Ambiente e Recursos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 Ambiente e Recursos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#221-codigo-fonte-analisado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.1 Código-fonte analisado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#222-ambiente-de-execucao-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.2 Ambiente de execução local
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-procedimentos-executados-reprodutibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Procedimentos Executados (reprodutibilidade)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3 Procedimentos Executados (reprodutibilidade)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231-m11-complexidade-ciclomatica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.1 M1.1 – Complexidade Ciclomática
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.1 M1.1 – Complexidade Ciclomática">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2311-procedimento-executado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.1.1 Procedimento executado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2312-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.1.2 Resultados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2313-observacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.1.3 Observações
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2314-evidencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.1.4 Evidências
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#232-m21-nivel-de-acoplamento-entre-modulos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.2 M2.1 – Nível de Acoplamento entre Módulos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.2 M2.1 – Nível de Acoplamento entre Módulos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2321-observacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.2.1 Observações
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#233-m22-deteccao-de-ciclos-de-dependencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.3 M2.2 – Detecção de Ciclos de Dependência
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.3 M2.2 – Detecção de Ciclos de Dependência">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2331-observacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.3.1 Observações
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#234-m31-cobertura-de-testes-automatizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.4 M3.1 – Cobertura de Testes Automatizados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.4 M3.1 – Cobertura de Testes Automatizados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2341-procedimento-executado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.4.1 Procedimento executado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2342-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.4.2 Resultados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2343-observacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.4.3 Observações
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2344-evidencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.4.4 Evidências
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#235-m41-disponibilidade-da-documentacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.5 M4.1 – Disponibilidade da Documentação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.5 M4.1 – Disponibilidade da Documentação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2351-procedimento-executado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.5.1 Procedimento executado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2352-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.5.2 Resultados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2353-observacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.5.3 Observações
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#236-m42-qualidade-da-documentacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.6 M4.2 – Qualidade da Documentação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.6 M4.2 – Qualidade da Documentação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2361-procedimento-executado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.6.1 Procedimento executado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2362-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.6.2 Resultados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2363-observacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.6.3 Observações
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2364-evidencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.6.4 Evidências
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-metricas-coletadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Métricas Coletadas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4 Métricas Coletadas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#241-metricas-nao-mensuraveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.1 Métricas não mensuráveis
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-respostas-as-questoes-gqm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 Respostas às Questões GQM
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#26-conclusao-e-recomendacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 Conclusão e Recomendações
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#27-historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7 Histórico de Versões
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navegação" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Página Inicial
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../visao_geral/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Fase 4 - Execução da Avaliação
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="2-manutenibilidade-execucao-da-avaliacao">2. Manutenibilidade – Execução da Avaliação</h1>
+<h2 id="21-introducao">2.1 Introdução</h2>
+<p>Esta seção apresenta a execução do plano definido na Fase 3 para a característica <strong>Manutenibilidade</strong> do Guardiões da Saúde – App. As métricas previstas na Fase 2 (M1.1, M2.1, M2.2, M3.1, M4.1, M4.2) foram operacionalizadas conforme o planejamento, com foco em:</p>
+<ul>
+<li>avaliar a <strong>complexidade estrutural</strong> do código;</li>
+<li>verificar <strong>acoplamento</strong> e <strong>ciclos de dependência</strong>;</li>
+<li>medir a <strong>cobertura de testes automatizados</strong>;</li>
+<li>analisar a <strong>disponibilidade</strong> e a <strong>qualidade</strong> da documentação técnica.</li>
+</ul>
+<p>Sempre que possível, as métricas foram coletadas de forma automatizada com apoio de ferramentas (SonarCloud, Jest). Nos casos em que a métrica não é suportada pela ferramenta utilizada, a impossibilidade de coleta foi registrada e discutida na análise.</p>
+<hr />
+<h2 id="22-ambiente-e-recursos">2.2 Ambiente e Recursos</h2>
+<h3 id="221-codigo-fonte-analisado">2.2.1 Código-fonte analisado</h3>
+<ul>
+<li><strong>Projeto:</strong> Guardiões da Saúde – App.</li>
+<li><strong>Repositório de origem:</strong> fork a partir do <a href="https://github.com/ProEpiDesenvolvimento">repositório oficial da ProEpi</a>.</li>
+<li><strong>Branch analisada:</strong> <code>master</code>.</li>
+</ul>
+<h3 id="222-ambiente-de-execucao-local">2.2.2 Ambiente de execução local</h3>
+<ul>
+<li><strong>Sistema Operacional:</strong> Windows 11 25H2.</li>
+<li><strong>Terminal utilizado:</strong> PowerShell.</li>
+<li><strong>Node.js / npm:</strong> Node v20.14.0 e npm 10.7.0.</li>
+<li><strong>Navegador:</strong> Edge para acesso ao SonarCloud.</li>
+</ul>
+<hr />
+<h2 id="23-procedimentos-executados-reprodutibilidade">2.3 Procedimentos Executados (reprodutibilidade)</h2>
+<p>A seguir são descritos, para cada métrica, o procedimento efetivamente executado, observações relevantes e as principais evidências geradas.</p>
+<h3 id="231-m11-complexidade-ciclomatica">2.3.1 M1.1 – Complexidade Ciclomática</h3>
+<p><strong>Questão relacionada:</strong> Q1 – Qual o nível de complexidade estrutural do código-fonte do sistema?</p>
+<h4 id="2311-procedimento-executado">2.3.1.1 Procedimento executado</h4>
+<ol>
+<li>Acessar o projeto <code>guardioes-app</code> no SonarCloud.</li>
+<li>Selecionar a branch <code>master</code>.</li>
+<li>Abrir o menu <strong>Complexity</strong> e, em seguida, a aba <strong>Cyclomatic Complexity</strong>.</li>
+<li>Na visão em árvore, registrar:</li>
+<li><strong>Complexidade total do projeto</strong> (valor exibido no topo).</li>
+<li>Complexidade agregada por diretório/arquivo, com foco em:<ul>
+<li>pasta <code>src/</code> (código principal do app);</li>
+</ul>
+</li>
+<li>Registrar os valores coletados na planilha de evidências.</li>
+</ol>
+<h4 id="2312-resultados">2.3.1.2 Resultados</h4>
+<p>A análise de complexidade ciclomática realizada no SonarCloud apresentou os seguintes valores:</p>
+<ul>
+<li><strong>Complexidade ciclomática total do projeto:</strong> 1.419  </li>
+<li><strong>Complexidade concentrada na pasta <code>src/</code>:</strong> 1.401  </li>
+<li><strong>Complexidade dos arquivos fora de <code>src/</code>:</strong> baixa, variando entre 1 e 10</li>
+</ul>
+<p>Esses valores indicam que praticamente toda a complexidade estrutural relevante do aplicativo está localizada dentro das pastas internas do código-fonte principal.</p>
+<h4 id="2313-observacoes">2.3.1.3 Observações</h4>
+<p>O SonarCloud não disponibiliza métricas detalhadas de complexidade para projetos JavaScript em nível de método ou função individual, tais como complexidade média por método, complexidade máxima ou listagem de funções com complexidade acima de limiares específicos (10, 20, 30). Assim, a avaliação da complexidade ciclomática foi conduzida no nível de pastas e arquivos, com foco principal na pasta <code>src/</code>, onde se concentra a maior parte da lógica do aplicativo.</p>
+<p>A distribuição observada sugere que a estrutura modular do projeto não é equilibrada em termos de complexidade, alguns diretórios acumulam a maior parte dos caminhos independentes do sistema, o que pode indicar a presença de componentes muito grandes, telas com múltiplas responsabilidades ou hooks utilitários extensos.</p>
+<h4 id="2314-evidencias">2.3.1.4 Evidências</h4>
+<div align="center">
+  <p><strong>Figura 1 – Visão de complexidade ciclomática no SonarCloud (árvore de arquivos).</strong></p>
+</div>
+<div align="center">
+  <img src="../../../assets/evidencias/manutenabilidade/m11_sonar_complexity_tree.jpeg" width="750" alt="Visão de complexidade ciclomática no SonarCloud"/>
+</div>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Fonte: Autores.
+</div>
+
+<div align="center">
+  <p><strong>Vídeo 1 – Navegação no SonarCloud para coleta da complexidade.</strong></p>
+</div>
+<div align="center">
+  <video src="../../../assets/evidencias/manutenabilidade/m11_sonar_complexity.mp4" width="750" controls></video>
+</div>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Fonte: Autores.
+</div>
+
+<hr />
+<h3 id="232-m21-nivel-de-acoplamento-entre-modulos">2.3.2 M2.1 – Nível de Acoplamento entre Módulos</h3>
+<p><strong>Questão relacionada:</strong> Q2 – As responsabilidades dos módulos estão bem separadas?</p>
+<h4 id="2321-observacoes">2.3.2.1 Observações</h4>
+<p>O SonarCloud limita sua análise estrutural para projetos JavaScript, não oferecendo mecanismos automáticos para mapear relações entre módulos ou determinar acoplamento estrutural.<br />
+Ferramentas assim só estão disponíveis para linguagens como Java, C#, C/C++, Kotlin e outras que possuem modelos de AST mais completos.</p>
+<p>Apesar disso, é possível inferir indiretamente que o projeto apresenta um grau elevado de dependências internas devido ao grande número de arquivos em <code>src/</code>, porém tal conclusão não pode ser quantificada pela ferramenta.</p>
+<p>Assim, esta métrica foi registrada como <strong>não mensurável via SonarCloud</strong>, com justificativa técnica e evidência correspondente.</p>
+<hr />
+<h3 id="233-m22-deteccao-de-ciclos-de-dependencia">2.3.3 M2.2 – Detecção de Ciclos de Dependência</h3>
+<p><strong>Questão relacionada:</strong> Q2 – As responsabilidades dos módulos estão bem separadas?</p>
+<h4 id="2331-observacoes">2.3.3.1 Observações</h4>
+<p>Na implementação atual da análise para JavaScript, o SonarCloud não constrói um grafo de dependências capaz de identificar ciclos entre módulos. Essa limitação está documentada nas próprias notas de suporte da ferramenta para linguagens interpretadas.</p>
+<p>Apesar de não ser possível medir ciclos, não foram observados indícios manuais de ciclo (como imports recursivos óbvios).<br />
+Ainda assim, a métrica foi classificada como <strong>“não mensurável”</strong> devido à impossibilidade técnica de detecção automatizada.</p>
+<hr />
+<h3 id="234-m31-cobertura-de-testes-automatizados">2.3.4 M3.1 – Cobertura de Testes Automatizados</h3>
+<p><strong>Questão relacionada:</strong> Q3 – O código está suficientemente coberto por testes automatizados?</p>
+<h4 id="2341-procedimento-executado">2.3.4.1 Procedimento executado</h4>
+<ol>
+<li>Na raiz do projeto <code>guardioes-app</code>, executar:
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npm<span class="w"> </span><span class="nb">test</span><span class="w"> </span>--<span class="w"> </span>--coverage
+</code></pre></div></li>
+<li>
+<p>Confirmar o resultado da execução de testes no terminal (1 suíte/1 teste passando).</p>
+</li>
+<li>
+<p>Registrar o arquivo <code>coverage/lcov-report/index.html</code> no navegador.</p>
+</li>
+</ol>
+<h4 id="2342-resultados">2.3.4.2 Resultados</h4>
+<p>A execução da suíte de testes via Jest gerou:</p>
+<ul>
+<li><strong>Testes executados com sucesso:</strong> 1 teste (exemplo padrão do React Native);</li>
+<li><strong>Cobertura total reportada:</strong> <strong>0%</strong> em todas as dimensões<br />
+  (statements, branches, lines, functions);</li>
+<li><strong>Número de arquivos analisados:</strong> 3.308 declarações avaliadas.</li>
+</ul>
+<p>Apesar de o Jest ter rodado corretamente, <strong>nenhum dos arquivos de <code>src/</code> foi coberto</strong>, resultando em cobertura total igual a zero.</p>
+<h4 id="2343-observacoes">2.3.4.3 Observações</h4>
+<p>Mesmo com a execução bem-sucedida do Jest, a estrutura do projeto não contém testes para componentes, telas, hooks ou utilitários, apenas o teste gerado automaticamente pelo template do React Native.</p>
+<h4 id="2344-evidencias">2.3.4.4 Evidências</h4>
+<div align="center">
+  <p><strong>Figura 2 – Relatório completo de cobertura do Jest exibindo 0%.</strong></p>
+</div>
+<div align="center">
+  <img src="../../../assets/evidencias/manutenabilidade/m31_coverage_full.png" width="750" alt="Relatório de cobertura do Jest"/>
+</div>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Fonte: Autores.
+</div>
+
+<div align="center">
+  <p><strong>Vídeo 2 – Execução do comando <code>npm test -- --coverage</code> mostrando a geração do relatório.</strong></p>
+</div>
+<div align="center">
+  <video src="../../../assets/evidencias/manutenabilidade/m31_jest_run.mp4" width="750" controls></video>
+</div>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Fonte: Autores.
+</div>
+
+<hr />
+<h3 id="235-m41-disponibilidade-da-documentacao">2.3.5 M4.1 – Disponibilidade da Documentação</h3>
+<p><strong>Questão relacionada:</strong> Q4 – A documentação técnica existente é suficiente para apoiar futuras manutenções?</p>
+<h4 id="2351-procedimento-executado">2.3.5.1 Procedimento executado</h4>
+<ol>
+<li>Abrir o repositório <code>guardioes-app</code> no VSCode/GitHub.</li>
+<li>Inspecionar a raiz do projeto e a pasta <code>doc/</code>, verificando a presença dos artefatos definidos na Fase 3.</li>
+<li>Registrar, em checklist, <strong>Sim / Não / Parcial</strong> para cada artefato e o respectivo caminho.</li>
+</ol>
+<h4 id="2352-resultados">2.3.5.2 Resultados</h4>
+<p>A inspeção do repositório identificou os seguintes artefatos:</p>
+<div align="center">
+  <p><strong>Tabela 1 – Artefatos de documentação identificados no repositório do Guardiões da Saúde.</strong></p>
+</div>
+
+<table>
+<thead>
+<tr>
+<th>Documento</th>
+<th>Presença</th>
+<th>Caminho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>README principal</td>
+<td><strong>Sim</strong></td>
+<td><code>/README.md</code></td>
+</tr>
+<tr>
+<td>Documento de arquitetura</td>
+<td><strong>Não</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td>Documentação de API</td>
+<td><strong>Não</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td>Guia de contribuição</td>
+<td><strong>Sim</strong></td>
+<td><code>/CONTRIBUTING.md</code></td>
+</tr>
+<tr>
+<td>Documentação técnica em <code>/docs</code></td>
+<td><strong>NÃO</strong></td>
+<td><code>/docs</code></td>
+</tr>
+</tbody>
+</table>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Fonte: Autores.
+</div>
+
+<p>Conclusão: <strong>Documentação disponível: Parcial</strong></p>
+<h4 id="2353-observacoes">2.3.5.3 Observações</h4>
+<p>O repositório possui uma boa base de arquivos voltados à colaboração (issues, PRs, código de conduta), mas <strong>carece totalmente de documentação técnica do sistema</strong>, incluindo:</p>
+<ul>
+<li>visão geral de arquitetura,</li>
+<li>descrição de módulos,</li>
+<li>fluxos internos,</li>
+<li>modelos de dados,</li>
+<li>contratos de API.</li>
+</ul>
+<p>Isso impacta diretamente a mantenibilidade, pois novos desenvolvedores precisam explorar manualmente o código para compreender suas responsabilidades e dependências.</p>
+<hr />
+<h3 id="236-m42-qualidade-da-documentacao">2.3.6 M4.2 – Qualidade da Documentação</h3>
+<p><strong>Questão relacionada:</strong> Q4 – A documentação técnica existente é suficiente para apoiar futuras manutenções?</p>
+<h4 id="2361-procedimento-executado">2.3.6.1 Procedimento executado</h4>
+<ol>
+<li>Considerar os artefatos identificados na M4.1:<ul>
+<li><code>README.md</code></li>
+<li><code>CONTRIBUTING.md</code></li>
+</ul>
+</li>
+<li>Para cada documento, aplicar o checklist definido na Fase 3, atribuindo notas de <strong>1 a 5</strong> para:<ul>
+<li><strong>Clareza</strong></li>
+<li><strong>Completude</strong></li>
+<li><strong>Atualização</strong></li>
+</ul>
+</li>
+<li>Calcular a média das três notas para cada artefato.</li>
+<li>Classificar a qualidade geral de cada documento:<ul>
+<li>4–5: Boa</li>
+<li>3: Regular</li>
+<li>1–2: Ruim</li>
+</ul>
+</li>
+</ol>
+<h4 id="2362-resultados">2.3.6.2 Resultados</h4>
+<p>Cada documento identificado em M4.1 foi avaliado segundo os critérios: <strong>clareza</strong>, <strong>completude</strong> e <strong>atualização</strong>, com notas de 1 a 5.</p>
+<div align="center">
+  <p><strong>Tabela 2 – Avaliação de clareza, completude e atualização da documentação.</strong></p>
+</div>
+
+<table>
+<thead>
+<tr>
+<th>Documento</th>
+<th style="text-align: right;">Clareza</th>
+<th style="text-align: right;">Completude</th>
+<th style="text-align: right;">Atualização</th>
+<th style="text-align: right;">Média</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>README.md</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;"><strong>3,0</strong></td>
+</tr>
+<tr>
+<td>CONTRIBUTING.md</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;"><strong>3,3</strong></td>
+</tr>
+<tr>
+<td>Templates de Issue/PR</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;"><strong>4,0</strong></td>
+</tr>
+</tbody>
+</table>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Fonte: Autores.
+</div>
+
+<p>Média geral ponderada da documentação técnica: <strong>3,1 (Regular)</strong></p>
+<h4 id="2363-observacoes">2.3.6.3 Observações</h4>
+<p>A documentação voltada ao fluxo de contribuição apresenta boa clareza e está relativamente atualizada, mas representa apenas o aspecto colaborativo do projeto.<br />
+Não há documentação técnica profunda, o que reduz significativamente a completude geral.  </p>
+<p>A ausência de descrição de arquitetura e módulos impacta a nota final, resultando em uma avaliação <strong>regular</strong>, com necessidade de expansão futura.</p>
+<h4 id="2364-evidencias">2.3.6.4 Evidências</h4>
+<div align="center">
+  <p><strong>Figura 3 – Documentação do Guardiões da Saúde.</strong></p>
+</div>
+<div align="center">
+  <img src="../../../assets/evidencias/manutenabilidade/m42_docs.jpeg" width="750" alt="Documentação do Guardiões da Saúde"/>
+</div>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Fonte: Autores.
+</div>
+
+<hr />
+<h2 id="24-metricas-coletadas">2.4 Métricas Coletadas</h2>
+<div align="center">
+  <p><strong>Tabela 3 – Síntese das métricas de manutenibilidade coletadas.</strong></p>
+</div>
+
+<table>
+<thead>
+<tr>
+<th>Métrica</th>
+<th>Valor</th>
+<th>Evidência</th>
+<th>Interpretação</th>
+<th>Julgamento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>M1.1 – Complexidade Ciclomática</strong></td>
+<td>Complexidade total: <strong>1.419</strong></td>
+<td>Print/relatório do SonarCloud</td>
+<td>Complexidade elevada e concentrada em <code>src/</code>, dificultando manutenção e extensão do código.</td>
+<td><strong>Insuficiente</strong></td>
+</tr>
+<tr>
+<td><strong>M3.1 – Cobertura de Testes Automatizados (%)</strong></td>
+<td><strong>0%</strong></td>
+<td>Relatório completo do Jest (coverage)</td>
+<td>Não há testes cobrindo o código crítico da aplicação, aumentando risco de regressões.</td>
+<td><strong>Insuficiente</strong></td>
+</tr>
+<tr>
+<td><strong>M4.1 – Disponibilidade da Documentação</strong></td>
+<td><strong>Parcial</strong></td>
+<td>Checklist dos artefatos identificados</td>
+<td>Documentação colaborativa existe, mas documentação técnica é ausente.</td>
+<td><strong>Regular</strong></td>
+</tr>
+<tr>
+<td><strong>M4.2 – Qualidade da Documentação</strong></td>
+<td>Média geral: <strong>3,1</strong></td>
+<td>Planilha de notas (clareza/completude/atualização)</td>
+<td>Documentação clara, mas incompleta e pouco técnica; insuficiente para onboarding e manutenção.</td>
+<td><strong>Regular</strong></td>
+</tr>
+</tbody>
+</table>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Fonte: Autores.
+</div>
+
+<h3 id="241-metricas-nao-mensuraveis">2.4.1 Métricas não mensuráveis</h3>
+<p>Diferentemente do previsto no planejamento, <strong>duas métricas não puderam ser mensuradas</strong> devido a limitações técnicas do SonarCloud para projetos JavaScript/React Native:</p>
+<ul>
+<li><strong>M2.1 – Acoplamento</strong>  </li>
+<li><strong>M2.2 – Ciclos de dependência</strong></li>
+</ul>
+<p>Ambas foram devidamente justificadas nas suas seções e registradas como <strong>não mensuráveis</strong>.</p>
+<hr />
+<h2 id="25-respostas-as-questoes-gqm">2.5 Respostas às Questões GQM</h2>
+<ul>
+<li>
+<p><strong>Q1. Qual o nível de complexidade estrutural do código-fonte do sistema?</strong>  </p>
+<ul>
+<li><strong>Resposta:</strong> <strong>Alto</strong>  </li>
+<li><strong>Justificativa:</strong> a complexidade total de <strong>1.419</strong>, concentrada quase totalmente na pasta <code>src/</code>, indica elevado número de caminhos independentes e módulos extensos, tornando o código mais difícil de compreender e modificar.</li>
+</ul>
+</li>
+<li>
+<p><strong>Q2. As responsabilidades dos módulos estão bem separadas?</strong>  </p>
+<ul>
+<li><strong>Resposta:</strong> <strong>Não é possível afirmar</strong>  </li>
+<li><strong>Justificativa:</strong> as métricas de acoplamento (M2.1) e ciclos (M2.2) não puderam ser medidas no SonarCloud para JavaScript. Não foram identificados ciclos manualmente, mas a ausência de ferramentas torna a avaliação inconclusiva.</li>
+</ul>
+</li>
+<li>
+<p><strong>Q3. O código está suficientemente coberto por testes automatizados?</strong>  </p>
+<ul>
+<li><strong>Resposta:</strong> <strong>Não</strong>  </li>
+<li><strong>Justificativa:</strong> a métrica M3.1 apontou <strong>0%</strong> de cobertura, indicando que funcionalidades críticas não possuem testes e que não há apoio automatizado para evitar regressões.</li>
+</ul>
+</li>
+<li>
+<p><strong>Q4. A documentação técnica existente é suficiente para apoiar futuras manutenções?</strong>  </p>
+<ul>
+<li><strong>Resposta:</strong> <strong>Parcialmente</strong>  </li>
+<li><strong>Justificativa:</strong> a documentação disponível cobre aspectos colaborativos (issues, PRs, código de conduta), porém <strong>não existe documentação técnica</strong>, reduzindo completude e sustentação ao processo de manutenção (M4.1 e M4.2).</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="26-conclusao-e-recomendacoes">2.6 Conclusão e Recomendações</h2>
+<p>As conclusões consolidadas sobre Manutenibilidade e as recomendações prioritárias estão apresentadas de forma integrada na <a href="../conclusao_geral/">Conclusão Geral</a>.</p>
+<hr />
+<h2 id="27-historico-de-versoes">2.7 Histórico de Versões</h2>
+<table>
+<thead>
+<tr>
+<th>Versão</th>
+<th>Data</th>
+<th>Descrição</th>
+<th>Autor(es)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>1.0</code></td>
+<td>26/11/2025</td>
+<td>Criação do documento</td>
+<td><a href="https://github.com/trindadea">Arthur Carneiro</a></td>
+</tr>
+<tr>
+<td><code>1.1</code></td>
+<td>27/11/2025</td>
+<td>Preenchimento da Fase 4</td>
+<td><a href="https://github.com/trindadea">Arthur Carneiro</a></td>
+</tr>
+<tr>
+<td><code>1.2</code></td>
+<td>27/11/2025</td>
+<td>Adição das evidências</td>
+<td><a href="https://github.com/GabrielaTiago">Gabriela Tiago</a></td>
+</tr>
+<tr>
+<td><code>1.3</code></td>
+<td>27/11/2025</td>
+<td>Revisão e Ajustes</td>
+<td><a href="https://github.com/GabrielaTiago">Gabriela Tiago</a></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 - T02 Katherine Johnson
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_Katherine_Johnson" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "search.highlight", "search.share", "toc.follow", "content.code.annotate", "content.code.copy", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1256 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="pt">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Documentação do projeto Guardiões da Saúde, relacionada à matéria de " curso="" da="" de="" do="" engenharia="" fcte."="" name="description" qualidade="" software="" software"="" unb=""/>
+<link href="https://fcte-qualidade-de-software-1.github.io/2025-2_T02_Katherine_Johnson/entregas/fase-2/seguranca/" rel="canonical"/>
+<link href="../confiabilidade/" rel="prev"/>
+<link href="../tabela_contribuicao/" rel="next"/>
+<link href="../../../assets/images/icon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.0" name="generator"/>
+<title>4. Segurança - Guardiões da Saúde</title>
+<link href="../../../assets/stylesheets/main.618322db.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../../stylesheets/theme-overrides.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="green" data-md-color-primary="teal" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#4-seguranca">
+          Pular para conteúdo
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Cabeçalho" class="md-header__inner md-grid">
+<a aria-label="Guardiões da Saúde" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="Guardiões da Saúde">
+<img alt="logo" src="../../../assets/images/icon.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Guardiões da Saúde
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              4. Segurança
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Mudar para modo escuro" class="md-option" data-md-color-accent="green" data-md-color-media="" data-md-color-primary="teal" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Mudar para modo escuro">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+<input aria-label="Mudar para modo claro" class="md-option" data-md-color-accent="green" data-md-color-media="" data-md-color-primary="teal" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Mudar para modo claro">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Buscar" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Buscar" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Pesquisar" class="md-search__options">
+<a aria-label="Compartilhar" class="md-search__icon md-icon" data-clipboard="" data-clipboard-text="" data-md-component="search-share" href="javascript:void(0)" tabindex="-1" title="Compartilhar">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
+</a>
+<button aria-label="Limpar" class="md-search__icon md-icon" tabindex="-1" title="Limpar" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_Katherine_Johnson" title="Ir para repositório">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+</div>
+<div class="md-source__repository">
+    FCTE-Qualidade-de-Software-1/2025-2_T02_Katherine_Johnson
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Abas" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../..">
+        
+  
+  
+    
+  
+  Página Inicial
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../sobre/visao-geral/">
+          
+  
+  
+  Sobre o Projeto
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../fase-1/proposito-da-avaliacao/">
+          
+  
+  
+  Fase 1 - Requisitos de Avaliação
+
+        </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../visao_geral/">
+          
+  
+  
+  Fase 2 - Especificação da Avaliação
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../fase-3/visao_geral/">
+          
+  
+  
+  Fase 3 - Planejamento da Avaliação
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../fase-4/visao_geral/">
+          
+  
+  
+  Fase 4 - Execução da Avaliação
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../declaracao_ia/">
+        
+  
+  
+    
+  
+  Declaração do uso de IA
+
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navegação" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Guardiões da Saúde" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="Guardiões da Saúde">
+<img alt="logo" src="../../../assets/images/icon.png"/>
+</a>
+    Guardiões da Saúde
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_Katherine_Johnson" title="Ir para repositório">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+</div>
+<div class="md-source__repository">
+    FCTE-Qualidade-de-Software-1/2025-2_T02_Katherine_Johnson
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+<span class="md-ellipsis">
+    
+  
+    Página Inicial
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Sobre o Projeto
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Sobre o Projeto
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../sobre/visao-geral/">
+<span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../sobre/equipe/">
+<span class="md-ellipsis">
+    
+  
+    Equipe
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Fase 1 - Requisitos de Avaliação
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 1 - Requisitos de Avaliação
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-1/proposito-da-avaliacao/">
+<span class="md-ellipsis">
+    
+  
+    1. Propósito da Avaliação
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-1/partes-interessadas/">
+<span class="md-ellipsis">
+    
+  
+    2. Requisitante e Partes Interessadas
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-1/caracteristicas-produto/">
+<span class="md-ellipsis">
+    
+  
+    3. Características do Produto
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-1/especificacao-modelo-qualidade/">
+<span class="md-ellipsis">
+    
+  
+    4. Especificação do modelo de qualidade
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-1/selecao-caracteristicas-avaliadas/">
+<span class="md-ellipsis">
+    
+  
+    5. Seleção das características avaliadas
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-1/ods-relacionados/">
+<span class="md-ellipsis">
+    
+  
+    6. ODS Relacionados
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Fase 2 - Especificação da Avaliação
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 2 - Especificação da Avaliação
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../visao_geral/">
+<span class="md-ellipsis">
+    
+  
+    1. Visão Geral
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../manutenabilidade/">
+<span class="md-ellipsis">
+    
+  
+    2. Manutenabilidade
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../confiabilidade/">
+<span class="md-ellipsis">
+    
+  
+    3. Confiabilidade
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    
+  
+    4. Segurança
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    
+  
+    4. Segurança
+  
+
+    
+  </span>
+</a>
+<nav aria-label="Índice" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#41-introducao">
+<span class="md-ellipsis">
+      
+        4.1 Introdução
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#42-objetivo-gqm">
+<span class="md-ellipsis">
+      
+        4.2 Objetivo GQM
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#43-questoes">
+<span class="md-ellipsis">
+      
+        4.3 Questões
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#44-hipoteses">
+<span class="md-ellipsis">
+      
+        4.4 Hipóteses
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#45-metricas">
+<span class="md-ellipsis">
+      
+        4.5 Métricas
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#46-plano-de-medicao">
+<span class="md-ellipsis">
+      
+        4.6 Plano de Medição
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#47-niveis-de-pontuacao-e-criterios-de-julgamento">
+<span class="md-ellipsis">
+      
+        4.7 Níveis de Pontuação e Critérios de Julgamento
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#48-tabela-gqm">
+<span class="md-ellipsis">
+      
+        4.8 Tabela GQM
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#48-diagrama-gqm">
+<span class="md-ellipsis">
+      
+        4.8 Diagrama GQM
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#49-referencias-bibliograficas">
+<span class="md-ellipsis">
+      
+        4.9 Referências Bibliográficas
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#410-historico-de-versoes">
+<span class="md-ellipsis">
+      
+        4.10 Histórico de Versões
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../tabela_contribuicao/">
+<span class="md-ellipsis">
+    
+  
+    5. Tabela de Contribuição
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Fase 3 - Planejamento da Avaliação
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 3 - Planejamento da Avaliação
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-3/visao_geral/">
+<span class="md-ellipsis">
+    
+  
+    1. Visão Geral
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-3/manutenabilidade/">
+<span class="md-ellipsis">
+    
+  
+    2. Planejamento - Manutenabilidade
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-3/confiabilidade/">
+<span class="md-ellipsis">
+    
+  
+    3. Planejamento - Confiabilidade
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-3/seguranca/">
+<span class="md-ellipsis">
+    
+  
+    4. Planejamento - Segurança
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-3/tabela_contribuicao/">
+<span class="md-ellipsis">
+    
+  
+    5. Tabela de Contribuição
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Fase 4 - Execução da Avaliação
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 4 - Execução da Avaliação
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-4/visao_geral/">
+<span class="md-ellipsis">
+    
+  
+    1. Visão Geral
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-4/resultados_manutenibilidade/">
+<span class="md-ellipsis">
+    
+  
+    2. Resultados - Manutenibilidade
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-4/resultados_confiabilidade/">
+<span class="md-ellipsis">
+    
+  
+    3. Resultados - Confiabilidade
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-4/resultados_seguranca/">
+<span class="md-ellipsis">
+    
+  
+    4. Resultados - Segurança
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-4/conclusao_geral/">
+<span class="md-ellipsis">
+    
+  
+    5. Conclusão Geral
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../fase-4/tabela_contribuicao/">
+<span class="md-ellipsis">
+    
+  
+    6. Tabela de Contribuição
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../declaracao_ia/">
+<span class="md-ellipsis">
+    
+  
+    Declaração do uso de IA
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Índice" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#41-introducao">
+<span class="md-ellipsis">
+      
+        4.1 Introdução
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#42-objetivo-gqm">
+<span class="md-ellipsis">
+      
+        4.2 Objetivo GQM
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#43-questoes">
+<span class="md-ellipsis">
+      
+        4.3 Questões
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#44-hipoteses">
+<span class="md-ellipsis">
+      
+        4.4 Hipóteses
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#45-metricas">
+<span class="md-ellipsis">
+      
+        4.5 Métricas
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#46-plano-de-medicao">
+<span class="md-ellipsis">
+      
+        4.6 Plano de Medição
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#47-niveis-de-pontuacao-e-criterios-de-julgamento">
+<span class="md-ellipsis">
+      
+        4.7 Níveis de Pontuação e Critérios de Julgamento
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#48-tabela-gqm">
+<span class="md-ellipsis">
+      
+        4.8 Tabela GQM
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#48-diagrama-gqm">
+<span class="md-ellipsis">
+      
+        4.8 Diagrama GQM
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#49-referencias-bibliograficas">
+<span class="md-ellipsis">
+      
+        4.9 Referências Bibliográficas
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#410-historico-de-versoes">
+<span class="md-ellipsis">
+      
+        4.10 Histórico de Versões
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<nav aria-label="Navegação" class="md-path">
+<ol class="md-path__list">
+<li class="md-path__item">
+<a class="md-path__link" href="../../..">
+<span class="md-ellipsis">
+    Página Inicial
+  </span>
+</a>
+</li>
+<li class="md-path__item">
+<a class="md-path__link" href="../visao_geral/">
+<span class="md-ellipsis">
+    Fase 2 - Especificação da Avaliação
+  </span>
+</a>
+</li>
+</ol>
+</nav>
+<article class="md-content__inner md-typeset">
+<h1 id="4-seguranca">4. Segurança</h1>
+<h2 id="41-introducao">4.1 Introdução</h2>
+<p>A <strong>segurança de software</strong> é uma característica de qualidade essencial, especialmente em sistemas que tratam <strong>informações sensíveis e dados pessoais dos usuários</strong>, como o <strong>Guardiões da Saúde</strong>. A proteção desses dados é uma prioridade para todos os stakeholders, desde os cidadãos que fornecem as informações até os gestores de saúde que as utilizam, e é um requisito legal sob a Lei Geral de Proteção de Dados (LGPD).</p>
+<p>Esta análise de segurança foca na identificação de vulnerabilidades no código-fonte e em suas dependências, que poderiam comprometer a <strong>confidencialidade</strong>, <strong>integridade</strong> e <strong>disponibilidade</strong> dos dados, garantindo que o sistema esteja protegido contra acessos e modificações não autorizadas.</p>
+<hr/>
+<h2 id="42-objetivo-gqm">4.2 Objetivo GQM</h2>
+<table>
+<tr><th>Analisar</th><td>o Guardiões da Saúde</td></tr>
+<tr><th>Para o propósito de</th><td>Entender e Avaliar</td></tr>
+<tr><th>Com respeito a</th><td>segurança</td></tr>
+<tr><th>Do ponto de vista da</th><td>equipe de desenvolvimento</td></tr>
+<tr><th>No contexto da</th><td>disciplina de Qualidade de Software</td></tr>
+</table>
+<div align="center">
+<span style="font-size: 12px; font-style: italic;">
+    Autor: <a href="https://github.com/MatheusHenrickSantos">Matheus Henrick</a>
+</span>
+</div>
+<hr/>
+<h2 id="43-questoes">4.3 Questões</h2>
+<p>As questões definidas para uma característica visam direcionar a avaliação e verificar se o objetivo de medição está sendo atingido.</p>
+<p>As questões avaliativas foram definidas com base nas subcaracterísticas selecionadas na Fase 1.</p>
+<p><strong>Confidencialidade / Integridade</strong>
+<br/></p>
+<p><strong>Q1.</strong> O sistema protege adequadamente os dados sensíveis dos usuários?</p>
+<p><strong>Q2.</strong> O sistema garante que os dados não sejam alterados indevidamente?</p>
+<p><strong>Q3.</strong> As ações dos usuários e do sistema são rastreáveis e auditáveis?</p>
+<p><strong>Q4.</strong> O sistema verifica corretamente a identidade dos usuários?</p>
+<hr/>
+<h2 id="44-hipoteses">4.4 Hipóteses</h2>
+<p>As hipóteses representam <strong>expectativas sobre o estado de segurança do software</strong> em relação às <a href="#43-questões">questões formuladas</a>.
+Elas orientam a interpretação dos resultados das medições e permitem comparar o desempenho real do sistema com o esperado, fornecendo base para o julgamento qualitativo.</p>
+<p><br/></p>
+<p><strong>H1:</strong> Os dados sensíveis estão protegidos por mecanismos de criptografia e controle de acesso.</p>
+<p><strong>H2:</strong> Os dados são protegidos contra alterações não autorizadas, com validações e registros de auditoria.</p>
+<p><strong>H3:</strong> O sistema registra ações relevantes com identificação clara do autor e timestamp, permitindo auditoria.</p>
+<p><strong>H4:</strong> O sistema utiliza mecanismos seguros de autenticação, evitando acessos indevidos.</p>
+<hr/>
+<h2 id="45-metricas">4.5 Métricas</h2>
+<p>As métricas foram selecionadas com base nas questões e <a href="#44-hipóteses">hipóteses propostas</a>, seguindo o princípio do GQM de alinhar cada medida a um objetivo claro.</p>
+<p>Um conjunto de métricas quantitativas e qualitativas foi definido para avaliar a segurança do sistema, focando na <strong>identificação de vulnerabilidades, revisão de pontos críticos de segurança e conformidade com boas práticas reconhecidas</strong>.</p>
+<p><br/></p>
+<p><strong>M1.1 (Q1, Q2, Q4):</strong> Contagem de Vulnerabilidades por Severidade: Mede o número de fraquezas de segurança encontradas no código-fonte, classificadas por severidade (Crítica, Alta, Média, Baixa). Vulnerabilidades podem comprometer a proteção de dados (Q1), permitir alterações indevidas (Q2) e quebrar mecanismos de autenticação (Q4).</p>
+<p><strong>M1.2 (Q1, Q2, Q4):</strong> Tipos de Vulnerabilidades (Mapeamento OWASP Top 10): Classifica as vulnerabilidades encontradas de acordo com as categorias de risco mais críticas para aplicações web, como Broken Access Control (A01), Cryptographic Failures (A02), Injection (A03) e Broken Authentication (A07). Isso permite uma análise qualitativa dos riscos relacionados à proteção de dados (Q1), integridade (Q2) e autenticação (Q4).</p>
+<p><strong>M1.3 (Q1, Q2, Q4):</strong> Percentual de Security Hotspots Revisados: Mede a proporção de pontos de código que são sensíveis à segurança (ex: manipulação de senhas, queries a banco de dados) e que já foram revisados por um desenvolvedor. Um baixo percentual de revisão indica riscos potenciais não avaliados.</p>
+<p><strong>M3.1 (Q3):</strong> Verificação da Implementação de Mecanismos de Log/Auditoria: Avalia a existência (Sim/Não) de um framework de logging consistente no código, capaz de registrar ações relevantes para auditoria. Esta é uma métrica qualitativa, verificada manualmente.</p>
+<hr/>
+<h2 id="46-plano-de-medicao">4.6 Plano de Medição</h2>
+<p>O plano de medição detalha como cada métrica de segurança será coletada, incluindo as ferramentas utilizadas, a frequência de coleta e os responsáveis pela execução, garantindo consistência e objetividade no processo.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">ID</th>
+<th>Métrica</th>
+<th>Descrição</th>
+<th>Tipo</th>
+<th>Escala</th>
+<th>Fonte de Coleta</th>
+<th>Ferramenta</th>
+<th>Procedimento de Coleta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">M1.1</td>
+<td>Contagem de Vulnerabilidades por Severidade</td>
+<td>Contagem de fraquezas de segurança encontradas no código-fonte, agrupadas por severidade para priorizar correções.</td>
+<td>Direta</td>
+<td>Absoluta</td>
+<td>Código-fonte</td>
+<td>SonarQube (SAST)</td>
+<td>Executar a análise de segurança estática (SAST). A ferramenta classifica automaticamente as vulnerabilidades encontradas.</td>
+</tr>
+<tr>
+<td style="text-align: center;">M1.2</td>
+<td>Tipos de Vulnerabilidades (Mapeamento OWASP Top 10)</td>
+<td>Classificação das vulnerabilidades encontradas de acordo com as categorias de risco do OWASP Top 10 para entender a natureza das falhas.</td>
+<td>Direta</td>
+<td>Nominal</td>
+<td>Código-fonte</td>
+<td>SonarQube (SAST)</td>
+<td>Mapear os resultados da análise SAST para as categorias correspondentes do OWASP Top 10, utilizando os relatórios da ferramenta.</td>
+</tr>
+<tr>
+<td style="text-align: center;">M1.3</td>
+<td>Percentual de Security Hotspots Revisados</td>
+<td>Proporção de pontos de código sensíveis à segurança que foram revisados por um desenvolvedor para garantir que riscos potenciais foram avaliados.</td>
+<td>Indireta</td>
+<td>De Razão</td>
+<td>Código-fonte</td>
+<td>SonarQube (SAST)</td>
+<td>Extrair do dashboard do SonarQube o número de hotspots marcados como "Revisado" e o número total de hotspots para calcular o percentual.</td>
+</tr>
+<tr>
+<td style="text-align: center;">M3.1</td>
+<td>Verificação da Implementação de Mecanismos de Log/Auditoria</td>
+<td>Verificação da existência de um framework de logging implementado nas principais rotinas de negócio para garantir a rastreabilidade.</td>
+<td>Direta</td>
+<td>Nominal</td>
+<td>Código-fonte</td>
+<td>Manual (Inspeção)</td>
+<td>Inspecionar o código-fonte de módulos críticos (ex: autenticação, manipulação de dados) para verificar a presença (Sim) ou ausência (Não) de chamadas a um sistema de log.</td>
+</tr>
+</tbody>
+</table>
+<div align="center">
+<span style="font-size: 12px; font-style: italic;">
+    Autora: <a href="https://github.com/GabrielaTiago">Gabriela Tiago</a>
+</span>
+</div>
+<hr/>
+<h2 id="47-niveis-de-pontuacao-e-criterios-de-julgamento">4.7 Níveis de Pontuação e Critérios de Julgamento</h2>
+<p>Os <strong>níveis de pontuação</strong> foram definidos para possibilitar uma <strong>interpretação padronizada dos resultados</strong> das <a href="#45-métricas">medições</a>.<br>
+Cada métrica é associada a uma escala de valores que varia de <em>insuficiente</em> a <em>excelente</em>, permitindo avaliar o grau de atendimento das boas práticas de qualidade de software.</br></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">ID</th>
+<th>Métrica</th>
+<th>Nível de Pontuação</th>
+<th>Critérios de Julgamento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">M1.1</td>
+<td>Contagem de Vulnerabilidades por Severidade</td>
+<td><strong>Excelente:</strong> 0 Críticas / 0 Altas <strong>Bom:</strong> 0 Críticas / ≤ 5 Altas <strong>Insuficiente:</strong> &gt; 5 Altas ou qualquer Crítica</td>
+<td>A presença de vulnerabilidades "Críticas" ou "Altas" indica um risco de segurança imediato que precisa ser corrigido, pois pode comprometer diretamente a proteção dos dados (Q1), sua integridade (Q2) e a autenticação dos usuários (Q4).</td>
+</tr>
+<tr>
+<td style="text-align: center;">M1.2</td>
+<td>Tipos de Vulnerabilidades (Mapeamento OWASP Top 10)</td>
+<td><strong>Excelente:</strong> Ausência de vulnerabilidades nas categorias A01, A02, A03, A07 <strong>Atenção:</strong> Presença de qualquer vulnerabilidade nessas categorias</td>
+<td>A presença de vulnerabilidades como Broken Access Control (A01), Cryptographic Failures (A02), Injection (A03) ou Broken Authentication (A07) representa uma falha grave e um risco direto à segurança dos dados e do sistema.</td>
+</tr>
+<tr>
+<td style="text-align: center;">M1.3</td>
+<td>Percentual de Security Hotspots Revisados</td>
+<td><strong>Excelente:</strong> 100% <strong>Bom:</strong> 80-99% <strong>Insuficiente:</strong> &lt; 80%</td>
+<td>Um percentual "Insuficiente" indica que existem riscos de segurança potenciais no código que não foram devidamente analisados pela equipe, deixando brechas que podem ser exploradas.</td>
+</tr>
+<tr>
+<td style="text-align: center;">M3.1</td>
+<td>Verificação da Implementação de Mecanismos de Log/Auditoria</td>
+<td><strong>Aceitável:</strong> Sim <strong>Insuficiente:</strong> Não</td>
+<td>A ausência ("Não") de um mecanismo de logging impede a rastreabilidade e auditoria das ações (Q3), falhando em atender a um requisito básico de segurança e conformidade para sistemas que manipulam dados sensíveis.</td>
+</tr>
+</tbody>
+</table>
+<div align="center">
+<span style="font-size: 12px; font-style: italic;">
+    Autores:  <a href="https://github.com/trindadea">Arthur Trindade</a> e <a href="https://github.com/GabrielaTiago">Gabriela Tiago</a>
+</span>
+</div>
+<hr/>
+<h2 id="48-tabela-gqm">4.8 Tabela GQM</h2>
+<p>A tabela GQM consolida as relações entre <strong>objetivos, questões, métricas, fontes de dados e periodicidade de coleta</strong>.<br>
+Essa visão integrada facilita o acompanhamento das medições e a verificação contínua da qualidade, garantindo que as decisões sexjam tomadas com base em evidências quantitativas e consistentes.</br></p>
+<table>
+<thead>
+<tr>
+<th>Objetivo</th>
+<th>Questão</th>
+<th>Métrica</th>
+<th>Fonte</th>
+<th>Periodicidade</th>
+<th>Alvo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Entender e avaliar a segurança do código do Guardiões da Saúde.</td>
+<td>Q1. O sistema protege adequadamente os dados sensíveis dos usuários?</td>
+<td>Contagem de Vulnerabilidades por Severidade</td>
+<td>SonarQube</td>
+<td>Uma vez</td>
+<td>0 Críticas / 0 Altas</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Tipos de Vulnerabilidades (OWASP)</td>
+<td>SonarQube</td>
+<td>Uma vez</td>
+<td>Ausência de Cryptographic Failures (A02)</td>
+</tr>
+<tr>
+<td></td>
+<td>Q2. O sistema garante que os dados não sejam alterados indevidamente?</td>
+<td>Tipos de Vulnerabilidades (OWASP)</td>
+<td>SonarQube</td>
+<td>Uma vez</td>
+<td>Ausência de Injection (A03)</td>
+</tr>
+<tr>
+<td></td>
+<td>Q3. As ações dos usuários e do sistema são rastreáveis e auditáveis?</td>
+<td>Verificação da Implementação de Mecanismos de Log/Auditoria</td>
+<td>Manual (Inspeção)</td>
+<td>Uma vez</td>
+<td>Sim</td>
+</tr>
+<tr>
+<td></td>
+<td>Q4. O sistema verifica corretamente a identidade dos usuários?</td>
+<td>Percentual de Security Hotspots Revisados</td>
+<td>SonarQube</td>
+<td>Uma vez</td>
+<td>100%</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Tipos de Vulnerabilidades (OWASP)</td>
+<td>SonarQube</td>
+<td>Uma vez</td>
+<td>Ausência de Broken Authentication (A07)</td>
+</tr>
+</tbody>
+</table>
+<div align="center">
+<span style="font-size: 12px; font-style: italic;">
+    Autores:  <a href="https://github.com/trindadea">Arthur Trindade</a> e <a href="https://github.com/GabrielaTiago">Gabriela Tiago</a>
+</span>
+</div>
+<hr/>
+<h2 id="48-diagrama-gqm">4.8 Diagrama GQM</h2>
+<pre class="mermaid"><code>graph TD
+  G(G1: Entender e Avaliar a Segurança) --&gt; Q1(Q1: Protege dados sensíveis?)
+  G --&gt; Q2(Q2: Garante integridade dos dados?)
+  G --&gt; Q3(Q3: Ações são rastreáveis?)
+  G --&gt; Q4(Q4: Verifica identidade corretamente?)
+
+  Q1 --&gt; M1_1(M1.1: Contagem de Vulnerabilidades)
+  Q1 --&gt; M1_2(M1.2: Tipos de Vulnerabilidades - OWASP)
+  Q1 --&gt; M1_3(M1.3: % de Hotspots Revisados)
+
+  Q2 --&gt; M1_1
+  Q2 --&gt; M1_2
+
+  Q3 --&gt; M3_1(M3.1: Verificação de Logging/Auditoria)
+
+  Q4 --&gt; M1_1
+  Q4 --&gt; M1_2
+  Q4 --&gt; M1_3</code></pre>
+<div align="center">
+<span style="font-size: 12px; font-style: italic;">
+    Autora: <a href="https://github.com/GabrielaTiago">Gabriela Tiago</a>
+</span>
+</div>
+<hr/>
+<h2 id="49-referencias-bibliograficas">4.9 Referências Bibliográficas</h2>
+<blockquote>
+<p>BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, Hans Dieter. <em>The Goal Question Metric (GQM) Approach.</em> In: MARCINIAK, J. J. (ed.). <em>Encyclopedia of Software Engineering.</em> New York: John Wiley &amp; Sons, 1994. cap. 6, p. 51–55.<br>
+INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. <em>ISO/IEC 25023:2011.</em> Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models. Genebra: ISO, 2011.</br></p>
+</blockquote>
+<hr/>
+<h2 id="410-historico-de-versoes">4.10 Histórico de Versões</h2>
+<table>
+<thead>
+<tr>
+<th>Versão</th>
+<th>Data</th>
+<th>Descrição</th>
+<th>Autor(es)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>1.0</code></td>
+<td>14/10/2025</td>
+<td>Criação do documento</td>
+<td><a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>, <a href="https://github.com/MatheusHenrickSantos">Matheus Henrick</a></td>
+</tr>
+<tr>
+<td><code>1.1</code></td>
+<td>15/10/2025</td>
+<td>Formatação do texto, remoção de informações redundantes</td>
+<td><a href="https://github.com/GabrielaTiago">Gabriela Tiago</a></td>
+</tr>
+<tr>
+<td><code>1.2</code></td>
+<td>24/10/2025</td>
+<td>Reestruturação do artefato, adição da introdução e dos links de navegação</td>
+<td><a href="https://github.com/trindadea">Arthur Carneiro</a></td>
+</tr>
+<tr>
+<td><code>1.3</code></td>
+<td>25/10/2025</td>
+<td>Ajuste dos itens 2.2 - 3.2 - 4.2 (propósitos somente o verbo no infinitivo)</td>
+<td><a href="https://github.com/uires2023">Uires Carlos de Oliveira</a></td>
+</tr>
+<tr>
+<td><code>1.4</code></td>
+<td>26/10/2025</td>
+<td>Revisão e atualização da seção de segurança, incluindo ajustes nas métricas, tabelas e diagrama</td>
+<td><a href="https://github.com/GabrielaTiago">Gabriela Tiago</a></td>
+</tr>
+<tr>
+<td><code>1.5</code></td>
+<td>25/10/2025</td>
+<td>inclusão dos termos: Confidencialidade/ Integridade</td>
+<td><a href="https://github.com/uires2023">Uires Carlos de Oliveira</a></td>
+</tr>
+</tbody>
+</table>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Voltar para o topo
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      Copyright © 2025 - T02 Katherine Johnson
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+<div class="md-social">
+<a class="md-social__link" href="https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_Katherine_Johnson" rel="noopener" target="_blank" title="github.com">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "search.highlight", "search.share", "toc.follow", "content.code.annotate", "content.code.copy", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+<script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+</body>
+</html>

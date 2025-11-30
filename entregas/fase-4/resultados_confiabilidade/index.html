@@ -1,0 +1,3831 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentação do projeto Guardiões da Saúde, relacionada à matéria de "Qualidade de Software" do curso de Engenharia de Software da UnB FCTE.">
+      
+      
+      
+        <link rel="canonical" href="https://fcte-qualidade-de-software-1.github.io/2025-2_T02_Katherine_Johnson/entregas/fase-4/resultados_confiabilidade/">
+      
+      
+        <link rel="prev" href="../resultados_manutenibilidade/">
+      
+      
+        <link rel="next" href="../resultados_seguranca/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/icon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>3. Resultados - Confiabilidade - Guardiões da Saúde</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/theme-overrides.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#3-confiabilidade-execucao-analise-e-interpretacao" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../../.." title="Guardiões da Saúde" class="md-header__button md-logo" aria-label="Guardiões da Saúde" data-md-component="logo">
+      
+  <img src="../../../assets/images/icon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Guardiões da Saúde
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              3. Resultados - Confiabilidade
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="green"  aria-label="Mudar para modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="green"  aria-label="Mudar para modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartilhar" aria-label="Compartilhar" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_Katherine_Johnson" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    FCTE-Qualidade-de-Software-1/2025-2_T02_Katherine_Johnson
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Página Inicial
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../sobre/visao-geral/" class="md-tabs__link">
+          
+  
+  
+  Sobre o Projeto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../fase-1/proposito-da-avaliacao/" class="md-tabs__link">
+          
+  
+  
+  Fase 1 - Requisitos de Avaliação
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../fase-2/visao_geral/" class="md-tabs__link">
+          
+  
+  
+  Fase 2 - Especificação da Avaliação
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../fase-3/visao_geral/" class="md-tabs__link">
+          
+  
+  
+  Fase 3 - Planejamento da Avaliação
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../visao_geral/" class="md-tabs__link">
+          
+  
+  
+  Fase 4 - Execução da Avaliação
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../declaracao_ia/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Declaração do uso de IA
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Guardiões da Saúde" class="md-nav__button md-logo" aria-label="Guardiões da Saúde" data-md-component="logo">
+      
+  <img src="../../../assets/images/icon.png" alt="logo">
+
+    </a>
+    Guardiões da Saúde
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_Katherine_Johnson" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    FCTE-Qualidade-de-Software-1/2025-2_T02_Katherine_Johnson
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Página Inicial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sobre o Projeto
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sobre o Projeto
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sobre/visao-geral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sobre/equipe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Equipe
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 1 - Requisitos de Avaliação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 1 - Requisitos de Avaliação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-1/proposito-da-avaliacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Propósito da Avaliação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-1/partes-interessadas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Requisitante e Partes Interessadas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-1/caracteristicas-produto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Características do Produto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-1/especificacao-modelo-qualidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Especificação do modelo de qualidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-1/selecao-caracteristicas-avaliadas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Seleção das características avaliadas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-1/ods-relacionados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. ODS Relacionados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 2 - Especificação da Avaliação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 2 - Especificação da Avaliação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-2/visao_geral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-2/manutenabilidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Manutenabilidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-2/confiabilidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Confiabilidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-2/seguranca/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Segurança
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-2/tabela_contribuicao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Tabela de Contribuição
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 3 - Planejamento da Avaliação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 3 - Planejamento da Avaliação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-3/visao_geral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-3/manutenabilidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Planejamento - Manutenabilidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-3/confiabilidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Planejamento - Confiabilidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-3/seguranca/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Planejamento - Segurança
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase-3/tabela_contribuicao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Tabela de Contribuição
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 4 - Execução da Avaliação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 4 - Execução da Avaliação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visao_geral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resultados_manutenibilidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Resultados - Manutenibilidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Resultados - Confiabilidade
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Resultados - Confiabilidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#31-introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Introdução
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1 Introdução">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#escopo-da-avaliacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Escopo da avaliação
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-ambiente-e-recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Ambiente e Recursos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Ambiente e Recursos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#evidencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evidências
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-procedimentos-executados-reprodutibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Procedimentos Executados (reprodutibilidade)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3 Procedimentos Executados (reprodutibilidade)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desvios-do-plano" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desvios do plano
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#34-evidencias-e-dados-brutos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Evidências e Dados Brutos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-reliability-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ---------Reliability:-------------------
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="---------Reliability:-------------------">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valor-coletado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valor coletado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definição:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterio-de-avaliacao-sonarqube" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critério de avaliação SonarQube:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterio-de-avaliacao-sonarqube_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critério de avaliação SonarQube:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpretacao-no-relatorio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretação no relatório:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concordancia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concordância
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-maintainability-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ---------Maintainability:-------------------
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="---------Maintainability:-------------------">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valor-coletado_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valor coletado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definicao_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definição:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterio-de-avaliacao-sonarqube_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critério de avaliação SonarQube:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#justificativa-tecnica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Justificativa técnica:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpretacao-no-relatorio_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretação no relatório:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concordancia_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concordância
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-security-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ---------Security:-------------------
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="---------Security:-------------------">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valor-coletado_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valor coletado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definicao_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definição:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterio-de-avaliacao-sonarqube_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critério de avaliação SonarQube:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#justificativa-tecnica_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Justificativa técnica:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpretacao-no-relatorio_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretação no relatório:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concordancia_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concordância
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-security-hotspots-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ---------Security Hotspots:-------------------
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="---------Security Hotspots:-------------------">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valor-coletado_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valor coletado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definicao_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definição:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterio-de-avaliacao-sonarqube_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critério de avaliação SonarQube:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#justificativa-tecnica_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Justificativa técnica:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpretacao-no-relatorio_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretação no relatório:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concordancia_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concordância
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-coverage-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ---------Coverage:-------------------
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="---------Coverage:-------------------">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valor-coletado_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valor coletado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definicao_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definição:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterio-de-avaliacao-sonarqube_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critério de avaliação SonarQube:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#justificativa-tecnica_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Justificativa técnica:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpretacao-no-relatorio_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretação no relatório:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concordancia_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concordância
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-duplications-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ---------Duplications:-------------------
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="---------Duplications:-------------------">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valor-coletado_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valor coletado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definicao_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definição:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterio-de-avaliacao-sonarqube_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critério de avaliação SonarQube:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#justificativa-tecnica_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Justificativa técnica:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpretacao-no-relatorio_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretação no relatório:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concordancia_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concordância
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-size-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ---------Size:-------------------
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="---------Size:-------------------">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valor-coletado_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valor coletado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definicao_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definição:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterio-de-avaliacao-sonarqube_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critério de avaliação SonarQube:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#justificativa-tecnica_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Justificativa técnica:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpretacao-no-relatorio_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretação no relatório:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concordancia_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concordância
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-languages-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ---------Languages:-------------------
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#35-metricas-coletadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5. Métricas Coletadas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.5. Métricas Coletadas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#36-metricas-nao-mensuraveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 Métricas não mensuráveis
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#37-respostas-as-questoes-gqm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7. Respostas às Questões GQM
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.7. Respostas às Questões GQM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#q1-o-sistema-esta-disponivel-para-uso-na-maior-parte-do-tempo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q1 — O sistema está disponível para uso na maior parte do tempo?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q2-o-sistema-continua-operando-diante-de-falhas-parciais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q2 — O sistema continua operando diante de falhas parciais?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q3-o-sistema-apresenta-baixa-incidencia-de-bugs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q3 — O sistema apresenta baixa incidência de bugs?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#38-conclusao-e-recomendacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.8 Conclusão e Recomendações
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.8 Conclusão e Recomendações">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sintese" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Síntese
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acoes-priorizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ações priorizadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#39-historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.9. Histórico de Versões
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resultados_seguranca/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Resultados - Segurança
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conclusao_geral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Conclusão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabela_contribuicao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Tabela de Contribuição
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../declaracao_ia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Declaração do uso de IA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#31-introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Introdução
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1 Introdução">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#escopo-da-avaliacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Escopo da avaliação
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-ambiente-e-recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Ambiente e Recursos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Ambiente e Recursos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#evidencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evidências
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-procedimentos-executados-reprodutibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Procedimentos Executados (reprodutibilidade)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3 Procedimentos Executados (reprodutibilidade)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desvios-do-plano" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desvios do plano
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#34-evidencias-e-dados-brutos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Evidências e Dados Brutos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-reliability-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ---------Reliability:-------------------
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="---------Reliability:-------------------">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valor-coletado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valor coletado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definição:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterio-de-avaliacao-sonarqube" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critério de avaliação SonarQube:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterio-de-avaliacao-sonarqube_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critério de avaliação SonarQube:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpretacao-no-relatorio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretação no relatório:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concordancia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concordância
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-maintainability-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ---------Maintainability:-------------------
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="---------Maintainability:-------------------">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valor-coletado_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valor coletado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definicao_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definição:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterio-de-avaliacao-sonarqube_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critério de avaliação SonarQube:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#justificativa-tecnica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Justificativa técnica:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpretacao-no-relatorio_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretação no relatório:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concordancia_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concordância
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-security-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ---------Security:-------------------
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="---------Security:-------------------">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valor-coletado_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valor coletado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definicao_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definição:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterio-de-avaliacao-sonarqube_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critério de avaliação SonarQube:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#justificativa-tecnica_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Justificativa técnica:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpretacao-no-relatorio_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretação no relatório:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concordancia_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concordância
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-security-hotspots-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ---------Security Hotspots:-------------------
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="---------Security Hotspots:-------------------">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valor-coletado_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valor coletado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definicao_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definição:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterio-de-avaliacao-sonarqube_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critério de avaliação SonarQube:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#justificativa-tecnica_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Justificativa técnica:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpretacao-no-relatorio_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretação no relatório:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concordancia_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concordância
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-coverage-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ---------Coverage:-------------------
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="---------Coverage:-------------------">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valor-coletado_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valor coletado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definicao_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definição:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterio-de-avaliacao-sonarqube_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critério de avaliação SonarQube:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#justificativa-tecnica_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Justificativa técnica:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpretacao-no-relatorio_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretação no relatório:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concordancia_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concordância
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-duplications-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ---------Duplications:-------------------
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="---------Duplications:-------------------">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valor-coletado_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valor coletado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definicao_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definição:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterio-de-avaliacao-sonarqube_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critério de avaliação SonarQube:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#justificativa-tecnica_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Justificativa técnica:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpretacao-no-relatorio_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretação no relatório:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concordancia_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concordância
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-size-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ---------Size:-------------------
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="---------Size:-------------------">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valor-coletado_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valor coletado:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definicao_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definição:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criterio-de-avaliacao-sonarqube_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critério de avaliação SonarQube:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#justificativa-tecnica_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Justificativa técnica:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpretacao-no-relatorio_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretação no relatório:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concordancia_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concordância
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-languages-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ---------Languages:-------------------
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#35-metricas-coletadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5. Métricas Coletadas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.5. Métricas Coletadas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#36-metricas-nao-mensuraveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 Métricas não mensuráveis
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#37-respostas-as-questoes-gqm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7. Respostas às Questões GQM
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.7. Respostas às Questões GQM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#q1-o-sistema-esta-disponivel-para-uso-na-maior-parte-do-tempo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q1 — O sistema está disponível para uso na maior parte do tempo?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q2-o-sistema-continua-operando-diante-de-falhas-parciais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q2 — O sistema continua operando diante de falhas parciais?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q3-o-sistema-apresenta-baixa-incidencia-de-bugs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q3 — O sistema apresenta baixa incidência de bugs?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#38-conclusao-e-recomendacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.8 Conclusão e Recomendações
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.8 Conclusão e Recomendações">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sintese" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Síntese
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acoes-priorizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ações priorizadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#39-historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.9. Histórico de Versões
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navegação" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Página Inicial
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../visao_geral/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Fase 4 - Execução da Avaliação
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="3-confiabilidade-execucao-analise-e-interpretacao">3. Confiabilidade – Execução, Análise e Interpretação</h1>
+<h2 id="31-introducao">3.1 Introdução</h2>
+<p>Este documento apresenta a execução da avaliação da característica <strong>Confiabilidade</strong>
+do projeto <strong>Guardiões da Saúde – App</strong>, conforme o planejamento definido na <strong>Fase 3</strong>.
+A avaliação foi conduzida por meio de <strong>análise estática do código-fonte</strong>, visando
+coletar métricas objetivas, interpretar resultados e responder às questões do modelo <strong>GQM</strong>.</p>
+<h3 id="escopo-da-avaliacao">Escopo da avaliação</h3>
+<ul>
+<li>
+<p><strong>Métricas mensuráveis (análise estática):</strong><br />
+<em>Bugs</em>, <em>Reliability Rating</em>, <em>Code Smells</em>, <em>Duplicação</em>, <em>Coverage</em>, <em>Maintainability</em>,
+  <em>Security</em>, <em>Security Hotspots Reviewed</em> e <em>Tamanho do código (LOC)</em>.</p>
+</li>
+<li>
+<p><strong>Métricas não mensuráveis (execução em produção / telemetria):</strong><br />
+<strong>M1.1 – Availability Rate (%)</strong>, <strong>M2.1 – Erros sem queda</strong>, <strong>M2.2 – Crashes</strong>.</p>
+</li>
+</ul>
+<p>Essas métricas foram classificadas como não mensuráveis pela ausência de ambiente em
+produção, telemetria e logs de execução.</p>
+<hr />
+<h2 id="32-ambiente-e-recursos">3.2 Ambiente e Recursos</h2>
+<ul>
+<li><strong>Sistema Operacional:</strong> Ubuntu Linux  </li>
+<li><strong>Ferramenta de análise:</strong> SonarQube Community Build <strong>v25.11.0.114957</strong>  </li>
+<li><strong>Modo:</strong> MQR  </li>
+<li><strong>Scanner:</strong> SonarScanner  </li>
+<li><strong>Projeto:</strong> <code>guardioes-app</code>  </li>
+<li><strong>URL do painel:</strong> <code>http://localhost:9000/dashboard?id=guardioes-app&amp;codeScope=overall</code>  </li>
+<li><strong>Branch/commit analisado:</strong> <em>(informar, se aplicável)</em></li>
+</ul>
+<h3 id="evidencias">Evidências</h3>
+<ul>
+<li>Diretório de armazenamento: <code>/docs/assets/images/fase-4/</code></li>
+</ul>
+<hr />
+<h2 id="33-procedimentos-executados-reprodutibilidade">3.3 Procedimentos Executados (reprodutibilidade)</h2>
+<ol>
+<li>Inicialização do SonarQube (<code>./sonar.sh start</code>).  </li>
+<li>Acesso ao painel web (<code>http://localhost:9000</code>).  </li>
+<li>Criação do projeto e configuração do token.  </li>
+<li>Execução do <strong>SonarScanner</strong> no repositório clonado.  </li>
+<li>Processamento de aproximadamente <strong>21.000 linhas de código</strong>.  </li>
+<li>Registro dos dashboards e métricas.</li>
+</ol>
+<h3 id="desvios-do-plano">Desvios do plano</h3>
+<ul>
+<li>Não houve coleta de métricas em produção, conforme previsto na Fase 3.</li>
+</ul>
+<hr />
+<h2 id="34-evidencias-e-dados-brutos">3.4 Evidências e Dados Brutos</h2>
+<ul>
+<li>Vídeo Sonar em execução:</li>
+</ul>
+<div align="center">
+  <p><strong>Vídeo 1 – Execução do scanner no APP Guardiões da Saúde </strong></p>
+</div>
+<div align="center">
+  <video src="../../../assets/evidencias/confiabilidade/sonar.mp4" width="750" controls></video>
+</div>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Fonte: Autores Uires Carlos de Oliveira
+</div>
+
+<hr />
+<ul>
+<li>Prints dos dashboards:<ul>
+<li>Geral / Overview
+<div align="center">
+  <p><strong>Figura 1 – Visão geral.</strong></p>
+</div>
+<div align="center">
+  <img src="../../../assets/evidencias/confiabilidade/m31_conf_dashboard_principal.jpeg" width="750" alt="Visão geral"/>
+</div>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
+</div></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="-reliability-">---------Reliability:-------------------</h2>
+<h3 id="valor-coletado">Valor coletado:</h3>
+<ul>
+<li>206 bugs</li>
+<li>Reliability Rating: <strong>D</strong></li>
+</ul>
+<h3 id="definicao">Definição:</h3>
+<ul>
+<li>Mede a presença de defeitos com potencial de causar falhas em tempo de execução.</li>
+</ul>
+<h3 id="criterio-de-avaliacao-sonarqube">Critério de avaliação SonarQube:</h3>
+<ul>
+<li>A: 0 bugs</li>
+<li>B: ≥ 1 bug low</li>
+<li>C: ≥ 1 bug medium</li>
+<li>D: ≥ 1 bug high</li>
+<li>E: ≥ 1 bug blocker</li>
+</ul>
+<h3 id="criterio-de-avaliacao-sonarqube_1">Critério de avaliação SonarQube:</h3>
+<ul>
+<li>A presença de ao menos um bug de severidade alta (<strong>high</strong>) é suficiente para que o SonarQube classifique a confiabilidade como <strong>D</strong>, independentemente da quantidade total.</li>
+</ul>
+<h3 id="interpretacao-no-relatorio">Interpretação no relatório:</h3>
+<blockquote>
+<p>“Alta probabilidade de falhas”</p>
+</blockquote>
+<h3 id="concordancia">Concordância</h3>
+<ul>
+<li>
+<p>Sim. A interpretação está correta e segue a lógica da ferramenta.</p>
+<p><div align="center">
+  <p><strong>Figura 2 – Confiabilidade.</strong></p>
+</div>
+<div align="center">
+  <img src="../../../assets/evidencias/confiabilidade/m31_conf_reliability_d.jpeg" width="500" alt="Confiabilidade"/>
+</div>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
+</div></p>
+<hr />
+</li>
+</ul>
+<h2 id="-maintainability-">---------Maintainability:-------------------</h2>
+<h3 id="valor-coletado_1">Valor coletado:</h3>
+<ul>
+<li>355 code smells</li>
+<li>Maintainability Rating: <strong>A</strong></li>
+</ul>
+<h3 id="definicao_1">Definição:</h3>
+<ul>
+<li>Reflete o esforço necessário para corrigir problemas estruturais ou de estilo (code smells), que podem impactar a legibilidade, consistência e manutenção do sistema.</li>
+</ul>
+<h3 id="criterio-de-avaliacao-sonarqube_2">Critério de avaliação SonarQube:</h3>
+<ul>
+<li>Baseado no índice de dívida técnica (Technical Debt Ratio):
+[
+\text{(tempo estimado para correção / tempo de desenvolvimento)} \times 100
+]</li>
+<li>Classificação:</li>
+<li>A: ≤ 5%</li>
+<li>B: ≤ 10%</li>
+<li>C: ≤ 20%</li>
+<li>D: ≤ 50%</li>
+<li>E: &gt; 50%</li>
+</ul>
+<h3 id="justificativa-tecnica">Justificativa técnica:</h3>
+<ul>
+<li>Apesar do número elevado de <em>code smells</em>, o esforço estimado de correção ficou abaixo de 5% do esforço total de desenvolvimento, o que garante a nota <strong>A</strong>.</li>
+</ul>
+<h3 id="interpretacao-no-relatorio_1">Interpretação no relatório:</h3>
+<blockquote>
+<p>“Esforço baixo de correção”</p>
+</blockquote>
+<h3 id="concordancia_1">Concordância</h3>
+<ul>
+<li>
+<p>Sim. A análise foi feita com base nos critérios corretos.</p>
+<p><div align="center">
+  <p><strong>Figura 3 – Manutenibilidade.</strong></p>
+</div>
+<div align="center">
+  <img src="../../../assets/evidencias/confiabilidade/m32_conf_maintainability_a.jpeg" width="500" alt="Manutenibilidade"/>
+</div>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
+</div></p>
+<hr />
+</li>
+</ul>
+<h2 id="-security-">---------Security:-------------------</h2>
+<h3 id="valor-coletado_2">Valor coletado:</h3>
+<ul>
+<li>Security Rating: <strong>A</strong></li>
+</ul>
+<h3 id="definicao_2">Definição:</h3>
+<ul>
+<li>Avalia a presença de vulnerabilidades de segurança reais no código.</li>
+</ul>
+<h3 id="criterio-de-avaliacao-sonarqube_3">Critério de avaliação SonarQube:</h3>
+<ul>
+<li>A: Nenhuma vulnerabilidade real;</li>
+<li>D ou E: Presença de vulnerabilidades críticas</li>
+</ul>
+<h3 id="justificativa-tecnica_1">Justificativa técnica:</h3>
+<ul>
+<li>O Sonar não identificou falhas de segurança reais — apenas mensagens informativas — o que justifica a nota máxima <strong>A</strong>.</li>
+</ul>
+<h3 id="interpretacao-no-relatorio_2">Interpretação no relatório:</h3>
+<blockquote>
+<p>“Sem vulnerabilidades críticas”</p>
+</blockquote>
+<h3 id="concordancia_2">Concordância</h3>
+<ul>
+<li>
+<p>Sim. Condiz com o funcionamento da métrica.</p>
+<p><div align="center">
+  <p><strong>Figura 4 – Security</strong></p>
+</div>
+<div align="center">
+  <img src="../../../assets/evidencias/confiabilidade/Security_A.jpeg" width="500" alt="Security"/>
+</div>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
+</div></p>
+<hr />
+</li>
+</ul>
+<h2 id="-security-hotspots-">---------Security Hotspots:-------------------</h2>
+<h3 id="valor-coletado_3">Valor coletado:</h3>
+<ul>
+<li>0% revisado</li>
+<li>Classificação: <strong>E</strong></li>
+</ul>
+<h3 id="definicao_3">Definição:</h3>
+<ul>
+<li>Aponta trechos do código potencialmente sensíveis à segurança que exigem análise manual para confirmação de risco.</li>
+</ul>
+<h3 id="criterio-de-avaliacao-sonarqube_4">Critério de avaliação SonarQube:</h3>
+<ul>
+<li>A: ≥ 80% revisado</li>
+<li>E: &lt; 30% revisado</li>
+</ul>
+<h3 id="justificativa-tecnica_2">Justificativa técnica:</h3>
+<ul>
+<li>Nenhum dos pontos sinalizados foi revisado manualmente, o que acarreta automaticamente nota <strong>E</strong>.</li>
+</ul>
+<h3 id="interpretacao-no-relatorio_3">Interpretação no relatório:</h3>
+<blockquote>
+<p>“Risco não revisado”</p>
+</blockquote>
+<h3 id="concordancia_3">Concordância</h3>
+<ul>
+<li>
+<p>Sim. Está de acordo com o critério da ferramenta</p>
+<p><div align="center">
+  <p><strong>Figura 5 – Security Hotspots</strong></p>
+</div>
+<div align="center">
+  <img src="../../../assets/evidencias/confiabilidade/Security_Hotspots_E.jpeg" width="500" alt="Security Hotspots"/>
+</div>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
+</div></p>
+<hr />
+</li>
+</ul>
+<h2 id="-coverage-">---------Coverage:-------------------</h2>
+<h3 id="valor-coletado_4">Valor coletado:</h3>
+<ul>
+<li>0%</li>
+<li>Classificação: <strong>E</strong></li>
+</ul>
+<h3 id="definicao_4">Definição:</h3>
+<ul>
+<li>Mede a porcentagem de linhas de código cobertas por testes automatizados (unitários ou de integração).</li>
+</ul>
+<h3 id="criterio-de-avaliacao-sonarqube_5">Critério de avaliação SonarQube:</h3>
+<ul>
+<li>A: ≥ 80%</li>
+<li>E: &lt; 30%</li>
+</ul>
+<h3 id="justificativa-tecnica_3">Justificativa técnica:</h3>
+<ul>
+<li>O projeto não possui testes automatizados com cobertura mensurável, o que justifica a nota mínima <strong>E</strong>.</li>
+</ul>
+<h3 id="interpretacao-no-relatorio_4">Interpretação no relatório:</h3>
+<blockquote>
+<p>“Ausência de testes”</p>
+</blockquote>
+<h3 id="concordancia_4">Concordância</h3>
+<ul>
+<li>
+<p>Sim. A descrição está alinhada com a avaliação do SonarQube.</p>
+<p><div align="center">
+  <p><strong>Figura 6 – Coverage</strong></p>
+</div>
+<div align="center">
+  <img src="../../../assets/evidencias/confiabilidade/Coverage1.jpeg" width="500" alt="Coverage"/>
+</div>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
+</div></p>
+<hr />
+<h2 id="-duplications-">---------Duplications:-------------------</h2>
+<h3 id="valor-coletado_5">Valor coletado:</h3>
+<ul>
+<li>39,1%</li>
+</ul>
+<h3 id="definicao_5">Definição:</h3>
+<ul>
+<li>Avalia a proporção do código que é duplicada no sistema, o que impacta negativamente na manutenibilidade e aumenta o risco de inconsistências.</li>
+</ul>
+<h3 id="criterio-de-avaliacao-sonarqube_6">Critério de avaliação SonarQube:</h3>
+<ul>
+<li>Não utiliza notas alfabéticas, mas valores acima de <strong>20%</strong> são destacados como críticos.</li>
+</ul>
+<h3 id="justificativa-tecnica_4">Justificativa técnica:</h3>
+<ul>
+<li>O índice de duplicação de 39,1% é considerado excessivo e prejudica a saúde estrutural do projeto.</li>
+</ul>
+<h3 id="interpretacao-no-relatorio_5">Interpretação no relatório:</h3>
+<blockquote>
+<p>“Código excessivamente repetido”</p>
+</blockquote>
+<h3 id="concordancia_5">Concordância</h3>
+<ul>
+<li>Sim. A leitura está correta e bem contextualizada.</li>
+</ul>
+<p><div align="center">
+  <p><strong>Figura 7 – Duplicações de Código.</strong></p>
+</div>
+<div align="center">
+ <img src="../../../assets/evidencias/confiabilidade/m33_conf_duplications.jpeg" width="500" alt="Duplicações de Código"/>
+</div>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
+</div></p>
+<hr />
+<h2 id="-size-">---------Size:-------------------</h2>
+</li>
+</ul>
+<h3 id="valor-coletado_6">Valor coletado:</h3>
+<ul>
+<li>Aproximadamente 21.000 linhas de código (LOC)</li>
+</ul>
+<h3 id="definicao_6">Definição:</h3>
+<ul>
+<li>Número total de linhas de código-fonte. Não recebe nota, mas serve como base para avaliar a densidade de problemas.</li>
+</ul>
+<h3 id="criterio-de-avaliacao-sonarqube_7">Critério de avaliação SonarQube:</h3>
+<p>Essa métrica é usada para contextualizar:
+- Densidade de <em>bugs</em><br />
+- <em>Code smells</em><br />
+- Duplicações</p>
+<h3 id="justificativa-tecnica_5">Justificativa técnica:</h3>
+<ul>
+<li>Com esse volume de código, os altos índices de bugs e duplicações indicam densidade crítica de problemas.</li>
+</ul>
+<h3 id="interpretacao-no-relatorio_6">Interpretação no relatório:</h3>
+<blockquote>
+<p>“Alta densidade de problemas”</p>
+</blockquote>
+<h3 id="concordancia_6">Concordância</h3>
+<ul>
+<li>
+<p>Sim. O uso da métrica como suporte contextual está adequado.</p>
+<p><div align="center">
+  <p><strong>Figura 8 – Size</strong></p>
+</div>
+<div align="center">
+  <img src="../../../assets/evidencias/confiabilidade/Size.jpeg" width="500" alt="Size"/>
+</div>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
+</div></p>
+<hr />
+<h2 id="-languages-">---------Languages:-------------------</h2>
+<p><div align="center">
+  <p><strong>Figura 9 – Languages</strong></p>
+</div>
+<div align="center">
+  <img src="../../../assets/evidencias/confiabilidade/Languages.jpeg" width="500" alt="Languages"/>
+</div>
+<div align="center" style="font-size: 12px; font-style: italic;">
+  Autor(es): <a href="https://github.com/uires2023">Uires Carlos de Oliveira</a>.
+</div></p>
+</li>
+<li>
+<p>Local: <code>/docs/assets/images/fase-4/</code></p>
+</li>
+<li>Planilhas/relatórios adicionais: <em>(não aplicável, se não houver)</em></li>
+</ul>
+<hr />
+<h2 id="35-metricas-coletadas">3.5. Métricas Coletadas</h2>
+<table>
+<thead>
+<tr>
+<th>Métrica</th>
+<th>Valor</th>
+<th>Evidência</th>
+<th>Interpretação</th>
+<th>Julgamento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bugs</td>
+<td>206</td>
+<td>Dashboard / Reliability</td>
+<td>Volume alto de defeitos</td>
+<td>Ruim</td>
+</tr>
+<tr>
+<td>Reliability Rating</td>
+<td>D</td>
+<td>Aba Reliability</td>
+<td>Alta probabilidade de falhas</td>
+<td>Ruim</td>
+</tr>
+<tr>
+<td>Code Smells</td>
+<td>355</td>
+<td>Dashboard</td>
+<td>Qualidade interna baixa</td>
+<td>Regular → Ruim</td>
+</tr>
+<tr>
+<td>Duplicação</td>
+<td>39,1%</td>
+<td>Aba Duplications</td>
+<td>Código excessivamente repetido</td>
+<td>Péssimo</td>
+</tr>
+<tr>
+<td>Cobertura</td>
+<td>0%</td>
+<td>Aba Coverage</td>
+<td>Ausência de testes</td>
+<td>Péssimo</td>
+</tr>
+<tr>
+<td>Maintainability Rating</td>
+<td>A</td>
+<td>Aba Maintainability</td>
+<td>Esforço baixo de correção</td>
+<td>Excelente</td>
+</tr>
+<tr>
+<td>Security Rating</td>
+<td>A</td>
+<td>Aba Security</td>
+<td>Sem vulnerabilidades críticas</td>
+<td>Excelente</td>
+</tr>
+<tr>
+<td>Hotspots revisados</td>
+<td>0% (E)</td>
+<td>Aba Security Hotspots</td>
+<td>Risco não revisado</td>
+<td>Ruim</td>
+</tr>
+<tr>
+<td>Tamanho (LOC)</td>
+<td>~21k</td>
+<td>Aba Size</td>
+<td>Alta densidade de problemas</td>
+<td>Contextual</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="36-metricas-nao-mensuraveis">3.6 Métricas não mensuráveis</h3>
+<p>Conforme definido no planejamento da <strong>Fase 3</strong>, algumas métricas dependem de ambiente em produção ou de informações técnicas que não estão disponíveis para a equipe de avaliação. Por esse motivo, não foi possível mensurá-las nesta fase.</p>
+<ul>
+<li>
+<p><strong>M1.1 – <em>Availability Rate</em> (%)</strong><br />
+  Para medir a disponibilidade seria necessário monitorar o endpoint principal do sistema. No entanto, a documentação consultada não apresentou o endpoint oficial da aplicação, o que impossibilitou a configuração de ferramentas de monitoramento, como o UptimeRobot. Uma alternativa seria utilizar ferramentas externas de inspeção de tráfego, como o Fiddler, para tentar identificar o endpoint real. Ainda assim, mesmo que esse endpoint fosse descoberto, seria indispensável a confirmação da equipe de desenvolvimento para validar se ele corresponde de fato ao ambiente de produção. Sem essa validação, os dados obtidos não poderiam ser considerados confiáveis.</p>
+</li>
+<li>
+<p><strong>M2.1/M2.2 – Erros sem queda (<em>runtime</em>) e Erros com queda (<em>Crashes</em>)</strong><br />
+  Para avaliar a tolerância a falhas seria necessário acesso direto ao código em execução ou aos logs de produção, o que não estava disponível para a equipe de avaliação. Uma alternativa seria solicitar à equipe de desenvolvimento que configurasse ferramentas de monitoramento, como o Sentry, para registrar erros e falhas. No entanto, devido ao tempo reduzido para a execução da avaliação, não foi viável abrir essa solicitação e aguardar a implementação. Por esse motivo, a métrica foi declarada como não mensurável nesta fase.</p>
+</li>
+</ul>
+<hr />
+<h2 id="37-respostas-as-questoes-gqm">3.7. Respostas às Questões GQM</h2>
+<h3 id="q1-o-sistema-esta-disponivel-para-uso-na-maior-parte-do-tempo">Q1 — O sistema está disponível para uso na maior parte do tempo?</h3>
+<ul>
+<li><strong>Resposta:</strong> Não mensurável.  </li>
+<li><strong>Justificativa:</strong> A ausência de informações sobre o endpoint oficial impossibilitou a configuração de monitoramento de disponibilidade. Embora seja tecnicamente possível descobrir o endpoint por meio de ferramentas externas usando o Fiddler, por exemplo, seria necessária a validação da equipe de desenvolvimento para garantir que o monitoramento reflita o ambiente real de produção. Sem essa confirmação, os dados não podem ser considerados confiáveis.</li>
+</ul>
+<h3 id="q2-o-sistema-continua-operando-diante-de-falhas-parciais">Q2 — O sistema continua operando diante de falhas parciais?</h3>
+<ul>
+<li><strong>Resposta:</strong> Não.  </li>
+<li><strong>Evidências:</strong> duplicação (39,1%), 355 <em>smells</em>, 0% de cobertura, <em>high issue</em> e <em>rating</em> D.</li>
+</ul>
+<h3 id="q3-o-sistema-apresenta-baixa-incidencia-de-bugs">Q3 — O sistema apresenta baixa incidência de <em>bugs</em>?</h3>
+<ul>
+<li><strong>Resposta:</strong> Não.  </li>
+<li><strong>Evidências:</strong> 206 <em>bugs</em> e <em>Reliability Rating</em> = D.</li>
+</ul>
+<hr />
+<h2 id="38-conclusao-e-recomendacoes">3.8 Conclusão e Recomendações</h2>
+<h3 id="sintese">Síntese</h3>
+<p>A <strong>Confiabilidade</strong> é considerada <strong>baixa</strong>, devido ao alto volume de defeitos,
+duplicação elevada e ausência de testes automatizados.</p>
+<h3 id="acoes-priorizadas">Ações priorizadas</h3>
+<ol>
+<li>Implementar testes automatizados (unitários e integração).  </li>
+<li>Reduzir duplicação por refatoração.  </li>
+<li>Priorizar correção de <em>bugs</em> críticos e <em>high</em>.  </li>
+<li>Tratar <em>code smells</em> de maior impacto.  </li>
+<li>Revisar manualmente <em>security hotspots</em>.</li>
+</ol>
+<hr />
+<h2 id="39-historico-de-versoes">3.9. Histórico de Versões</h2>
+<table>
+<thead>
+<tr>
+<th>Versão</th>
+<th>Data</th>
+<th>Descrição</th>
+<th>Autor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>1.0</code></td>
+<td>25/11/2025</td>
+<td>Execução da Avaliação – Confiabilidade</td>
+<td><a href="https://github.com/uires2023">Uires Carlos de Oliveira</a></td>
+</tr>
+<tr>
+<td><code>1.1</code></td>
+<td>26/11/2025</td>
+<td>Adiciona a conclusão sobre as métricas não mensuráveis</td>
+<td><a href="https://github.com/MatheusHenrickSantos">Matheus Henrick</a></td>
+</tr>
+<tr>
+<td><code>1.2</code></td>
+<td>27/11/2025</td>
+<td>Execução e análise (SonarQube v25.11.0.114957)</td>
+<td>Uires Carlos de Oliveira</td>
+</tr>
+<tr>
+<td><code>1.3</code></td>
+<td>28/11/2025</td>
+<td>Adiciona novamente a conclusão sobre as métricas não mensuráveis e adiciona imagens de evidências</td>
+<td><a href="https://github.com/MatheusHenrickSantos">Matheus Henrick</a></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 - T02 Katherine Johnson
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_Katherine_Johnson" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "search.highlight", "search.share", "toc.follow", "content.code.annotate", "content.code.copy", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

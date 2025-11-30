@@ -6,12 +6,18 @@ Esta seção apresenta a tabela de contribuição dos integrantes do grupo na Fa
 
 | Integrante                        | Contribuição (%) | Responsabilidades                                                                 |
 | --------------------------------- | ---------------- | --------------------------------------------------------------------------------- |
-| Uires Carlos de Oliveira          | [%]              | [Descrição das responsabilidades]                                                |
-| Arthur Carneiro Trindade          | [%]              | [Descrição das responsabilidades]                                                |
-| Caio Pacheco Santos               | [%]              | [Descrição das responsabilidades]                                                |
-| Gabriela Tiago de Araújo          | [%]              | [Descrição das responsabilidades]                                                |
-| Guilherme Coelho Mendonça         | [%]              | [Descrição das responsabilidades]                                                |
-| Matheus Henrick Dutra dos Santos  | [%]              | [Descrição das responsabilidades]                                                |
+| Uires Carlos de Oliveira          | [16,66%]              | [Atuação no trabalho, rodar
+sistemas e analisar dados]                                                |
+| Arthur Carneiro Trindade          | [16,67%]              | [Atuação no trabalho, rodar
+sistemas e analisar dados]                                                |
+| Caio Pacheco Santos               | [16,66%]              | [Atuação no trabalho, rodar
+sistemas e analisar dados]                                                |
+| Gabriela Tiago de Araújo          | [16,67%]              | [Atuação no trabalho, rodar
+sistemas e analisar dados]                                                |
+| Guilherme Coelho Mendonça         | [16,67%]              | [Atuação no trabalho, rodar
+sistemas e analisar dados]                                                |
+| Matheus Henrick Dutra dos Santos  | [16,67%]              | [Atuação no trabalho, rodar
+sistemas e analisar dados]                                                |
 | **Total**                         | **100%**         | **Contribuição integral da equipe**                                              |
 
 ---
